@@ -1,6 +1,6 @@
 ## SWD-SOCIAL-WEB-DESIGNERS - PROJETO INTEGRADOR
 
-<p>https://github.com/guilhermerubrae/SWD-SOCIAL-WEB-DESIGNERS</p>
+<p>https://github.com/guilhermerubrae/TCC-Desenvolvimento-Web</p>
 
 <p>Branch final: "main"</p>
 
