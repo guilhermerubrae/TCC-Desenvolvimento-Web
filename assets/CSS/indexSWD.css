@@ -107,6 +107,7 @@ header {
 }
 
 #section-principal {
+    overflow: hidden;
     border-bottom: #ffffff 5px solid;
     position: relative;
 }
@@ -185,7 +186,7 @@ header {
     box-sizing: border-box;
     margin: 3%;
     padding: 0 10px;
-    display: flex;
+    
 }
 
 .project img {
@@ -193,24 +194,18 @@ header {
     height: auto;
 }
 
-.project h4,
-.project p {
-    text-align: left;
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.project-left {
-    flex-direction: row-reverse;
-    text-align: right;
+.project-image {
+    order: 2;
 }
 
-.project-right {
-    flex-direction: row;
-    text-align: left;
+.titulo-projeto {
+    order: 1;
 }
 
-.h1-spacing {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-}
 
