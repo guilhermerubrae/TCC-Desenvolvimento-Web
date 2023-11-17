@@ -16,7 +16,7 @@ h1 {
     font-size: 28px;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
@@ -33,6 +33,9 @@ p, .btn {
 
 header {
     background-image: url(../img/indexSWD/principal/fundoazul.png);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -47,8 +50,8 @@ header {
 }
 
 .empresa {
-    position: relative;
-    margin-left: -10rem;
+    white-space: nowrap;            
+    /* margin-left: -10rem; */
     margin-right: 3rem;
     letter-spacing: 1.5px;
 }
@@ -64,6 +67,7 @@ header {
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -95,6 +99,7 @@ header {
 }
 
 .btn {
+    white-space: nowrap;   
     background-color: #9CCCD4;
     color: #fff;
     font-weight:500;
@@ -140,8 +145,9 @@ header {
 /* Ajuste os estilos dos títulos e parágrafos conforme necessário */
 #h1-left,
 #h2-right {
-    font-size: 24px;
+    font-size: 2vw; /* Use vw para tamanho relativo à largura da viewport */
     font-weight: bold; /* Adiciona negrito */
+    white-space: normal; /* Permite que o texto quebre */
 }
 
 #p-left,
@@ -150,8 +156,9 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-    font-size: 18px;
+    font-size: 1.5vw; /* Use vw para tamanho relativo à largura da viewport */
     font-weight: bold; /* Adiciona negrito */
+    white-space: normal; /* Permite que o texto quebre */
 }
 
 /* Adiciona um drop shadow */
@@ -161,6 +168,7 @@ header {
 #p-right {
     text-shadow: 1px 1px 2px #000000; /* Adiciona um drop shadow de 50% */
 }
+
 
 .h1-spacing {
     margin-left: 5rem;
@@ -176,36 +184,28 @@ header {
     height: auto;
 }
 
-.projects-section {
+.project {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin: 10rem 10rem 10rem;
+    margin-bottom: 20px; /* Adicione margem inferior entre os projetos conforme necessário */
 }
 
-.project {
-    box-sizing: border-box;
-    margin: 3%;
-    padding: 0 10px;
-    
-}
-
-.project img {
-    max-width: 50%;
-    height: auto;
-}
-
-.project {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.project-image {
-    order: 2;
+.project > div {
+    flex: 1;
 }
 
 .titulo-projeto {
-    order: 1;
+    font-size: 1.5em; /* Ajuste conforme necessário */
 }
+
+.project-left,
+.project-right {
+    font-size: 1em; /* Ajuste conforme necessário */
+    white-space: normal;
+}
+
+/* Adicione outros estilos conforme necessário */
+
 
 
