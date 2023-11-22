@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
 
 * {
     margin: 0;
@@ -6,218 +6,206 @@
     box-sizing: border-box;
 }
 
-/* styles.css */
 body {
-    background-color: rgba(156, 204, 212, 0.75); /* Usando RGBA para definir a cor com transparência */
+    background-color: #9CCCD4;
 }
 
-/* Estilos para h1 */
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: bold; /* Fonte Poppins em negrito */
+    font-weight: 600;
+    font-size: 28px;
 }
 
-/* Estilos para h2, h3, h4, ... */
-h2, h3, h4, h5, h6 {
+h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Fonte Poppins em semibold */
+    font-weight: 500;
 }
 
-/* Estilos para p */
-p {
+p, .btn {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500; /* Fonte Poppins em medium */
+    font-weight: 300 bold;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 header {
     background-image: url(../img/indexSWD/principal/fundoazul.png);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     color: #fff;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2rem;
+    text-transform: uppercase;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.logo-tam {
+    margin-left: 3rem;
+    width: 60px;
+}
+
+.empresa {
+    white-space: nowrap;            
+    /* margin-left: -10rem; */
+    margin-right: 3rem;
+    letter-spacing: 1.5px;
+}
+
+.empresa h1:nth-child(1) {
+    margin-bottom: -22.4px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.399), #9cccd4d7);
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .menu a {
     text-decoration: none;
+    position: relative;
+    font-weight:400;
     color: #fff;
-    margin: 0 20px;
+    margin: 1px;
 }
 
-#comece-agora-btn {
-    background-color: #000000;
+.menu a:hover {
+    color: #00f8f4;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to right, #00f8f4, rgb(11, 78, 186));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.btn {
+    white-space: nowrap;   
+    background-color: #9CCCD4;
     color: #fff;
-    padding: 10px 20px;
+    font-weight:500;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 12px 20px;
     border: none;
     font-size: 16px;
     cursor: pointer;
 }
 
-.main-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px;
-    margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100vh;
+#section-principal {
+    overflow: hidden;
+    border-bottom: #ffffff 5px solid;
+    position: relative;
 }
 
-.main-section div {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
+#img-principal {
+    width: 100%;
+    height: auto;
 }
 
-#projetos-landing {
-    margin: 0;
-    padding: 0;
+#div-left,
+#div-right {
+    position: absolute;
+    max-width: 45%; /* Ajuste conforme necessário */
     box-sizing: border-box;
-    width: 100%; /* Alterado para 100% */
-    height: auto;   
+    padding: 3%; /* Adiciona um pequeno espaçamento entre o texto e a borda da div */
 }
 
-.main-section h1, .main-section h2 {
-    text-transform: uppercase;
+#div-left {
+    left: 5%;
+    top: 25%;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-main {
-    text-align: center;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
+#div-right {
+    right: 5%;
+    top: 35%;
+    text-align: right; /* Alinha o texto à direita */
 }
 
-.projects-section {
-    padding: 20px;
+/* Ajuste os estilos dos títulos e parágrafos conforme necessário */
+#h1-left,
+#h2-right {
+    font-size: 2vw; /* Use vw para tamanho relativo à largura da viewport */
+    font-weight: bold; /* Adiciona negrito */
+    white-space: normal; /* Permite que o texto quebre */
+}
+
+#p-left,
+#p-right {
+    letter-spacing: 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: 1.5vw; /* Use vw para tamanho relativo à largura da viewport */
+    font-weight: bold; /* Adiciona negrito */
+    white-space: normal; /* Permite que o texto quebre */
+}
+
+/* Adiciona um drop shadow */
+#h1-left,
+#h2-right,
+#p-left,
+#p-right {
+    text-shadow: 1px 1px 2px #000000; /* Adiciona um drop shadow de 50% */
+}
+
+
+.h1-spacing {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    letter-spacing: 1px;
+
+}
+
+#img-projetos {
+    width: 100%;
+    height: auto;
 }
 
 .project {
-    margin: 20px;
-    display: inline-block;
-    text-align: left;
-}
-
-.project img {
-    width: 550px;
-    height: 435px;
-}
-
-h1 {
-    letter-spacing: 20%;
-    font-weight: bold;
-}
-
-p {
-    font-weight: 500; /* 500 é o equivalente a "medium" para a fonte "Poppins" */
-}
-
-.partners-section {
-    text-align: center;
-    padding: 20px;
-}
-
-.partners-section .partner-logos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin: 10rem 10rem 10rem;
+    margin-bottom: 20px; /* Adicione margem inferior entre os projetos conforme necessário */
 }
 
-.partner-logos img {
-    width: 100px;
-    height: auto;
-    margin: 10px;
-}
-
-.custom-section {
-    text-align: center;
-    padding: 20px;
-}
-
-.custom-section .custom-div {
-    display: flex;
-    justify-content: space-around;
-}
-
-.custom-subdiv {
+.project > div {
     flex: 1;
-    width: 362px;
-    height: 733.20px;
-    padding: 20px;
-    background-color: #eee;
-    margin: 0 10px;
 }
 
-.payment-section {
-    text-align: left;
-    padding: 20px;
+.titulo-projeto {
+    font-size: 1.5em; /* Ajuste conforme necessário */
 }
 
-.payment-title {
-    font-weight: bold;
+.project-left,
+.project-right {
+    font-size: 1em; /* Ajuste conforme necessário */
+    white-space: normal;
 }
 
-.payment-methods {
-    display: flex;
-}
+/* Adicione outros estilos conforme necessário */
 
-.payment-method {
-    width: 55px;
-    height: 35px;
-    margin: 0 10px;
-}
 
-.domain-section {
-    text-align: left;
-    padding: 20px;
-}
 
-.domain-section .domain-article {
-    width: 268px;
-    height: 220px;
-    background-color: #eee;
-    margin: 10px;
-    padding: 10px;
-}
-
-.domain-article h4 {
-    font-weight: bold;
-}
-
-.domain-article p {
-    font-weight: 500;
-}
-
-.domain-article button {
-    width: 127px;
-    height: 40px;
-    border: 4px solid #000;
-}
-
-.form-field {
-    width: 1320px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    margin-bottom: 10px;
-}
-
-.form-button {
-    width: 190px;
-    height: 60px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.captcha-container {
-    text-align: center;
-}

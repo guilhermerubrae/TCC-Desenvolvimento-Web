@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: 'Lexend', sans-serif;
+}
+.container header {
+    width: auto;
+    height: 173px;
+    flex-shrink: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container header img {
+    width: 128px;
+    height: 128px;
+    flex-shrink: 0;
+    margin: 0 35px;
+}
+.container header nav ul, .container header nav {
+    width: 35%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container header nav ul li {
+    color: #FFF;
+    width: 200px;
+    margin: 0 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.container header nav ul li span {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+#carousel-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+    opacity: 0.5;
+    transition: 0.2s linear;
+}
+
+.carousel-arrow:hover {
+    opacity: 1;
+}
+
+#prev {
+  left: 10px;
+    left: 10px;
+}
+
+#next {
+   right: 10px;
+}
+
+.container header ul li::after {
+    content: ' ';
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(to right, #F8eF00, rgb(186, 20, 11)), 134, 0));
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.container header ul li:hover::after {
+    width: 100%;
+}
