@@ -33,7 +33,7 @@ nav {
     align-items: center;
     text-align: center;
     background-color: black;
-    height: 14vh;
+    height: 12vh;
     margin-right: 70px;
 
 }
@@ -41,37 +41,37 @@ nav {
 .navbar {
     list-style: none;
     display: flex;
+    font-size: 1em;
 
 }
 
 .navbar li {
-    margin: 0 16px;
+    margin: 1em;
 }
 
 .Logo {
-    height: 5em;
-    margin-left: 90px;
+    height: 4.1em;
+    margin-left: 5rem;
 
 }
 
-img {
+ul img {
     height: 2em;
     vertical-align: middle;
-    margin-left: 10px;
-    
-
+    margin-left: 0.5rem;
 }
 
 .Principal {
     width: 100%;
-    height: 600px;
-    margin: 0%;
+    height: 100vh; 
+    margin: 0;
 }
 
 .sobre {
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 0.7rem;
+    margin: 1em 1.5em;
 }
 
 .icon {
@@ -83,6 +83,7 @@ img {
 
 .container {
     display: flex;
+    font-size: 0.8rem;
 }
 
 .column {
@@ -102,12 +103,13 @@ img {
 .texto-aszn {
     margin: 8%;
     text-align: center;
+    font-size: 0.8rem;
 
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 13rem;
+    height: 13rem;
     text-align: center;
     border: 1px solid #000000;
     background-color: #FBD300;
@@ -116,7 +118,8 @@ img {
     margin: 10px;
     margin-bottom: 9%;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 0.9em;
+    /* ou 14px*/
 }
 
 .card:hover {
@@ -174,7 +177,7 @@ img {
 
 .candidatura {
     padding: 15px;
-    background: linear-gradient(to top, #000000, #FBD300);
+    background:#FBD300;
     color: rgb(0, 0, 0);
     border-radius: 30px;
     border: 0;
@@ -190,34 +193,43 @@ img {
     margin-right: 20px;
 }
 
-.teste {
-    width: 350px; 
-    height: auto;
-    margin-top: 100px;
-    margin-left: 80px;
-    border-radius: 10px;
-    
-
-}
-
 .teste2 {
     margin-top: 9%;
+    padding: 2%;
     border-top: 1px solid #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+}
+
+.teste2 h1 {
+    margin: 2em;
+
+}
+
+.teste2 img {
+    width: 25vw;
+    height: 80vh;
+    margin-top: 2.5em;
+}
+
+#emprego {
+    margin-right: 1.2em;
+}
+
+.help {
     text-align: center;
+    font-size: 0.7em;
+    margin: 5em 0.8em;
+   }
+
+#ajuda {
+    width: 8vw;
+    height: 18.5vh;
 }
 
-.teste2 p {
-    font-size: 20px;
-    margin-top: 90px;
+#separa {
+    width: 100%;
+    height: 3vh;
+    margin: 1.7em 0;
 }
 
-.coluna {
-   margin: 0 20px;
-}
-
-.coluna h1 {
-    margin-top: 80px;
-}
