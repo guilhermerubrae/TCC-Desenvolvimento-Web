@@ -1,35 +1,29 @@
-let currentSlide = 0;
-const track = document.querySelector('.carousel-wrapper');
+const wrapper = document.getElementById('carousel-wrapper');
 const slides = document.querySelectorAll('.carousel-slide');
-const btnPrev = document.querySelector('#prev-btn');
-const btnNext = document.querySelector('#next-btn');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+let currentIndex = 0;
 
 function showSlide(index) {
-    if (index >= slides.length) {
-        currentSlide = 0;
-    } else if (index < 0) {
-        currentSlide = slides.length - 1;
-    } else {
-        currentSlide = index;
-    }
-
-    const newPosition = -currentSlide * 100 + '%';
-    track.style.transform = 'translateX(' + newPosition + ')';
+  const newTransformValue = -index * 100 + '%';
+  wrapper.style.transform = `translateX(${newTransformValue})`;
 }
 
 function nextSlide() {
-    showSlide(currentSlide + 1);
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
 }
 
 function prevSlide() {
-    showSlide(currentSlide - 1);
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
 }
 
-// Mostrar a primeira imagem ao carregar a página
-showSlide(currentSlide);
+function autoSlide() {
+  nextSlide();
+}
 
-// Avançar automaticamente a cada 3 segundos
-setInterval(nextSlide, 3000);
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
 
-btnPrev.addEventListener("click", prevSlide);
-btnNext.addEventListener("click", nextSlide);
+setInterval(autoSlide, 3000); // Troca de slide a cada 3 segundos

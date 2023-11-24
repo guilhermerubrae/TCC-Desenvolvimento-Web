@@ -13,7 +13,7 @@ body {
 
 .container header {
     width: 100%;
-    height: 173px;
+    height: 140px;
     flex-shrink: 0;
     background-color: #000;
     display: flex;
@@ -23,7 +23,7 @@ body {
 }
 
 .container header img {
-    height: 80%;
+    height: 75%;
     flex-shrink: 0;
     margin: 0 35px;
 }
@@ -60,21 +60,22 @@ body {
     width: 100%;
 }
 
-.carousel-container {
-    position: relative;
+#carousel-container {
     width: 100%;
+    margin: auto;
     overflow: hidden;
+    position: relative;
+    background-color: #000;
 }
 
-.carousel-wrapper {
+#carousel-wrapper {
     display: flex;
-    width: 300%; /* Ajuste o valor conforme o número de slides */
     transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
-    width: 100%;
-    /* flex: 0 0 100%; Para garantir que cada slide ocupe 100% da largura */
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .carousel-img {
@@ -82,21 +83,87 @@ body {
     height: auto;
 }
 
-.prev-btn, .next-btn {
+.carousel-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px;
+    font-size: 2em;
     cursor: pointer;
-    border: none;
-    background: none;
-    outline: none;
+    color: #333;
+    opacity: 0.5;
+    transition: 0.5s ease-out;
 }
 
-.prev-btn {
+.carousel-arrow:hover {
+    opacity: 1;
+}
+
+#prev {
     left: 10px;
 }
 
-.next-btn {
+#next {
     right: 10px;
+}
+
+.black-division {
+    width: 100%;
+    height: 21px;
+    background-color: #000;
+}
+
+.desc-area {
+    width: 100%;
+    height: 523px;
+    background-image: url("../img/desc-img-black-withe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-area .info {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.desc-area .info p {
+    color: #FFF;
+}
+
+.desc-area .info #text-1 {
+    width: 33%;
+}
+
+.desc-area .info #text-2 {
+    width: 33%;
+}
+
+.desc-area .info .area-image {
+    margin: 0 10px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-area .info .area-image .icon {
+    background-color: #F8eF00;
+    height: 50%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    position: relative;
+}
+
+.desc-area .info .area-image .icon img {
+    position: relative;
+    left: 3px;
+    height: 160px;
 }
