@@ -1,6 +1,8 @@
 let currentSlide = 0;
 const track = document.querySelector('.carousel-wrapper');
 const slides = document.querySelectorAll('.carousel-slide');
+const btnPrev = document.querySelector('#prev-btn');
+const btnNext = document.querySelector('#next-btn');
 
 function showSlide(index) {
     if (index >= slides.length) {
@@ -28,3 +30,6 @@ showSlide(currentSlide);
 
 // Avançar automaticamente a cada 3 segundos
 setInterval(nextSlide, 3000);
+
+btnPrev.addEventListener("click", prevSlide);
+btnNext.addEventListener("click", nextSlide);
