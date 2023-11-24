@@ -1,0 +1,904 @@
+.MIKAEL-e-DANI-ASZN {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.MIKAEL-e-DANI-ASZN .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1885px;
+  height: 10697px;
+  position: relative;
+}
+
+.MIKAEL-e-DANI-ASZN .overlap {
+  position: absolute;
+  width: 2058px;
+  height: 1911px;
+  top: 0;
+  left: -103px;
+}
+
+.MIKAEL-e-DANI-ASZN .image {
+  position: absolute;
+  width: 1958px;
+  height: 793px;
+  top: 1118px;
+  left: 30px;
+  background-image: url(./img/image.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.MIKAEL-e-DANI-ASZN .group {
+  position: relative;
+  width: 1877px;
+  height: 586px;
+  top: 104px;
+  left: 40px;
+}
+
+.MIKAEL-e-DANI-ASZN .frame {
+  position: relative;
+  height: 586px;
+}
+
+.MIKAEL-e-DANI-ASZN .diversity-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 53px 86px;
+  position: absolute;
+  top: 132px;
+  left: 783px;
+  background-color: #fff112;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.MIKAEL-e-DANI-ASZN .diversity {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+.MIKAEL-e-DANI-ASZN .nossa-misso-clara {
+  position: absolute;
+  width: 578px;
+  height: 210px;
+  top: 153px;
+  left: 143px;
+}
+
+.MIKAEL-e-DANI-ASZN .venha-voc-tambem {
+  position: absolute;
+  width: 581px;
+  height: 102px;
+  top: 186px;
+  left: 1183px;
+}
+
+.MIKAEL-e-DANI-ASZN .rectangle {
+  position: absolute;
+  width: 2024px;
+  height: 214px;
+  top: 0;
+  left: 6px;
+  background-color: #000000;
+}
+
+.MIKAEL-e-DANI-ASZN .IMG {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  top: 43px;
+  left: 180px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .navbar {
+  position: absolute;
+  width: 653px;
+  height: 39px;
+  top: 87px;
+  left: 1151px;
+}
+
+.MIKAEL-e-DANI-ASZN .text-button {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  all: unset;
+  box-sizing: border-box;
+}
+
+.MIKAEL-e-DANI-ASZN .house {
+  position: absolute;
+  width: 40px;
+  height: 39px;
+  top: 0;
+  left: 87px;
+}
+
+.MIKAEL-e-DANI-ASZN .text-wrapper {
+  left: 153px;
+  position: absolute;
+  top: 4px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .volunteer-activism {
+  position: absolute;
+  width: 40px;
+  height: 39px;
+  top: 0;
+  left: 277px;
+}
+
+.MIKAEL-e-DANI-ASZN .text-button-2 {
+  left: 343px;
+  position: absolute;
+  top: 4px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .business-center {
+  position: absolute;
+  width: 40px;
+  height: 39px;
+  top: 0;
+  left: 438px;
+}
+
+.MIKAEL-e-DANI-ASZN .text-button-3 {
+  left: 504px;
+  position: absolute;
+  top: 4px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .school {
+  position: absolute;
+  width: 40px;
+  height: 39px;
+  top: 0;
+  left: 613px;
+}
+
+.MIKAEL-e-DANI-ASZN .element {
+  position: absolute;
+  width: 1885px;
+  height: 955px;
+  top: 171px;
+  left: 103px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .div-o-header {
+  position: absolute;
+  width: 2030px;
+  height: 42px;
+  top: 1869px;
+  left: 0;
+  background: linear-gradient(180deg, rgb(27, 26, 19) 39.58%);
+}
+
+.MIKAEL-e-DANI-ASZN .div-o-header-2 {
+  position: absolute;
+  width: 2030px;
+  height: 42px;
+  top: 1126px;
+  left: 28px;
+  background: linear-gradient(180deg, rgb(27, 26, 19) 39.58%);
+}
+
+.MIKAEL-e-DANI-ASZN .overlap-group {
+  position: absolute;
+  width: 2390px;
+  height: 8744px;
+  top: 1953px;
+  left: -435px;
+}
+
+.MIKAEL-e-DANI-ASZN .frame-2 {
+  position: absolute;
+  width: 1955px;
+  height: 2225px;
+  top: 3728px;
+  left: 417px;
+  background-color: #fff112b2;
+}
+
+.MIKAEL-e-DANI-ASZN .img {
+  position: absolute;
+  width: 1170px;
+  height: 3841px;
+  top: 1043px;
+  left: 435px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .frame-wrapper {
+  position: absolute;
+  width: 1719px;
+  height: 831px;
+  top: 264px;
+  left: 484px;
+}
+
+.MIKAEL-e-DANI-ASZN .div-wrapper {
+  position: relative;
+  height: 831px;
+  background-color: #d9d9d973;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.MIKAEL-e-DANI-ASZN .p {
+  position: absolute;
+  width: 449px;
+  height: 949px;
+  top: -74px;
+  left: 100px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #010000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 58.3px;
+}
+
+.MIKAEL-e-DANI-ASZN .group-2 {
+  position: absolute;
+  width: 1955px;
+  height: 1169px;
+  top: 1258px;
+  left: 379px;
+}
+
+.MIKAEL-e-DANI-ASZN .frame-3 {
+  position: relative;
+  height: 1169px;
+  background-color: #fff112b2;
+}
+
+.MIKAEL-e-DANI-ASZN .main-section {
+  position: absolute;
+  width: 525px;
+  height: 890px;
+  top: 167px;
+  left: 103px;
+  background-color: #ffffff;
+  border-radius: 22px;
+}
+
+.MIKAEL-e-DANI-ASZN .group-3 {
+  position: absolute;
+  width: 494px;
+  height: 736px;
+  top: 33px;
+  left: 17px;
+}
+
+.MIKAEL-e-DANI-ASZN .fafa-de-d {
+  position: absolute;
+  width: 476px;
+  height: 594px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .text-wrapper-2 {
+  position: absolute;
+  width: 476px;
+  height: 82px;
+  top: 654px;
+  left: 16px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #212529;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.MIKAEL-e-DANI-ASZN .link {
+  position: absolute;
+  width: 492px;
+  height: 40px;
+  top: 812px;
+  left: 17px;
+  background-color: #0d6efd;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.MIKAEL-e-DANI-ASZN .text-wrapper-3 {
+  position: absolute;
+  width: 83px;
+  height: 19px;
+  top: 9px;
+  left: 205px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .main-section-2 {
+  width: 534px;
+  height: 881px;
+  top: 176px;
+  left: 1353px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 22px;
+  box-shadow: 2px 6px 8px #16161a2e;
+}
+
+.MIKAEL-e-DANI-ASZN .element-ddc-d {
+  position: absolute;
+  width: 493px;
+  height: 611px;
+  top: 30px;
+  left: 20px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .text-wrapper-4 {
+  position: absolute;
+  width: 500px;
+  height: 138px;
+  top: 667px;
+  left: 17px;
+  transform: rotate(-0.5deg);
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #212529;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.MIKAEL-e-DANI-ASZN .link-2 {
+  width: 501px;
+  top: 823px;
+  left: 17px;
+  position: absolute;
+  height: 40px;
+  background-color: #0d6efd;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.MIKAEL-e-DANI-ASZN .text-wrapper-5 {
+  position: absolute;
+  width: 83px;
+  height: 19px;
+  top: 9px;
+  left: 209px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .text-wrapper-6 {
+  position: absolute;
+  width: 337px;
+  height: 8px;
+  top: 657px;
+  left: 20px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .main-section-3 {
+  width: 565px;
+  height: 893px;
+  top: 1422px;
+  left: 1067px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 22px;
+  box-shadow: 2px 6px 8px #16161a2e;
+}
+
+.MIKAEL-e-DANI-ASZN .text-wrapper-7 {
+  position: absolute;
+  width: 456px;
+  height: 120px;
+  top: 667px;
+  left: 54px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #212529;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.MIKAEL-e-DANI-ASZN .whatsapp-image {
+  position: absolute;
+  width: 527px;
+  height: 598px;
+  top: 36px;
+  left: 16px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .link-3 {
+  width: 533px;
+  top: 822px;
+  left: 18px;
+  position: absolute;
+  height: 40px;
+  background-color: #0d6efd;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.MIKAEL-e-DANI-ASZN .text-wrapper-8 {
+  position: absolute;
+  width: 83px;
+  height: 19px;
+  top: 9px;
+  left: 225px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .div-o-header-wrapper {
+  position: absolute;
+  width: 2390px;
+  height: 143px;
+  top: 68px;
+  left: 0;
+}
+
+.MIKAEL-e-DANI-ASZN .nossa-COMUNIDADE-wrapper {
+  position: relative;
+  height: 143px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgb(255, 241, 18) 12.5%, rgb(255, 255, 255) 39.58%);
+}
+
+.MIKAEL-e-DANI-ASZN .nossa-COMUNIDADE {
+  position: absolute;
+  width: 1741px;
+  top: 31px;
+  left: 586px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 77.8px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .images {
+  position: absolute;
+  width: 1008px;
+  height: 1395px;
+  top: 0;
+  left: 1146px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .voc-tambem-pode {
+  position: absolute;
+  width: 702px;
+  top: 2849px;
+  left: 1457px;
+  transform: rotate(0.19deg);
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 96px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MIKAEL-e-DANI-ASZN .cpia-de-IMG {
+  position: absolute;
+  width: 1885px;
+  height: 995px;
+  top: 4184px;
+  left: 435px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .frame-4 {
+  position: absolute;
+  width: 691px;
+  height: 804px;
+  top: 5633px;
+  left: 517px;
+  background-color: #ffe500;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.MIKAEL-e-DANI-ASZN .element-2 {
+  position: absolute;
+  width: 588px;
+  height: 365px;
+  top: 61px;
+  left: 53px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .nossa-jornada-de {
+  position: absolute;
+  width: 596px;
+  height: 303px;
+  top: 477px;
+  left: 41px;
+}
+
+.MIKAEL-e-DANI-ASZN .element-wrapper {
+  position: absolute;
+  width: 691px;
+  height: 804px;
+  top: 6484px;
+  left: 1577px;
+  background-color: #ffe500;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.MIKAEL-e-DANI-ASZN .element-3 {
+  position: absolute;
+  width: 575px;
+  height: 383px;
+  top: 65px;
+  left: 57px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .desde-o-incio-nossa {
+  position: absolute;
+  width: 594px;
+  height: 197px;
+  top: 6990px;
+  left: 1626px;
+}
+
+.MIKAEL-e-DANI-ASZN .e-ad-f {
+  position: absolute;
+  width: 1885px;
+  height: 1074px;
+  top: 7098px;
+  left: 435px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .overlap-group-wrapper {
+  position: absolute;
+  width: 1922px;
+  height: 871px;
+  top: 7873px;
+  left: 418px;
+}
+
+.MIKAEL-e-DANI-ASZN .overlap-group-2 {
+  position: relative;
+  width: 1920px;
+  height: 871px;
+  background-color: #000000;
+}
+
+.MIKAEL-e-DANI-ASZN .buttons-container {
+  display: inline-flex;
+  height: 28px;
+  align-items: center;
+  gap: 26px;
+  position: absolute;
+  top: 112px;
+  left: 800px;
+}
+
+.MIKAEL-e-DANI-ASZN .button {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.4px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: var(--white-shades90);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+  all: unset;
+  box-sizing: border-box;
+}
+
+.MIKAEL-e-DANI-ASZN .text-button-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.4px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: var(--white-shades90);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .IMG-wa {
+  position: absolute;
+  width: 128px;
+  height: 134px;
+  top: 310px;
+  left: 198px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .container {
+  display: flex;
+  width: 1596px;
+  height: 37.6px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 514px;
+  left: 162px;
+}
+
+.MIKAEL-e-DANI-ASZN .button-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 6px;
+  all: unset;
+  box-sizing: border-box;
+}
+
+.MIKAEL-e-DANI-ASZN .icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.MIKAEL-e-DANI-ASZN .text-button-5 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  color: var(--white);
+  font-size: var(--body-font-size);
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
+  white-space: nowrap;
+  font-style: var(--body-font-style);
+}
+
+.MIKAEL-e-DANI-ASZN .text-button-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: var(--white-shades90);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .button-3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 6px;
+}
+
+.MIKAEL-e-DANI-ASZN .text-button-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Jost", Helvetica;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .container-2 {
+  display: flex;
+  width: 1596px;
+  height: 87.73px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 30px 16px 16px;
+  position: absolute;
+  top: 699px;
+  left: 162px;
+  background-color: var(--grey-10);
+  border-radius: 100px;
+  border: 1px solid;
+  border-color: var(--grey-15);
+}
+
+.MIKAEL-e-DANI-ASZN .buttons-container-2 {
+  position: relative;
+  width: 249px;
+}
+
+.MIKAEL-e-DANI-ASZN .text {
+  position: relative;
+  width: fit-content;
+  font-family: "Lexend", Helvetica;
+  font-weight: 300;
+  color: var(--grey-shades70);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .sub-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.MIKAEL-e-DANI-ASZN .text-button-8 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 300;
+  color: var(--grey-shades70);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.MIKAEL-e-DANI-ASZN .line {
+  position: relative;
+  align-self: stretch;
+  width: 1px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .text-button-9 {
+  position: absolute;
+  width: 139px;
+  top: 281px;
+  left: 1594px;
+  font-family: "Jost", Helvetica;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.MIKAEL-e-DANI-ASZN .frame-5 {
+  position: absolute;
+  width: 692px;
+  height: 771px;
+  top: 6902px;
+  left: 552px;
+  background-color: #ffe500;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.MIKAEL-e-DANI-ASZN .element-4 {
+  position: absolute;
+  width: 581px;
+  height: 323px;
+  top: 65px;
+  left: 57px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .nossa-misso-clara-2 {
+  position: absolute;
+  width: 554px;
+  height: 240px;
+  top: 448px;
+  left: 74px;
+}
+
+.MIKAEL-e-DANI-ASZN .tabpanel-tab-of {
+  position: absolute;
+  width: 46px;
+  height: 1727px;
+  top: 5877px;
+  left: 1380px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+.MIKAEL-e-DANI-ASZN .beafc-fe-cd-wrapper {
+  position: absolute;
+  width: 1920px;
+  height: 981px;
+  top: 973px;
+  left: -2493px;
+  background-image: url(./img/bea0f4c7-0f2e-44cd-a828-49bf8a711fb0-3.png);
+  background-size: 100% 100%;
+}
+
+.MIKAEL-e-DANI-ASZN .beafc-fe-cd {
+  position: absolute;
+  width: 590px;
+  height: 599px;
+  top: 209px;
+  left: 1227px;
+  object-fit: cover;
+}
+
+.MIKAEL-e-DANI-ASZN .rectangle-2 {
+  position: absolute;
+  width: 1885px;
+  height: 995px;
+  top: 7744px;
+  left: -11841px;
+}
