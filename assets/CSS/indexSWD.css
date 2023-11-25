@@ -51,18 +51,18 @@ header {
 
 .empresa {
     white-space: nowrap;            
-    /* margin-left: -10rem; */
     margin-right: 3rem;
     letter-spacing: 1.5px;
 }
 
 .empresa h1:nth-child(1) {
-    margin-bottom: -22.4px;
+    margin-bottom: -12.4px;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.399), #9cccd4d7);
 }
+
 
 
 .menu {
