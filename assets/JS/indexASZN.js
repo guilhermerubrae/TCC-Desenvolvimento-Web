@@ -26,4 +26,4 @@ function autoSlide() {
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
-setInterval(autoSlide, 3000); // Troca de slide a cada 3 segundos
+setInterval(autoSlide, 7000); // Troca de slide a cada 7 segundos

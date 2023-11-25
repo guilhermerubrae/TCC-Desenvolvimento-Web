@@ -1,169 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    font-family: 'Lexend', sans-serif;
+  height: 500vh;
+  font-family: "Lexend", sans-serif;
 }
 
 .container header {
-    width: 100%;
-    height: 140px;
-    flex-shrink: 0;
-    background-color: #000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 90px;
+  flex-shrink: 0;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.container header img {
-    height: 75%;
-    flex-shrink: 0;
-    margin: 0 35px;
+.container header a {
+  height: 75%;
+  margin: 0 35px;
+}
+
+.container header a img {
+  height: 100%;
+  flex-shrink: 0;
 }
 
 .container header nav a span {
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 5px;
 }
 
 .container header nav {
-    margin: 0 25px;
+  margin: 0 25px;
 }
 
 .container header nav a {
-    text-decoration: none;
-    color: #FFF;
-    position: relative;
-    margin: 0 5px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  margin: 0 5px;
 }
 
 .container header nav a::after {
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: linear-gradient(to right, #F8eF00, rgb(186, 20, 11));
-    position: absolute;
-    top: 20px;
-    left: 0;
-    transition: 0.5s ease-in-out;
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(to right, #f8ef00, rgb(186, 20, 11));
+  position: absolute;
+  top: 20px;
+  left: 0;
+  transition: 0.5s ease-in-out;
 }
 
 .container header nav a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 #carousel-container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    background-color: #000;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
 }
 
 #carousel-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
 .carousel-img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2em;
-    cursor: pointer;
-    color: #333;
-    opacity: 0.5;
-    transition: 0.5s ease-out;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  color: #333;
+  opacity: 0.5;
+  transition: 0.5s ease-out;
 }
 
 .carousel-arrow:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 #prev {
-    left: 10px;
+  left: 10px;
 }
 
 #next {
-    right: 10px;
+  right: 10px;
 }
 
 .black-division {
-    width: 100%;
-    height: 21px;
-    background-color: #000;
+  width: 100%;
+  height: 21px;
+  background-color: #000;
 }
 
 .desc-area {
-    width: 100%;
-    height: 523px;
-    background-image: url("../img/desc-img-black-withe.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 450px;
+  background-image: url("../img/desc-img-black-withe.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .desc-area .info {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .desc-area .info p {
-    color: #FFF;
+  color: #fff;
 }
 
 .desc-area .info #text-1 {
-    width: 33%;
+  width: 33%;
 }
 
 .desc-area .info #text-2 {
-    width: 33%;
+  width: 33%;
 }
 
 .desc-area .info .area-image {
-    margin: 0 10px;
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0 10px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .desc-area .info .area-image .icon {
-    background-color: #F8eF00;
-    height: 50%;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 22px;
-    position: relative;
+  background-color: #f8ef00;
+  height: 50%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  position: relative;
 }
 
 .desc-area .info .area-image .icon img {
-    position: relative;
-    left: 3px;
-    height: 160px;
+  position: relative;
+  left: 3px;
+  height: 160px;
+}
+
+#text-1,
+#text-2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.notebook {
+}
+
+.notebook .titulo {
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(to right, #f8ef00, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.notebook .titulo p {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.notebook .area {
+  width: 90%;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 70px;
+  background-color: #eeeeee;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.notebook .area p {
+  width: 30%;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 30px;
+}
+
+.notebook .area .image {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notebook .area .image img {
+  height: 1000px;
+}
+
+.cards {
+  width: 100%;
+  height: 860px;
+  background-color: #ffef12B3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards .card-list {
+  width: 90%;
+  height: 700px;
+  background-color: #fff;
 }
