@@ -118,7 +118,7 @@ body {
 
 .desc-area {
   width: 100%;
-  height: 450px;
+  height: 500px;
   background-image: url("../img/desc-img-black-withe.png");
   background-size: cover;
   background-position: center;
@@ -169,7 +169,7 @@ body {
 .desc-area .info .area-image .icon img {
   position: relative;
   left: 3px;
-  height: 160px;
+  height: 130px;
 }
 
 #text-1,
@@ -238,6 +238,46 @@ body {
 
 .cards .card-list {
   width: 90%;
-  height: 700px;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+  height: 650px;
   background-color: #fff;
+  padding: 20px;
+  border-radius: 22px;
+  margin: 0 20px;
+}
+
+.card img {
+  height: 370px;
+  border-radius: 22px;
+  margin-bottom: 22px;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 10px;
+  margin-bottom: 15px;
+}
+
+.card a {
+  width: 96%;
+  padding: 6px 0;
+  background-color: #0D6EFD;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  border-radius: 6px;
 }
