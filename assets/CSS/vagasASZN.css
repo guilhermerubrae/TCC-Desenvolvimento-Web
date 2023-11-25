@@ -26,7 +26,6 @@ header a {
     color: #FBD300;
 }
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -233,3 +232,83 @@ ul img {
     margin: 1.7em 0;
 }
 
+footer {
+     font-size: 1em;
+}
+
+.nave-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nave-footer li {
+    margin: 4em 0.4em;
+}
+
+.informa-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+    
+}
+
+.informa-footer button {
+    text-align: center;
+    margin-right: 2em;
+    padding: 0.5em;
+    border-radius: 3em;
+    border: none;
+    cursor: pointer;
+    background-color: #FBD300;
+}
+
+.informa-footer img {
+    width: 8vw;
+}
+
+#sobe {
+    width: 3vw;
+}
+
+.informa-footer ul {
+    list-style: none;
+}
+
+.req-footer {
+    display: flex;
+    justify-content: center;
+    
+    margin: 5em 0;
+}
+
+.req-footer img {
+    width: 1.5vw;
+    height: auto;
+    margin: 0 0.7em;
+}
+
+.final-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4em;
+    background-color: #1A1A1A;
+    border-radius: 2em;
+   
+} 
+
+.redes-footer {
+    margin: 0.5em 1.5em;
+}
+
+.final-footer img {
+    width: 3vw;
+    margin-right: 0.6em;
+}
+
+.final-footer p {
+    margin: 0px 20px;
+}
