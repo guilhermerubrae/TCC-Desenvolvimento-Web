@@ -439,6 +439,14 @@ label {
   display: none;
 }
 
+.card {
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;
+}
+
 #dep {
   text-align: center;
   padding: 20px;
