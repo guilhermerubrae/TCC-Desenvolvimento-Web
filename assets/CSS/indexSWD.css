@@ -478,11 +478,96 @@ h4 {
 }
 
 #footer-pt1 {
-    background-color: #000000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+#footer-pt1 div {
+  flex: 1;
+  max-width: 300px; /* Ajuste conforme necessário */
+  margin: 10px;
+  text-align: left;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+.form-button {
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustes específicos para o botão e a imagem no primeiro div */
+#footer-pt1 div:first-child .form-button {
+  margin-bottom: 10px;
+}
+
+#footer-pt1 div:nth-child(2) img {
+  max-width: 50px; /* Ajuste conforme necessário */
 }
 
 #footer-pt2 {
-    background-image: url(../img/indexSWD/principal/fundoazul.png);
-    color: #fff;
+  background-image: url(../img/indexSWD/principal/fundoazul.png);
+  color: #fff;
+  padding: 20px;
+  gap: 20px; /* Adicionado para espaçamento entre as colunas */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinhamento à esquerda */
+  padding: 10px; /* Adicionado espaçamento interno */
+}
+
+.logo h4 {
+  margin-top: 10px;
+  margin-left: 10px; /* Adicione margem à esquerda se necessário */
+}
+
+.payment-methods,
+.icons {
+  display: flex;
+  flex-wrap: nowrap; /* Impede quebras para a próxima linha */
+  align-items: center;
+  justify-content: center; /* Adicionado para centralizar */
+  flex-grow: 1; /* Adicionado para ocupar o espaço restante e empurrar a div de pagamento para o centro */
+  padding: 10px; /* Adicionado espaçamento interno */
+}
+
+.payment-method {
+  margin-top: 10px;
+}
+
+.icon {
+  margin-top: 10px;
+}
+
+#copy {
+  font-size: 80%;
 }

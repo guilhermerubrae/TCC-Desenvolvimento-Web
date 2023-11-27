@@ -1,13 +1,14 @@
 $(document).ready(function(){
-    $('.partner-logos').slick({
+  $('.partner-logos').slick({
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000
-    });
+      autoplaySpeed: 1000,
+      arrows: false // Remover setas de navegação
   });
-  
+});
+
   function validateForm() {
     var nome = document.getElementById('nome').value;
     var empresa = document.getElementById('empresa').value;
