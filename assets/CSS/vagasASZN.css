@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+
+* {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+header a {
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.header-menu:hover {
+    transform: scale(1.05);
+    transition: .8s;
+}
+
+.cor-selecao {
+    color: #FBD300;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    height: 14vh;
+    margin-right: 70px;
+
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+
+}
+
+.navbar li {
+    margin: 0 16px;
+}
+
+.Logo {
+    height: 5em;
+    margin-left: 90px;
+
+}
+
+img {
+    height: 2em;
+    vertical-align: middle;
+    margin-left: 10px;
+    
+
+}
+
+.Principal {
+    width: 100%;
+    height: 600px;
+    margin: 0%;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+    margin: 20px
+}
+
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+}
+
+.titulo-caixa {
+    margin: 30px;
+}
+
+.column+.column {
+    border-left: 1px solid #ccc;
+}
+
+.texto-aszn {
+    margin: 8%;
+    text-align: center;
+
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: #FBD300;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 9%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.imagem2 {
+    margin: 10px;
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.card-vagas {
+    width: 480px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.lista-requisitos li {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.card-vagas h2 {
+    margin-bottom: 10px;
+}
+
+.card-vagas h3 {
+    margin-top: 10px;
+}
+
+.localidade {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 8px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.candidata {
+    display: flex;
+    justify-content: center;
+}
+
+.candidatura {
+    padding: 15px;
+    background: linear-gradient(to top, #000000, #FBD300);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.conjunto-vagas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.data {
+    margin-right: 20px;
+}
+
+.teste {
+    width: 350px; 
+    height: auto;
+    margin-top: 100px;
+    margin-left: 80px;
+    border-radius: 10px;
+    
+
+}
+
+.teste2 {
+    margin-top: 9%;
+    border-top: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.teste2 p {
+    font-size: 20px;
+    margin-top: 90px;
+}
+
+.coluna {
+   margin: 0 20px;
+}
+
+.coluna h1 {
+    margin-top: 80px;
+}
