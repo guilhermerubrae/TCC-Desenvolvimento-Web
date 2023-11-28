@@ -11,6 +11,17 @@ body {
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #FBD300;
+}
+
+
 header a {
     font-size: 1em;
     text-decoration: none;
@@ -62,7 +73,7 @@ ul img {
 
 .Principal {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     margin: 0;
 }
 
@@ -91,6 +102,7 @@ ul img {
     text-align: center;
 }
 
+
 .titulo-caixa {
     margin: 30px;
 }
@@ -110,7 +122,6 @@ ul img {
     width: 13rem;
     height: 13rem;
     text-align: center;
-    border: 1px solid #000000;
     background-color: #FBD300;
     color: black;
     padding: 10px;
@@ -176,7 +187,7 @@ ul img {
 
 .candidatura {
     padding: 15px;
-    background:#FBD300;
+    background: #FBD300;
     color: rgb(0, 0, 0);
     border-radius: 30px;
     border: 0;
@@ -219,7 +230,7 @@ ul img {
     text-align: center;
     font-size: 0.7em;
     margin: 5em 0.8em;
-   }
+}
 
 #ajuda {
     width: 8vw;
@@ -233,7 +244,7 @@ ul img {
 }
 
 footer {
-     font-size: 1em;
+    font-size: 0.9em;
 }
 
 .nave-footer {
@@ -241,6 +252,11 @@ footer {
     justify-content: center;
     align-items: center;
     list-style: none;
+}
+
+.nave-footer a {
+    text-decoration: none;
+    color: white;
 }
 
 .nave-footer li {
@@ -252,7 +268,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 2em;
-    
+
 }
 
 .informa-footer button {
@@ -277,10 +293,15 @@ footer {
     list-style: none;
 }
 
+.informa-footer a {
+    text-decoration: none;
+    color: white;
+}
+
 .req-footer {
     display: flex;
     justify-content: center;
-    
+
     margin: 5em 0;
 }
 
@@ -294,11 +315,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4em;
+    margin: 0.2em 4em;
     background-color: #1A1A1A;
     border-radius: 2em;
-   
-} 
+}
 
 .redes-footer {
     margin: 0.5em 1.5em;
@@ -311,4 +331,212 @@ footer {
 
 .final-footer p {
     margin: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 430px) {
+
+   
+
+    header a {
+        font-size: 1.5em;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between  ;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        height: 14vh;
+        margin-right: 30px;
+    
+    }
+    
+    .navbar {
+        list-style: none;
+        display: flex;
+        font-size: 0.5em;
+    
+    }
+    
+    .navbar li {
+        margin: 1px;
+    }
+    
+    .Logo {
+        height: 3.1em;
+        margin-left: 10px;
+        margin-right: 0px;
+    
+    }
+    
+    ul img {
+        height: 3em;
+        margin-left: 0.4rem;
+    }
+    
+    .Principal {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .sobre {
+        display: flex;
+        align-items: center;
+        font-size: 0.5rem;
+        margin: 0;
+    }
+    
+    .icon {
+        width: 50px;
+        margin: 20px 15px;
+    }
+    
+    .container {
+        display: grid;
+        font-size: 0.8rem;
+    }
+
+    .column+.column {
+        border-left: none;
+    }
+    
+    .texto-aszn {
+        display: none; /* Retirado */
+        margin: 20px 15px;
+        text-align: center;
+        font-size: 0.7rem;
+    
+    }
+    
+    .card { /* Alterado */
+        width: 10rem;
+        height: auto;
+        padding: none;
+        margin: none;
+        margin-bottom: none;
+        border-radius: 15px;
+    }
+
+    .card:hover { /* Alterado */
+        transform: none;
+        transition: none;
+    }
+    
+    .imagem2 { /* Alterado */
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #card-oport { /* Alterado */ 
+        display: none;
+    }
+    
+    .cards {
+        display: grid; /* Alterado */
+        grid-template-columns: 13em 13em;
+        margin-bottom: 1.7em;
+    }
+    
+    .card-vagas {
+        width: 80vw; /* Alterado */
+        margin-left: none;
+        margin-right: 1.2em;
+    }
+    
+
+    .conjunto-vagas {
+        display: grid; /* Alterado */
+        justify-content: none;
+    }
+    
+    
+    .teste2 { /* Alterado */
+        margin-top: 5%;
+        padding: 2%; 
+        display: grid;
+    
+    }
+
+    
+    .teste2 img { /* Alterado */
+        width: 65vw;
+        height: auto;
+        margin-top: 2.5em;
+        margin-left: 4em;
+    }
+    
+    #emprego { /* Alterado */
+        display: none;
+    }
+    
+    .help { /* Alterado */ 
+        margin: 3em 0.8em;
+    }
+    
+    #ajuda { /* Alterado */
+        width: auto;
+        height: 17.5vh;
+        margin-right: 4.5em;
+    }
+    
+    #separa {  /* Alterado */
+        height: 1.5vh;
+        margin: 0.5em 0;
+    }
+    
+    footer { /* Alterado */
+        font-size: 1em;
+    }
+    
+    .informa-footer button { /* Alterado */
+        display: none;
+    }
+    
+    .informa-footer img { /* Alterado */
+        width: 20vw;
+    }
+    
+    .req-footer { /* Alterado */
+        display: grid;
+        margin: 2em 0;
+    }
+    
+    .req-footer img { /* Alterado */
+        display: none;
+    }
+
+    .req-footer p { /* Alterado */
+        margin: 0.4em 1em;
+    }
+
+    .final-footer {
+        display: grid;
+        margin: 0.2em 1em;
+    }
+    
+    .redes-footer {
+        display: none;
+    }
+    
+    .final-footer p {
+        margin: 0.1em 1em;
+        padding: 0.2em;
+    }
+
+}
+@media screen and (min-width: 1600px) {
+    
 }
