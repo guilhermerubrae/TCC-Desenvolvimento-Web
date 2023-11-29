@@ -21,7 +21,6 @@ body {
     background-color: #FBD300;
 }
 
-
 header a {
     font-size: 1em;
     text-decoration: none;
@@ -124,12 +123,11 @@ ul img {
     text-align: center;
     background-color: #FBD300;
     color: black;
-    padding: 10px;
-    margin: 10px;
+    padding: 0.7em;
+    margin: 0.7em;
     margin-bottom: 9%;
     border-radius: 10px;
     font-size: 0.9em;
-    /* ou 14px*/
 }
 
 .card:hover {
@@ -334,20 +332,7 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 430px) {
-
-   
-
+@media (max-width: 767px) { /* Celulares */
     header a {
         font-size: 1.5em;
     }
@@ -359,7 +344,7 @@ footer {
         text-align: center;
         background-color: black;
         height: 14vh;
-        margin-right: 30px;
+        margin-right: 2em;
     
     }
     
@@ -376,8 +361,8 @@ footer {
     
     .Logo {
         height: 3.1em;
-        margin-left: 10px;
-        margin-right: 0px;
+        margin-left: 1em;
+        margin-right: none;
     
     }
     
@@ -415,17 +400,13 @@ footer {
     
     .texto-aszn {
         display: none; /* Retirado */
-        margin: 20px 15px;
-        text-align: center;
-        font-size: 0.7rem;
-    
     }
     
     .card { /* Alterado */
         width: 10rem;
         height: auto;
-        padding: none;
-        margin: none;
+        padding: 0.7em;
+        margin: 0.9em;
         margin-bottom: none;
         border-radius: 15px;
     }
@@ -469,7 +450,6 @@ footer {
         display: grid;
     
     }
-
     
     .teste2 img { /* Alterado */
         width: 65vw;
@@ -537,6 +517,7 @@ footer {
     }
 
 }
-@media screen and (min-width: 1600px) {
-    
-}
+
+/* @media (min-width: 768px) {
+
+} */
