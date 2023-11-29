@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
 
+/* CONFIGURAÇÕES PRINCIPAIS */
 * {
   margin: 0;
   padding: 0;
@@ -35,17 +36,24 @@ p,
   font-weight: 300;
 }
 
+
+
+/* HEADER */
+
 header {
   background-image: url(../img/indexSWD/principal/fundoazul.png);
-  position: ;
+
   width: 100%;
-  z-index: 100;
+  max-height: 15vh;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 2rem;
   text-transform: uppercase;
+  box-sizing: border-box; /* Adicionado para incluir padding e bordas na largura total */
+  position: relative;
+
 }
 
 .logo-tam {
@@ -55,9 +63,19 @@ header {
 
 .empresa {
   white-space: nowrap;
+  margin-top: 3%;
   margin-right: 3rem;
   letter-spacing: 1.5px;
+  
 }
+
+#logo-h1-fixed {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+/* DUPLICAÇÃO DO H1 DA HEADER */
 
 .empresa h1:nth-child(1) {
   margin-bottom: -12.4px;
@@ -69,19 +87,19 @@ header {
     rgba(255, 255, 255, 0.399),
     #9cccd4d7
   );
+  z-index: 1;
 }
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-wrap: nowrap; 
 }
 
 .menu a {
   text-decoration: none;
   position: relative;
-  font-weight: 400;
   color: #fff;
+  padding-right: 1%;
   margin: 1px;
 }
 
@@ -108,7 +126,6 @@ header {
   white-space: nowrap;
   background-color: #9cccd4;
   color: #fff;
-  font-weight: 500;
   margin-left: 3rem;
   margin-right: 3rem;
   padding: 12px 20px;
@@ -117,6 +134,11 @@ header {
   font-size: 16px;
   cursor: pointer;
 }
+
+
+
+
+/* PRINCIPAL IMG E TEXTO */
 
 #section-principal {
   overflow: hidden;
@@ -187,6 +209,11 @@ header {
   /* Adiciona um drop shadow de 50% */
 }
 
+
+
+
+/* H1 PADRÃO */
+
 .h1-spacing {
   margin-left: 10rem;
   margin-right: 10rem;
@@ -194,6 +221,11 @@ header {
   margin-bottom: 2%;
   letter-spacing: 1px;
 }
+
+
+
+
+/* IMG PROJETOS PADRÃO */
 
 .project-image {
   max-width: 100%; /* Torna a imagem responsiva */
@@ -203,6 +235,7 @@ header {
 
 .project {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 5rem 10rem; /* Ajustado para ser consistente com a parte superior */
   margin-bottom: 20px;
@@ -224,10 +257,16 @@ header {
 
 .project-social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 5rem 10rem; /* Ajustado para ser consistente com a parte superior */
   margin-bottom: 20px;
 }
+
+
+
+
+/* IMG - TEXTO LADO A LADO */
 
 .project-social > div {
   flex: 1;
@@ -244,8 +283,14 @@ header {
   white-space: normal;
 }
 
+
+
+
+/* PARCEIROS */
+
 .partner-logos {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
@@ -271,6 +316,11 @@ header {
   padding-bottom: 5%;
 }
 
+
+
+
+/* PLANOS */
+
 .custom-section {
   max-width: 1800px;
   margin-left: 10rem;
@@ -281,6 +331,8 @@ header {
 
 .custom-div {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -299,7 +351,7 @@ header {
 
 /* Removendo estilos da lista */
 .custom-subdiv {
-  width: 362px;
+  width: 362rem;
   height: auto;
   background-color: black;
   color: #fff;
@@ -350,6 +402,11 @@ header {
   margin-bottom: 40%;
 }
 
+
+
+
+/* DOMINIOS */
+
 .domain-section {
   background-color: black;
   color: #9cccd4;
@@ -382,6 +439,11 @@ header {
   font-weight: bold;
 }
 
+
+
+
+/* CONTRAÇÃO */
+
 #espaçamento1 {
   margin-left: 10rem;
   margin-right: 10rem;
@@ -398,7 +460,10 @@ header {
   margin: 4%;
 }
 
-/* Adicione esta parte ao seu arquivo CSS */
+
+
+
+/* FORMULÁRIO */
 
 section form {
   background-color: #000000;
@@ -447,6 +512,11 @@ label {
   text-align: center;
 }
 
+
+
+
+/* QUEM SOMOS */
+
 .dropdown {
   display: flex;
   align-items: center;
@@ -455,9 +525,6 @@ label {
   width: 70%; /* Defina a largura desejada para o dropdown */
   margin-left: 10rem;
   margin-right: 10rem;
-  
-
-
 }
 
 .dropdown-btn {
@@ -489,11 +556,16 @@ label {
   display: block;
 }
 
+
+
+
+/* DEPOIMENTOS */
+
 #dep {
   text-align: center;
   padding: 20px;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-top: 4%;
   margin-bottom: 4%;
 }
@@ -509,7 +581,7 @@ h1.h1-spacing {
 }
 
 .testimonial {
-  flex: 0 0 calc(48% - 20px); /* Largura de 48%, subtraindo a margem */
+  flex: 0 0 calc(90% - 10px); /* Largura de 48%, subtraindo a margem */
   margin: 10px;
   background-color: white;
   padding: 20px;
@@ -526,6 +598,11 @@ h1.h1-spacing {
 h4 {
   margin-top: 10px;
 }
+
+
+
+
+/* FOOTER */
 
 #footer-pt1 {
   background-color: #000;
@@ -623,6 +700,35 @@ img {
 }
 
 
+
+
+/* REFORÇO DE RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Altera a direção para coluna em telas menores */
+    align-items: flex-start; /* Alinha os itens à esquerda em telas menores */
+    padding: 15px 1rem; /* Ajusta o padding para telas menores */
+  }
+
+  .logo-tam {
+    margin-left: 1rem; /* Ajusta a margem para telas menores */
+  }
+
+  .empresa {
+    margin-right: 1rem; /* Ajusta a margem para telas menores */
+  }
+
+  .menu {
+    margin-top: 1rem; /* Adiciona margem superior para separar o menu em telas menores */
+    width: 100%; /* Garante que o menu ocupe a largura total */
+  }
+
+  .btn {
+    margin: 1rem 0; /* Adiciona margem superior e inferior ao botão em telas menores */
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* Aplique estilos específicos para telas menores que 768 pixels */
 
@@ -648,8 +754,23 @@ img {
   /* Por exemplo, ajuste tamanhos de fonte, margens, etc. */
 }
 
-/* Outras media queries para ajustes adicionais conforme necessário */
 
-@media screen and (max-width: 600px) {
-  /* Aplique estilos específicos para telas menores que 600 pixels */
+
+
+
+
+@media screen and (max-width: 700px) {
+
+  .domain-section {
+    background-color: black;
+    color: #9cccd4;
+    float: left;
+    width: 100%;
+    margin: 10%;
+    padding: 1rem;
+    text-align: center;
+    height: 250px;
+    position: relative;
+}
+
 }
