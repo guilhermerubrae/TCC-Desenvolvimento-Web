@@ -22,7 +22,7 @@ body {
 }
 
 header a {
-    font-size: 1em;
+    font-size: 1.2em;
     text-decoration: none;
     color: white;
 }
@@ -42,9 +42,8 @@ nav {
     align-items: center;
     text-align: center;
     background-color: black;
-    height: 12vh;
-    margin-right: 70px;
-
+    height: 12.5vh;
+    margin-right: 2.5em;
 }
 
 .navbar {
@@ -59,20 +58,20 @@ nav {
 }
 
 .Logo {
-    height: 4.1em;
+    width: 7em;
+    height: auto;
     margin-left: 5rem;
-
 }
 
 ul img {
-    height: 2em;
+    height: 2.3em;
     vertical-align: middle;
     margin-left: 0.5rem;
 }
 
 .Principal {
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin: 0;
 }
 
@@ -92,18 +91,18 @@ ul img {
 
 .container {
     display: flex;
-    font-size: 0.8rem;
+    font-size: 1em;
 }
 
 .column {
     flex: 1;
-    padding: 30px;
+    padding: 3em;
     text-align: center;
 }
 
 
 .titulo-caixa {
-    margin: 30px;
+    margin: 2em;
 }
 
 .column+.column {
@@ -147,13 +146,13 @@ ul img {
 }
 
 .card-vagas {
-    width: 480px;
+    width: 30%; 
     height: auto;
     margin-top: 20px;
     margin-left: 20px;
-    padding: 20px;
+    padding: 1.8em;
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    color: black;
     border-radius: 15px;
 }
 
@@ -210,13 +209,13 @@ ul img {
 }
 
 .teste2 h1 {
-    margin: 2em;
+    margin: 3em;
 
 }
 
 .teste2 img {
     width: 25vw;
-    height: 80vh;
+    height: auto;
     margin-top: 2.5em;
 }
 
@@ -227,11 +226,11 @@ ul img {
 .help {
     text-align: center;
     font-size: 0.7em;
-    margin: 5em 0.8em;
+    margin: 15em 0.8em;
 }
 
 #ajuda {
-    width: 8vw;
+    width: 9vw;
     height: 18.5vh;
 }
 
@@ -344,7 +343,7 @@ footer {
         text-align: center;
         background-color: black;
         height: 14vh;
-        margin-right: 2em;
+        margin-right: 1em;
     
     }
     
@@ -352,7 +351,6 @@ footer {
         list-style: none;
         display: flex;
         font-size: 0.5em;
-    
     }
     
     .navbar li {
@@ -360,10 +358,10 @@ footer {
     }
     
     .Logo {
-        height: 3.1em;
-        margin-left: 1em;
+        width: 5em;
+        height: auto;
+        margin-left: 1.5em;
         margin-right: none;
-    
     }
     
     ul img {
@@ -518,6 +516,3 @@ footer {
 
 }
 
-/* @media (min-width: 768px) {
-
-} */
