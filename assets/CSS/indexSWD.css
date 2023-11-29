@@ -1,0 +1,776 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+/* CONFIGURAÇÕES PRINCIPAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9cccd4;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+p,
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300 bold;
+}
+
+.menu {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+
+
+/* HEADER */
+
+header {
+  background-image: url(../img/indexSWD/principal/fundoazul.png);
+
+  width: 100%;
+  max-height: 15vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 2rem;
+  text-transform: uppercase;
+  box-sizing: border-box; /* Adicionado para incluir padding e bordas na largura total */
+  position: relative;
+
+}
+
+.logo-tam {
+  margin-left: 3rem;
+  width: 60px;
+}
+
+.empresa {
+  white-space: nowrap;
+  margin-top: 3%;
+  margin-right: 3rem;
+  letter-spacing: 1.5px;
+  
+}
+
+#logo-h1-fixed {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+/* DUPLICAÇÃO DO H1 DA HEADER */
+
+.empresa h1:nth-child(1) {
+  margin-bottom: -12.4px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.399),
+    #9cccd4d7
+  );
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap; 
+}
+
+.menu a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  padding-right: 1%;
+  margin: 1px;
+}
+
+.menu a:hover {
+  color: #9be2e0;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #9be2e0, rgb(255, 255, 255));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.btn {
+  white-space: nowrap;
+  background-color: #9cccd4;
+  color: #fff;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+/* PRINCIPAL IMG E TEXTO */
+
+#section-principal {
+  overflow: hidden;
+  border-bottom: #ffffff 5px solid;
+  position: relative;
+}
+
+#img-principal {
+  width: 100%;
+  height: auto;
+}
+
+#div-left,
+#div-right {
+  position: absolute;
+  max-width: 45%;
+  /* Ajuste conforme necessário */
+  box-sizing: border-box;
+  /* Adiciona um pequeno espaçamento entre o texto e a borda da div */
+
+}
+
+#div-left {
+  left: 5%;
+  top: 25%;
+  text-align: left;
+  /* Alinha o texto à esquerda */
+}
+
+#div-right {
+  right: 5%;
+  top: 35%;
+  text-align: right;
+  /* Alinha o texto à direita */
+}
+
+/* Ajuste os estilos dos títulos e parágrafos conforme necessário */
+#h1-left,
+#h2-right {
+  font-size: 2vw;
+  /* Use vw para tamanho relativo à largura da viewport */
+  font-weight: bold;
+  /* Adiciona negrito */
+  white-space: normal;
+  /* Permite que o texto quebre */
+}
+
+#p-left,
+#p-right {
+  letter-spacing: 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  font-size: 1.5vw;
+  /* Use vw para tamanho relativo à largura da viewport */
+  font-weight: bold;
+  /* Adiciona negrito */
+  white-space: normal;
+  /* Permite que o texto quebre */
+}
+
+/* Adiciona um drop shadow */
+#h1-left,
+#h2-right,
+#p-left,
+#p-right {
+  text-shadow: 1px 1px 2px #000000;
+  /* Adiciona um drop shadow de 50% */
+}
+
+
+
+
+/* H1 PADRÃO */
+
+.h1-spacing {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  letter-spacing: 1px;
+}
+
+
+
+
+/* IMG PROJETOS PADRÃO */
+
+.project-image {
+  max-width: 100%; /* Torna a imagem responsiva */
+  height: auto; /* Garante que a proporção da imagem seja mantida */
+  max-width: 400px; /* Define uma largura máxima específica para a imagem */
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5rem 10rem; /* Ajustado para ser consistente com a parte superior */
+  margin-bottom: 20px;
+}
+
+.project > div {
+  flex: 1;
+}
+
+.titulo-projeto {
+  font-size: 1.5em;
+}
+
+.project-left,
+.project-right {
+  font-size: 1em;
+  white-space: normal;
+}
+
+.project-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5rem 10rem; /* Ajustado para ser consistente com a parte superior */
+  margin-bottom: 20px;
+}
+
+
+
+
+/* IMG - TEXTO LADO A LADO */
+
+.project-social > div {
+  flex: 1;
+  text-align: right;
+}
+
+.titulo-projeto {
+  font-size: 1.5em;
+}
+
+.project-left,
+.project-right {
+  font-size: 1em;
+  white-space: normal;
+}
+
+
+
+
+/* PARCEIROS */
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 5% 10rem 5% 10rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.partner-logos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  background-color: #000000;
+  color: #fff;
+}
+#text-parceiros {
+  display: flex;
+  text-align: right;
+  margin: 0 10rem 10rem;
+  padding-bottom: 5%;
+}
+
+
+
+
+/* PLANOS */
+
+.custom-section {
+  max-width: 1800px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.custom-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.p-box {
+  background-color: #9cccd4;
+  padding: 2%; /* Adicionado preenchimento */
+}
+
+.domain-button {
+  padding: 2%;
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #9cccd4;
+  margin-top: 2vh; /* Adicionado para espaçamento superior */
+}
+
+/* Removendo estilos da lista */
+.custom-subdiv {
+  width: 362rem;
+  height: auto;
+  background-color: black;
+  color: #fff;
+  border: 0.1px solid #9cccd4;
+  padding: 2% 2% 2% 2%;
+  padding-top: 1%;
+  margin-bottom: 2vh;
+  flex: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.custom-subdiv h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom-subdiv h4,
+.custom-subdiv p {
+  text-align: left;
+  font-size: 70%;
+}
+
+.custom-subdiv button {
+  padding: 2% 5%; /* Ajuste o preenchimento do botão */
+  margin: 5%;
+}
+
+/* Se necessário, ajuste o tamanho da fonte para as listas */
+.custom-subdiv ul li,
+.custom-subdiv ol li {
+  font-size: 70%;
+  text-align: left;
+  list-style-type: none;
+}
+
+.custom-subdiv ol li {
+  list-style-type: decimal;
+  margin-left: 7%;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+#espaçamento {
+  margin-left: 9rem;
+  margin-bottom: 40%;
+}
+
+
+
+
+/* DOMINIOS */
+
+.domain-section {
+  background-color: black;
+  color: #9cccd4;
+  float: left;
+  width: 20%;
+  margin: 1%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  height: 250px;
+  position: relative;
+}
+
+.dom-button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  position: absolute; /* Adiciona posicionamento absoluto para o botão */
+  bottom: 2%; /* Posiciona o botão a 2% do final da div */
+}
+
+.domain-article p {
+  text-align: left;
+  color: #fff;
+}
+
+.domain-article h4 {
+  text-align: left;
+  font-weight: bold;
+}
+
+
+
+
+/* CONTRAÇÃO */
+
+#espaçamento1 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.spacing {
+  margin-top: 50%;
+}
+
+.list {
+  list-style-type: none;
+  margin: 4%;
+}
+
+
+
+
+/* FORMULÁRIO */
+
+section form {
+  background-color: #000000;
+  color: white;
+  padding: 5% 20% 5% 10%;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.form-container {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.form-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  background-image: url(../img/indexSWD/principal/fundoazul.png);
+  color: white;
+  transition: width 0.3s ease-in-out; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.form-field:hover {
+  width: 110%; /* Aumenta o tamanho em 10% quando o mouse está sobre o campo */
+}
+
+.hidden-label {
+  display: none;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+
+
+
+/* QUEM SOMOS */
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  width: 70%; /* Defina a largura desejada para o dropdown */
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.dropdown-btn {
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  padding: 1%;
+}
+
+.dropdown-content p {
+  padding: 15px;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* DEPOIMENTOS */
+
+#dep {
+  text-align: center;
+  padding: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+h1.h1-spacing {
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial {
+  flex: 0 0 calc(90% - 10px); /* Largura de 48%, subtraindo a margem */
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.testimonial img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+
+
+
+/* FOOTER */
+
+#footer-pt1 {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+#footer-pt1 div {
+  flex: 1;
+  max-width: 300px; /* Ajuste conforme necessário */
+  margin: 10px;
+  text-align: left;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+.form-button {
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustes específicos para o botão e a imagem no primeiro div */
+#footer-pt1 div:first-child .form-button {
+  margin-bottom: 10px;
+}
+
+#footer-pt1 div:nth-child(2) img {
+  max-width: 50px; /* Ajuste conforme necessário */
+}
+
+#footer-pt2 {
+  background-image: url(../img/indexSWD/principal/fundoazul.png);
+  color: #fff;
+  padding: 20px;
+  gap: 20px; /* Adicionado para espaçamento entre as colunas */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinhamento à esquerda */
+  padding: 10px; /* Adicionado espaçamento interno */
+}
+
+.logo h4 {
+  margin-top: 10px;
+  margin-left: 10px; /* Adicione margem à esquerda se necessário */
+}
+
+.payment-methods,
+.icons {
+  display: flex;
+  flex-wrap: nowrap; /* Impede quebras para a próxima linha */
+  align-items: center;
+  justify-content: center; /* Adicionado para centralizar */
+  flex-grow: 1; /* Adicionado para ocupar o espaço restante e empurrar a div de pagamento para o centro */
+  padding: 10px; /* Adicionado espaçamento interno */
+}
+
+.payment-method {
+  margin-top: 10px;
+}
+
+.icon {
+  margin-top: 10px;
+}
+
+#copy {
+  font-size: 80%;
+}
+
+
+
+
+/* REFORÇO DE RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Altera a direção para coluna em telas menores */
+    align-items: flex-start; /* Alinha os itens à esquerda em telas menores */
+    padding: 15px 1rem; /* Ajusta o padding para telas menores */
+  }
+
+  .logo-tam {
+    margin-left: 1rem; /* Ajusta a margem para telas menores */
+  }
+
+  .empresa {
+    margin-right: 1rem; /* Ajusta a margem para telas menores */
+  }
+
+  .menu {
+    margin-top: 1rem; /* Adiciona margem superior para separar o menu em telas menores */
+    width: 100%; /* Garante que o menu ocupe a largura total */
+  }
+
+  .btn {
+    margin: 1rem 0; /* Adiciona margem superior e inferior ao botão em telas menores */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Aplique estilos específicos para telas menores que 768 pixels */
+
+  /* Exemplo: Alterar a largura do dropdown para ocupar a largura total */
+  .dropdown {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Adicione estilos para tornar o conteúdo do dropdown empilhado */
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Adapte outros estilos conforme necessário para uma experiência mais amigável em telas menores */
+  /* Por exemplo, ajuste tamanhos de fonte, margens, etc. */
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+  .domain-section {
+    background-color: black;
+    color: #9cccd4;
+    float: left;
+    width: 100%;
+    margin: 10%;
+    padding: 1rem;
+    text-align: center;
+    height: 250px;
+    position: relative;
+}
+
+}
