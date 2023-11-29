@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap");
+
+* {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+header {
+  background-color: black;
+}
+
+header a {
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+}
+
+.header-menu:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+.cor-selecao {
+  color: #fbd300;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  height: 12vh;
+  margin-right: 70px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  font-size: 1em;
+}
+
+.navbar li {
+  margin: 1em;
+}
+
+.Logo {
+  height: 4.1em;
+  margin-left: 5rem;
+}
+
+ul img {
+  height: 2em;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.Principal1 {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.container1 {
+  height: 50vh;
+  background-color: black;
+  display: flex;
+  font-size: 1rem;
+}
+
+.column1 {
+  flex: 1;
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000000;
+  background-color: #fbd300;
+  padding: 40px;
+  margin: 60px;
+  border-radius: 10px;
+}
+
+.Principal2 {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+}
+
+.DoeAqui {
+  width: 80px;
+  height: 60px;
+  padding: 40px;
+  margin: 60px;
+  background: #fbd300;
+  text-align: center;
+  color: black;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+.timeline {
+  margin: 40px auto;
+  max-width: 80%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 6px 1fr;
+  color: #fff;
+}
+
+.timeline__component {
+  margin: 0 40px 20px 40px;
+}
+
+.timeline__component--bg {
+  padding: 1.5rem;
+  background: #ffe500;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.timeline__component--bottom {
+  margin-bottom: 0;
+}
+
+.timeline__middle {
+  position: relative;
+  background: #000;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__img {
+  margin: 0 0 10px 0;
+  height: 200px;
+  border-radius: 22px;
+}
+
+.timeline__paragraph {
+  color: #000;
+  font-weight: 600;
+}
+
+#carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+
+#carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  color: #333;
+  opacity: 0.5;
+  transition: 0.5s ease-out;
+}
+
+.carousel-arrow:hover {
+  opacity: 1;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.conheça {
+  padding: 15px;
+  background: #fbd300;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+.Imagem-Final {
+  width: 100%;
+  margin: 0;
+}
+
+footer {
+  font-size: 0.9em;
+  background-color: #000000;
+}
+
+.nave-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nave-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.nave-footer li {
+  margin: 4em 0.4em;
+}
+
+.informa-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+}
+
+.informa-footer button {
+  text-align: center;
+  margin-right: 2em;
+  padding: 0.5em;
+  border-radius: 3em;
+  border: none;
+  cursor: pointer;
+  background-color: #fbd300;
+}
+
+.informa-footer img {
+  width: 8vw;
+}
+
+#sobe {
+  width: 3vw;
+}
+
+.informa-footer ul {
+  list-style: none;
+}
+
+.informa-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.req-footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 5em 0;
+}
+
+.req-footer img {
+  width: 1.5vw;
+  height: auto;
+  margin: 0 0.7em;
+}
+
+.final-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2em 4em;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+}
+
+.redes-footer {
+  margin: 0.5em 1.5em;
+}
+
+.final-footer img {
+  width: 3vw;
+  margin-right: 0.6em;
+}
+
+.final-footer p {
+  margin: 0px 20px;
+}
+
+.doe {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.Imagem-Final {
+    position: relative;
+}
