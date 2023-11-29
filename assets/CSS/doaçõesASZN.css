@@ -115,6 +115,8 @@ ul img {
   display: grid;
   grid-template-columns: 1fr 6px 1fr;
   color: #fff;
+  border-radius: 13px;
+  background-color: #fbd300;
 }
 
 .timeline__component {
@@ -339,4 +341,19 @@ footer {
 .div-doacao .doe img {
     width: 37px;
     margin-right: 10px;
+}
+
+header nav ul li a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(to right, #f8ef00, rgb(186, 20, 11));
+  position: absolute;
+  top: 25px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
 }
