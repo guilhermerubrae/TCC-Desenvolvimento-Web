@@ -50,6 +50,10 @@ body {
   margin: 0 5px;
 }
 
+#home {
+  color: #fbd300;
+}
+
 .container header nav a::after {
   content: " ";
   width: 0%;
