@@ -1,135 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Vertical Timeline</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Bree+Serif||Fira+Sans|Source+Sans+Pro|Montserrat:400,900&display=swap");
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
 
-      * {
-        margin: 0;
-        padding: 0;
+    header {
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #555;
+      overflow: hidden;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 16px;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        width: 100%;
         box-sizing: border-box;
-        font-family: "Source Sans Pro", "Poppins", sans-serif;
       }
 
-      .timeline {
-        margin: 0 auto;
-        max-width: 900px;
-        padding: 25px;
-        display: grid;
-        grid-template-columns: 1fr 6px 1fr;
-        color: #fff;
+      .menu-icon {
+        display: block;
       }
+    }
 
-      .timeline__component {
-        margin: 0 40px 20px 40px;
-      }
+    .menu-icon {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
 
-      .timeline__component--bg {
-        padding: 1.5rem;
-        background: #ffe500;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-      }
+    .menu {
+      display: none;
+    }
 
-      .timeline__component--bottom {
-        margin-bottom: 0;
+    @media screen and (max-width: 600px) {
+      .menu.show {
+        display: block;
       }
+    }
+  </style>
+</head>
+<body>
 
-      .timeline__middle {
-        position: relative;
-        background: #000;
-      }
+  <header>
+    <h1>Responsive Menu</h1>
+  </header>
 
-      .timeline__point {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 15px;
-        height: 15px;
-        background: #000;
-        border-radius: 50%;
-      }
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <div class="menu-icon">&#9776;</div>
+  </nav>
 
-      .timeline__point--bottom {
-        top: initial;
-        bottom: 0;
-      }
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
 
-      .timeline__date--right {
-        text-align: right;
-      }
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.querySelector('.menu-icon');
+      const menu = document.querySelector('.menu');
 
-      .timeline__img {
-        margin: 0 0 10px 0;
-        height: 200px;
-        border-radius: 22px;
-      }
+      menuIcon.addEventListener('click', function () {
+        menu.classList.toggle('show');
+      });
+    });
+  </script>
 
-      .timeline__paragraph {
-        color: #000;
-        font-weight: 600;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="timeline">
-      <div class="timeline__component"></div>
-      <div class="timeline__middle">
-        <div class="timeline__point"></div>
-      </div>
-      <div class="timeline__component timeline__component--bg">
-        <img src="assets/img/timeline/timeline1.png" alt="Timeline 1" class="timeline__img" />
-        <p class="timeline__paragraph">
-          Nossa jornada de impacto social na comunidade Zaki Narchi teve início
-          em 2013, quando nos propusemos a oferecer atividades lúdicas, como
-          brincadeiras, esportes e cultura, para as crianças locais. Eventos
-          como futebol, quermesses, festas do Dia das Crianças e o icônico
-          evento "DIA Z" foram os primeiros passos para celebrar a comunidade
-          Zaki Narchi. À medida que essas atividades alcançaram um número cada
-          vez maior de moradores, nosso projeto cresceu, unindo mais pessoas com
-          um objetivo comum. Assim, a Associação Sempre Zaki Narchi nasceu em
-          2018.esafios com resiliência.
-        </p>
-      </div>
-      <div class="timeline__component timeline__component--bg">
-        <img src="assets/img/timeline/timeline2.png" alt="Timeline 2" class="timeline__img" />
-        <p class="timeline__paragraph">
-          Desde o início, nossa dedicação incansável foi voltada para a defesa
-          dos direitos fundamentais de nossos moradores, trabalhando
-          incansavelmente para garantir o acesso à educação, esporte, cultura,
-          lazer, alimentação e oportunidades de emprego.
-        </p>
-      </div>
-      <div class="timeline__middle">
-        <div class="timeline__point"></div>
-      </div>
-      <div class="timeline__component"></div>
-      <div class="timeline__component"></div>
-      <div class="timeline__middle">
-        <div class="timeline__point"></div>
-      </div>
-      <div class="timeline__component timeline__component--bg">
-        <img src="assets/img/timeline/timeline3.png" alt="Timeline 3" class="timeline__img" />
-        <p class="timeline__paragraph">
-          Nossa missão é clara: transformar vidas e comunidades, promovendo o
-          desenvolvimento e empoderamento de todos que fazem parte da Zaki
-          Narchi. Através de programas e iniciativas, buscamos construir um
-          futuro melhor, onde a igualdade de oportunidades e a dignidade se
-          tornem uma realidade para cada morador. Junte-se a nós nessa jornada
-          de esperança, transformação e crescimento. Seja parte da mudança.
-          Unidos, podemos fazer a diferença.
-        </p>
-      </div>
-      <div class="timeline__component"></div>
-      <div class="timeline__middle">
-        <div class="timeline__point timeline__point--bottom"></div>
-      </div>
-      <div class="timeline__component timeline__component--bottom"></div>
-    </div>
-  </body>
+</body>
 </html>
