@@ -23,3 +23,26 @@ $(document).ready(function(){
     }
 }
 
+function validateForm() {
+  // Aqui ficaria a lógica para validar o formulário
+  // Se o formulário for válido e enviado com sucesso, exiba o pop-up
+  showSuccessPopup();
+}
+
+function validateForm() {
+  // Aqui ficaria a lógica para validar o formulário
+  // Por exemplo, verificar se os campos estão preenchidos corretamente
+
+  // Se o formulário for válido, exiba o pop-up de sucesso
+  showSuccessPopup();
+}
+
+function showSuccessPopup() {
+  var popup = document.getElementById("successPopup");
+  popup.classList.add("show-popup");
+
+  // Esconder o pop-up após alguns segundos (opcional)
+  setTimeout(function() {
+      popup.classList.remove("show-popup");
+  }, 3000); // 3000 milissegundos = 3 segundos
+}

@@ -512,6 +512,27 @@ label {
   text-align: center;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #9cccd4;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.popup p {
+  margin: 0;
+}
+
+.show-popup {
+  display: block !important;
+}
+
 
 
 
@@ -689,6 +710,10 @@ img {
 
 .payment-method {
   margin-top: 10px;
+}
+
+#infs {
+  
 }
 
 .icon {
