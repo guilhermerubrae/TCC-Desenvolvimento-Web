@@ -37,9 +37,9 @@ p,
 
 header {
   background-image: url(../img/indexSWD/principal/fundoazul.png);
-  position: fixed;
+  position: ;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -74,7 +74,7 @@ header {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  
 }
 
 .menu a {
@@ -135,8 +135,8 @@ header {
   max-width: 45%;
   /* Ajuste conforme necessário */
   box-sizing: border-box;
-  padding: 3%;
   /* Adiciona um pequeno espaçamento entre o texto e a borda da div */
+
 }
 
 #div-left {
@@ -447,6 +447,48 @@ label {
   text-align: center;
 }
 
+.dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  width: 70%; /* Defina a largura desejada para o dropdown */
+  margin-left: 10rem;
+  margin-right: 10rem;
+  
+
+
+}
+
+.dropdown-btn {
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  padding: 1%;
+}
+
+.dropdown-content p {
+  padding: 15px;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 #dep {
   text-align: center;
   padding: 20px;
@@ -581,3 +623,33 @@ img {
 }
 
 
+@media screen and (max-width: 768px) {
+  /* Aplique estilos específicos para telas menores que 768 pixels */
+
+  /* Exemplo: Alterar a largura do dropdown para ocupar a largura total */
+  .dropdown {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Adicione estilos para tornar o conteúdo do dropdown empilhado */
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Adapte outros estilos conforme necessário para uma experiência mais amigável em telas menores */
+  /* Por exemplo, ajuste tamanhos de fonte, margens, etc. */
+}
+
+/* Outras media queries para ajustes adicionais conforme necessário */
+
+@media screen and (max-width: 600px) {
+  /* Aplique estilos específicos para telas menores que 600 pixels */
+}
