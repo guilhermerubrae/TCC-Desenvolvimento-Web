@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+
+* {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #FBD300;
+}
+
+header a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+}
+
+.header-menu:hover {
+    transform: scale(1.05);
+    transition: .8s;
+}
+
+.cor-selecao {
+    color: #FBD300;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    height: 12.5vh;
+    margin-right: 2.5em;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    font-size: 1em;
+
+}
+
+.navbar li {
+    margin: 1em;
+}
+
+.Logo {
+    width: 7em;
+    height: auto;
+    margin-left: 5rem;
+}
+
+ul img {
+    height: 2.3em;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.Principal {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    margin: 1em 1.5em;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+    margin: 20px
+}
+
+
+.container {
+    display: flex;
+    font-size: 1em;
+}
+
+.column {
+    flex: 1;
+    padding: 3em;
+    text-align: center;
+}
+
+
+.titulo-caixa {
+    margin: 2em;
+}
+
+.column+.column {
+    border-left: 1px solid #ccc;
+}
+
+.texto-aszn {
+    margin: 8%;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.card {
+    width: 13rem;
+    height: 13rem;
+    text-align: center;
+    background-color: #FBD300;
+    color: black;
+    padding: 0.7em;
+    margin: 0.7em;
+    margin-bottom: 9%;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.imagem2 {
+    margin: 10px;
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.card-vagas {
+    width: 30%; 
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 1.8em;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
+}
+
+.lista-requisitos li {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.card-vagas h2 {
+    margin-bottom: 10px;
+}
+
+.card-vagas h3 {
+    margin-top: 10px;
+}
+
+.localidade {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 8px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.candidata {
+    display: flex;
+    justify-content: center;
+}
+
+.candidatura {
+    padding: 15px;
+    background: #FBD300;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.conjunto-vagas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.data {
+    margin-right: 20px;
+}
+
+.teste2 {
+    margin-top: 9%;
+    padding: 2%;
+    border-top: 1px solid #ffffff;
+    display: flex;
+
+}
+
+.teste2 h1 {
+    margin: 3em;
+
+}
+
+.teste2 img {
+    width: 25vw;
+    height: auto;
+    margin-top: 2.5em;
+}
+
+#emprego {
+    margin-right: 1.2em;
+}
+
+.help {
+    text-align: center;
+    font-size: 0.7em;
+    margin: 15em 0.8em;
+}
+
+#ajuda {
+    width: 9vw;
+    height: 18.5vh;
+}
+
+#separa {
+    width: 100%;
+    height: 3vh;
+    margin: 1.7em 0;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+.nave-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nave-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.nave-footer li {
+    margin: 4em 0.4em;
+}
+
+.informa-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+
+}
+
+.informa-footer button {
+    text-align: center;
+    margin-right: 2em;
+    padding: 0.5em;
+    border-radius: 3em;
+    border: none;
+    cursor: pointer;
+    background-color: #FBD300;
+}
+
+.informa-footer img {
+    width: 8vw;
+}
+
+#sobe {
+    width: 3vw;
+}
+
+.informa-footer ul {
+    list-style: none;
+}
+
+.informa-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.req-footer {
+    display: flex;
+    justify-content: center;
+
+    margin: 5em 0;
+}
+
+.req-footer img {
+    width: 1.5vw;
+    height: auto;
+    margin: 0 0.7em;
+}
+
+.final-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2em 4em;
+    background-color: #1A1A1A;
+    border-radius: 2em;
+}
+
+.redes-footer {
+    margin: 0.5em 1.5em;
+}
+
+.final-footer img {
+    width: 3vw;
+    margin-right: 0.6em;
+}
+
+.final-footer p {
+    margin: 0px 20px;
+}
+
+
+@media (max-width: 767px) { /* Celulares */
+    header a {
+        font-size: 1.5em;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between  ;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        height: 14vh;
+        margin-right: 1em;
+    
+    }
+    
+    .navbar {
+        list-style: none;
+        display: flex;
+        font-size: 0.5em;
+    }
+    
+    .navbar li {
+        margin: 1px;
+    }
+    
+    .Logo {
+        width: 5em;
+        height: auto;
+        margin-left: 1.5em;
+        margin-right: none;
+    }
+    
+    ul img {
+        height: 3em;
+        margin-left: 0.4rem;
+    }
+    
+    .Principal {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .sobre {
+        display: flex;
+        align-items: center;
+        font-size: 0.5rem;
+        margin: 0;
+    }
+    
+    .icon {
+        width: 50px;
+        margin: 20px 15px;
+    }
+    
+    .container {
+        display: grid;
+        font-size: 0.8rem;
+    }
+
+    .column+.column {
+        border-left: none;
+    }
+    
+    .texto-aszn {
+        display: none; /* Retirado */
+    }
+    
+    .card { /* Alterado */
+        width: 10rem;
+        height: auto;
+        padding: 0.7em;
+        margin: 0.9em;
+        margin-bottom: none;
+        border-radius: 15px;
+    }
+
+    .card:hover { /* Alterado */
+        transform: none;
+        transition: none;
+    }
+    
+    .imagem2 { /* Alterado */
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #card-oport { /* Alterado */ 
+        display: none;
+    }
+    
+    .cards {
+        display: grid; /* Alterado */
+        grid-template-columns: 13em 13em;
+        margin-bottom: 1.7em;
+    }
+    
+    .card-vagas {
+        width: 80vw; /* Alterado */
+        margin-left: none;
+        margin-right: 1.2em;
+    }
+    
+
+    .conjunto-vagas {
+        display: grid; /* Alterado */
+        justify-content: none;
+    }
+    
+    
+    .teste2 { /* Alterado */
+        margin-top: 5%;
+        padding: 2%; 
+        display: grid;
+    
+    }
+    
+    .teste2 img { /* Alterado */
+        width: 65vw;
+        height: auto;
+        margin-top: 2.5em;
+        margin-left: 4em;
+    }
+    
+    #emprego { /* Alterado */
+        display: none;
+    }
+    
+    .help { /* Alterado */ 
+        margin: 3em 0.8em;
+    }
+    
+    #ajuda { /* Alterado */
+        width: auto;
+        height: 17.5vh;
+        margin-right: 4.5em;
+    }
+    
+    #separa {  /* Alterado */
+        height: 1.5vh;
+        margin: 0.5em 0;
+    }
+    
+    footer { /* Alterado */
+        font-size: 1em;
+    }
+    
+    .informa-footer button { /* Alterado */
+        display: none;
+    }
+    
+    .informa-footer img { /* Alterado */
+        width: 20vw;
+    }
+    
+    .req-footer { /* Alterado */
+        display: grid;
+        margin: 2em 0;
+    }
+    
+    .req-footer img { /* Alterado */
+        display: none;
+    }
+
+    .req-footer p { /* Alterado */
+        margin: 0.4em 1em;
+    }
+
+    .final-footer {
+        display: grid;
+        margin: 0.2em 1em;
+    }
+    
+    .redes-footer {
+        display: none;
+    }
+    
+    .final-footer p {
+        margin: 0.1em 1em;
+        padding: 0.2em;
+    }
+
+}
+
