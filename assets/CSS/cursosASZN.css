@@ -251,7 +251,7 @@ ul img {
   .container1 .card {
     position: relative;
     width: 250px;
-    background-color: whitesmoke;
+    background-color: #003da6;
     margin: 20px;
     border: 1px solid black;
     border-radius: 20px;
@@ -284,7 +284,7 @@ ul img {
     position: relative;
     display: inline-block;
     padding: 10px 25px;
-    background-color: #e11456;
+    background-color: #003da6;
     ;
     color: #FBD300;
     text-decoration: none;
