@@ -204,7 +204,7 @@ body {
 
 .notebook .area {
   width: 90%;
-  height: 700px;
+  height: 350px;
   margin: 0 auto;
   margin-top: 24px;
   margin-bottom: 70px;
@@ -214,49 +214,33 @@ body {
   align-items: center;
 }
 
-@media (max-width: 1182px) {
-  .notebook .area {
-    flex-direction: column;
-    height: 830px;
-    padding: 20px 0;
-  }
-
-  .notebook .area p {
-    width: 400px;
-    font-size: 10px;
-    margin: 90px 0;
-  }
-
-  .notebook .area .image {
-    height: 400px;
-  }
-
-  .notebook .area .image img{
-    width: 900px;
-    height: 700px;
-  }
-}
-
-@media (min-width: 1182px) {
-
-}
-
 .notebook .area p {
-  width: 30%;
-  font-size: 30px;
+  width: 60%;
+  font-size: 25px;
   font-weight: 600;
-  margin: 0 30px;
+  margin: 30px 30px;
 }
 
 .notebook .area .image {
-  width: 70%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .notebook .area .image img {
-  /* height: 400px; */
+  height: 250px;
+}
+
+@media screen and (max-width: 1134px) {
+  .notebook .area {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .notebook .area .image img {
+    height: 200px;
+  }
 }
 
 .cards {
@@ -293,7 +277,7 @@ body {
 }
 
 .card img {
-  height: 370px;
+  height: 300px;
   border-radius: 22px;
   margin-bottom: 22px;
 }
@@ -322,7 +306,7 @@ body {
 }
 
 .street-view-box {
-  width: 100%;
+  width: 95%;
   height: 500px;
   /* min-height: 500px; */
   display: flex;
@@ -331,11 +315,28 @@ body {
 }
 
 .street-view {
-  width: 95%;
+  width: 60%;
   height: 100%;
   border-radius: 8px;
   margin-top: 50px;
+  margin-left: 10px;
   /* margin: 20px auto; */
+}
+
+.street-view-box p {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  width: 40%;
+  height: 100%;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.img-social {
+  width: 100%;
+  margin: 70px 0;
 }
 
 .timeline {
@@ -347,7 +348,7 @@ body {
   color: #fff;
 }
 
-@media (max-width: 1244px) {
+/* @media (max-width: 1244px) {
   .timeline {
     display: block;
   }
@@ -355,7 +356,7 @@ body {
   .timeline__point {
     display: none;
   }
-}
+} */
 
 .timeline__component {
   margin: 0 40px 20px 40px;
@@ -402,9 +403,18 @@ body {
   text-align: right;
 }
 
+.img-component {
+  /* width: auto; */
+  /* height: 100%; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
 .timeline__img {
   margin: 0 0 10px 0;
-  height: 200px;
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 22px;
 }
 
