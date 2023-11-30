@@ -21,3 +21,1729 @@ https://www.canva.com/design/DAF1fbGBWEY/-xGaX__al7dQlGAQTK0MTw/edit?utm_content
 
 https://docs.google.com/document/d/1PruRAzAQiguNIWMv5oQMpMVIeoJaya2PMgnzfQvA1i0/edit?usp=sharing
 -ROTEIRO
+
+
+ <!-- <section id="section-aria-cursos">
+    <div class="sobre">
+        <img class="icon" src="./assets/img/cursosASZN/mais.png" alt="icon-mais">
+        <h2>ÁREAS DE INTERESSE</h2>
+    </div>
+
+    <div class="cards-cursos">
+        <div class="card-cursos">
+            <img class="imagem2" src="./assets/img/cursosASZN/card1.png" alt="Desenvolvimento">
+            <h4>Curso de Socioemocional</h4>
+            <p>Oferecemos cursos gratuitos de desenvolvimento socioemocional para o mercado de trabalho...</p>
+            <div class="divisoria"></div>
+            <p>DURAÇÃO</p>
+            <p>VARIÁVEL</p>
+            <div class="divisoria"></div>
+            <p>NÍVEL</p>
+            <p>INICIANTE</p>
+            <div class="popup">
+                <p>Texto completo do curso socioemocional.</p>
+                
+            </div>
+        </div>
+        
+    </div> -->
+
+    <!-- <section>
+        <div class="sobre">
+            <img class="icon" src="./assets/img/cursosASZN/cursos (10).png" alt="icon-sobre">
+            <h2>CONHEÇA NOSSO CURSO MAIS AGREGADOR</h2>
+        </div>
+    </section>
+    
+    <div>
+ <div class="socio-img">
+        <img src="./assets/img/cursosASZN/imagem.jpg" alt="Imagem sobre desenvolvimento socioemocional">
+    </div>
+
+    <div>
+        <p>O desenvolvimento socioemocional é a chave para uma vida equilibrada e bem-sucedida. Afinal, para que serve o aspecto socioemocional? Ele desempenha um papel fundamental em nossa jornada, permitindo-nos compreender e gerenciar nossas emoções, construir relacionamentos saudáveis, tomar decisões sábias e enfrentar desafios com resiliência.</p>
+    </div>
+</div>
+
+    </section> -->
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="./assets/img/indexSWD/logo/logoblack.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <title>SOCIAL WEB DESIGNERS</title>
+
+    <!-- Vinculando a folha de estilo externa -->
+    <link rel="stylesheet" href="assets/CSS/indexSWD.css">
+</head>
+
+<body>
+    <header class="fixed-header">
+<div id="logo-h1-fixed">
+        <div class="logo">
+            <img class="logo-tam" src="assets/img/indexSWD/logo/logo.jpg" alt="logo">
+        </div>
+
+        <div class="empresa">
+            <h1 id="h1-1">SOCIAL WEB DESIGNERS</h1>
+            <h1 id="h1-2">SOCIAL WEB DESIGNERS</h1>
+        </div>
+    </div>
+        <div class="menu">
+            <a href="#" id="projetos-link">PROJETOS</a>
+            <a href="#" id="pacotes-link">PACOTES</a>
+            <a href="#" id="quem-somos-link">SOBRE</a>
+        </div>
+        <div class=botao>
+            <button class="btn">COMECE AGORA</button>
+        </div>
+    </header>
+
+    <section id="section-principal">
+        <img id="img-principal" src="assets/img/indexSWD/principal/imgPrincipal.png" alt="principal">
+        <div id="div-left">
+            <h1 id="h1-left">FORTALECENDO COMUNIDADES, TRANSFORMANDO VIDAS COM TECNOLOGIA</h1>
+            <p id="p-left">Construindo um Mundo Digital de Inclusão e Empoderamento. Bem-vindo à Social Web Designers,
+                onde a
+                tecnologia encontra a responsabilidade social. Juntos, moldamos o futuro online, capacitando
+                organizações, comunidades e grandes empresas para triunfar na era digital.</p>
+        </div>
+        <div id="div-right">
+            <h2 id="h2-right">SOMOS REFERÊNCIA EM TRANSFORMAÇÃO DIGITAL NO BRASIL</h2>
+            <p id="p-right">Na Social Web Designers, nossa paixão pela inovação e inclusão nos posicionou como líderes
+                na revolução
+                digital. Vamos além das fronteiras para moldar o futuro online, capacitando organizações, comunidades e
+                grandes empresas. Seja parte da mudança, junte-se à referência brasileira em tecnologia com propósito.
+            </p>
+    </section>
+    <main id="main-projetos">
+        <h1 class="h1-spacing">PROJETOS</h1>
+        <div class="projects-section">
+
+            <div class="project">
+                <div>
+                    <img class="project-image" src="assets/img/indexSWD/projetos/fitness.png" alt="Projeto">
+                </div>
+
+                <div>
+                    <h4 class="titulo-projeto">FITNESS</h4>
+                    <p class="project-left">Na Social Web Designers, estamos comprometidos em impulsionar o sucesso de
+                        sua organização por meio
+                        de plataformas digitais inovadoras e de alta qualidade. Desenvolvemos soluções tecnológicas de
+                        ponta
+                        para atender às suas necessidades, independentemente de sua escala ou complexidade.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <img class="project-image" src="assets/img/indexSWD/projetos/ionize.png" alt="Projeto">
+                </div>
+
+                <div>
+                    <h4 class="titulo-projeto">IONIZE</h4>
+                    <p class="project-left">Nossa equipe altamente qualificada e experiente em design e programação
+                        está pronta para criar
+                        landing pages personalizadas que representam autenticamente os valores e objetivos de sua
+                        organização. Oferecemos uma abordagem única para ajudar a sua causa a brilhar online, atraindo a
+                        atenção que merece.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <img class="project-image" src="assets/img/indexSWD/projetos/oneder.png" alt="Projeto">
+                </div>
+
+                <div>
+                    <h4 class="titulo-projeto">ONEDER</h4>
+                    <p class="project-left">Estamos comprometidos em impulsionar o sucesso de sua organização por
+                        meio de plataformas digitais
+                        inovadoras e de alta qualidade. Desenvolvemos soluções tecnológicas de ponta para atender às
+                        suas
+                        necessidades, independentemente de sua escala ou complexidade.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <img class="project-image" src="assets/img/indexSWD/projetos/clarity.png" alt="Projeto">
+                </div>
+
+                <div>
+                    <h4 class="titulo-projeto">CLARITY</h4>
+                    <p class="project-left">Queremos que a sua presença online seja verdadeiramente
+                        impactante. Nossos serviços abrangem
+                        desde a criação de sites impressionantes até a manutenção de longo prazo para
+                        garantir
+                        eficiência e segurança contínuas. Juntos, construiremos uma plataforma que reflete a
+                        essência de
+                        sua organização.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div>
+                    <img class="project-image" src="assets/img/indexSWD/projetos/videograph.png" alt="Projeto">
+                </div>
+
+                <div>
+                    <h4 class="titulo-projeto">VIDEOGRAPH</h4>
+                    <p class="project-left">Nossa página é mais do que um mero espaço virtual é o início de
+                        uma jornada que compartilhamos
+                        com você. Uma jornada de transformação digital, inovação e impacto social. Cada
+                        elemento, desde
+                        o layout até os recursos interativos, foi cuidadosamente planejado para fornecer
+                        informações
+                        claras e inspiração.</p>
+                </div>
+            </div>
+
+            <h1 class="h1-spacing">PROJETOS SOCIAIS</h1>
+
+
+            <div class="project-social">
+                <div>
+                    <h4 class="titulo-projeto">CENTRO DE INTEGRAÇÃO EMPRESA ESCOLA</h4>
+                    <p class="project-rigth">Uma imagem digital forte é essencial nos dias de hoje. Mantemos
+                        a identidade visual do seu site
+                        atualizada com as últimas tendências do mercado, garantindo que sua organização se
+                        destaque
+                        online. Nossa equipe é apaixonada por design e está pronta para ajudar a construir
+                        uma presença
+                        online única.</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="assets/img/indexSWD/projetos/ciee.png" alt="Projeto">
+                </div>
+            </div>
+            <div class="project-social">
+                <div>
+                    <h4 class="titulo-projeto">INSTITUTO RUMO INCLUSÃO</h4>
+                    <p class="project-rigth">Valorizamos a inclusão e a acessibilidade. Nossas plataformas
+                        digitais são projetadas para
+                        proporcionar uma experiência imersiva a todas as pessoas, independentemente de suas
+                        habilidades
+                        ou deficiências. Estamos comprometidos em capacitar a todos a prosperar no mundo
+                        digital.</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="assets/img/indexSWD/projetos/rumo.png" alt="Projeto">
+                </div>
+            </div>
+            <div class="project-social">
+                <div>
+                    <h4 class="titulo-projeto">FUNDAÇÃO ABRINQ</h4>
+                    <p class="project-rigth">Na Social Web Designers, nosso compromisso vai além do
+                        desenvolvimento de sites. Estamos
+                        empenhados em contribuir para causas sociais e ambientais. Trabalhamos de perto com
+                        organizações
+                        sem fins lucrativos para fortalecer sua presença online, permitindo que alcancem um
+                        público mais
+                        amplo e impactem positivamente suas comunidades.</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="assets/img/indexSWD/projetos/abrinq.png" alt="Projeto">
+                </div>
+            </div>
+            <div class="project-social">
+                <div>
+                    <h4 class="titulo-projeto">ASSOSIAÇÃO SEMPRE ZAKI NARCHI</h4>
+                    <p class="project-rigth">Atualmente, estamos orgulhosos de colaborar com a Associação
+                        Sempre Zaki Narchi (ASZN) em um
+                        projeto que vai muito além da tecnologia. A ASZN desempenha um papel vital na
+                        construção de um
+                        ambiente residencial digno e na promoção de oportunidades educacionais, culturais e
+                        esportivas
+                        na Comunidade Zaki Narchi, em São Paulo.</p>
+                </div>
+
+                <div>
+                    <a href="indexASZN.html">
+                        <img class="project-image" src="assets/img/indexSWD/projetos/aszn.png" alt="Projeto">
+                    </a>
+                </div>
+            </div>
+
+            <section class="partners-section">
+                <h1 class="h1-spacing">PARCEIROS</h1>
+                <div class="container-parceiros">
+                    <div class="partner-logos">
+                        <div><img src="assets/img/indexSWD/parceiros1.png" alt="Parceiro"></div>
+                        <div><img src="assets/img/indexSWD/parceiros2.png" alt="Parceiro"></div>
+                        <div><img src="assets/img/indexSWD/parceiros3.png" alt="Parceiro"></div>
+                        <div><img src="assets/img/indexSWD/parceiros4.png" alt="Parceiro"></div>
+                        <div><img src="assets/img/indexSWD/parceiros5.png" alt="Parceiro"></div>
+                        <div><img src="assets/img/indexSWD/parceiros6.png" alt="Parceiro"></div>
+                        <div><img src="assets/img/indexSWD/parceiros7.png" alt="Parceiro"></div>
+                        <div><img src="assets/img/indexSWD/parceiros8.png" alt="Parceiro"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <p id="text-parceiros">Para sustentar nossa missão, adotamos uma abordagem única. Não
+                        nos limitamos
+                        a atender organizações sociais
+                        gratuitamente, mas também oferecemos nossos serviços a grandes empresas com recursos
+                        disponíveis. Essa
+                        abordagem equilibrada nos permite cumprir nosso compromisso com organizações sem
+                        fins lucrativos
+                        e garantir
+                        nossa sustentabilidade por meio de projetos comerciais. Além disso, estabelecemos
+                        parcerias
+                        estratégicas com
+                        outras empresas, o que não apenas contribui para nossa sustentabilidade, mas também
+                        fornece
+                        recursos
+                        adicionais para expandir nossos serviços.</p>
+                </div>
+            </section>
+
+            <h1 class="h1-spacing">PLANOS</h1>
+
+            <section class="custom-section">
+                <div class="custom-div">
+                    <div class="custom-subdiv">
+                        <h3>DESENVOLVIMENTO</h3>
+                        <p>Comece sua jornada digital com toda a facilidade.</p>
+                        <p class="p-box">A partir de</p>
+                        <p class="text-bold">R$ 650 /mês*</p>
+                        <button class="domain-button">EU QUERO</button>
+                        <h4>Todas as opções:</h4>
+                        <ul>
+                            <li>Entrega de toda estrutura
+                            </li>
+                            <li>Visual e visão do cliente
+                            </li>
+                            <li>Gestão das informações
+                            </li>
+                            <li>Contratos com desconto
+                            </li>
+                        </ul>
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li>Central de ajuda
+                            </li>
+                            <li>Atendimento por email
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="custom-subdiv">
+                        <h3>IDENTIDADE VISUAL</h3>
+                        <p>Remodelamos a sua plataforma digital trazendo um novo estilo.</p>
+                        <p class="p-box">A partir de</p>
+                        <p class="text-bold">R$ 315 /mês*</p>
+                        <button class="domain-button">EU QUERO</button>
+                        <h4>Todas as opções:</h4>
+                        <ul>
+                            <li>Atraia mais usuários
+                            </li>
+                            <li>Visual interativo
+                            </li>
+                            <li>Analise seus resultados
+                            </li>
+                            <li></li>
+                        </ul>
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li>Central de ajuda
+                            </li>
+                            <li>Atendimento por email
+                            </li>
+                            <li>Atendimento por chat
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="custom-subdiv">
+                        <h3>MANUTENÇÃO</h3>
+                        <p>Mais produtividade e resultados com manutenção.</p>
+                        <p class="p-box">A partir de</p>
+                        <p class="text-bold">R$ 250 /mês*</p>
+                        <button class="domain-button">EU QUERO</button>
+                        <h4>Todas as opções:</h4>
+                        <ul>
+                            <li>Correções erros, bugs e falhas.
+                            </li>
+                            <li>Gestão de contatos
+                            </li>
+                            <li>Análises completas
+                            </li>
+                            <li>Ferramentas disponíveis
+                            </li>
+                        </ul>
+                        <h4>Suporte Avançado</h4>
+                        <ul>
+                            <li>Central de ajuda</li>
+                            <li>Atendimento por chat e email
+                            </li>
+                            <li>Atendimento por videochamada
+                            </li>
+                            <li>Especialista estratégico
+                            </li>
+                            <li>Especialista técnico
+                            </li>
+                            <li>Prioridade de atendimento no suporte</li>
+                        </ul>
+                    </div>
+
+                    <div class="custom-subdiv">
+                        <h3>PROJETO SOCIAL</h3>
+                        <p>Análises avançadas para gerir toda a plataforma digital de forma
+                            inteligente.</p>
+                        <p class="p-box">PREÇO NULO sob consulta</p>
+                        <br>
+                        <button class="domain-button">INSCREVA-SE</button>
+                        <h4>Requisitos:</h4>
+                        <ol>
+                            <li>
+                                Qualificação de ONGs: A elegibilidade para assistência gratuita é
+                                baseada na missão
+                                da organização, impacto na comunidade e recursos financeiros
+                                disponíveis.
+                            </li>
+                            <li>
+                                Inclusão e Equidade: Nosso compromisso com projetos sociais reforça
+                                nossa missão de
+                                promover inclusão e equidade na web.
+                            </li>
+                            <li>
+                                Direcionamento de Recursos: Focamos nossos recursos nas organizações que
+                                mais
+                                necessitam de apoio, garantindo que nossos serviços sejam eficientes.
+                            </li>
+                        </ol>
+                        <h4>Fortalecendo comunidades, transformando vidas com tecnologia.</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1 class="h1-spacing">SERVIÇOS DE REGISTRO DE DOMÍNIO</h1>
+                <div id="espaçamento">
+                    <div class="domain-section">
+                        <article class="domain-article">
+                            <h4>.com.br</h4>
+                            <p>Uma das extensões mais clássicas do mercado brasileiro</p>
+                            <p>R$ 35,90/ano*</p>
+                            <button class="domain-button">CONSULTE</button>
+                        </article>
+                    </div>
+                    <div class="domain-section">
+                        <article class="domain-article">
+                            <h4>.com</h4>
+                            <p>Opção versátil e popular para um site internacional</p>
+                            <p>R$ 35,90/ano*</p>
+                            <button class="domain-button">CONSULTE</button>
+                        </article>
+                    </div>
+                    <div class="domain-section">
+                        <article class="domain-article">
+                            <h4>.net</h4>
+                            <p>Uma excelente opção para micro e pequenas empresas</p>
+                            <p>R$ 35,90/ano*</p>
+                            <button class="domain-button">CONSULTE</button>
+                        </article>
+                    </div>
+                    <div class="domain-section">
+                        <article class="domain-article">
+                            <h4>.online</h4>
+                            <p>Uma escolha dinâmica para todo tipo de negócio</p>
+                            <p>R$ 35,90/ano*</p>
+                            <button class="domain-button">CONSULTE</button>
+                        </article>
+                    </div>
+                    <div class="domain-section">
+                        <article class="domain-article">
+                            <h4>.site</h4>
+                            <p>Opção criativa para páginas de diversos temas</p>
+                            <p>R$ 35,90/ano*</p>
+                            <button class="domain-button">CONSULTE</button>
+                        </article>
+                    </div>
+                    <div class="domain-section">
+                        <article class="domain-article">
+                            <h4>.org</h4>
+                            <p>Ótima opção para organizações do setor público</p>
+                            <p>R$ 35,90/ano*</p>
+                            <button class="domain-button">CONSULTE</button>
+                        </article>
+                    </div>
+                    <div class="domain-section">
+                        <article class="domain-article">
+                            <h4>.store</h4>
+                            <p>Uma excelente opção de domínio para lojas virtuais e e-commerces</p>
+                            <p>R$ 35,90/ano*</p>
+                            <button class="domain-button">CONSULTE</button>
+                        </article>
+                    </div>
+                    <div class="domain-section">
+                        <article class="domain-article">
+                            <h4>.tech</h4>
+                            <p>Escolha inovadora para sites de tecnologia</p>
+                            <p>R$ 35,90/ano*</p>
+                            <button class="domain-button">CONSULTE</button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contracao">
+
+                <h1 class="h1-spacing spacing">CONTRATE NOSSOS SERVIÇOS</h1>
+                <div id="espaçamento1">
+                    <div>
+                        <p>Qualquer contratação de nossos serviços resultará em um contrato e acordo com o
+                            cliente em
+                            que
+                            serão esclarecidos os seguintes adendos:</p>
+                        <ul class="list">
+                            <li>Estabelecemos aos clientes datas de vencimento com um sistema de
+                                acompanhamento de
+                                pagamentos para garantir que as faturas sejam pagas dentro dos prazos
+                                acordados.</li>
+                            <li>Somos transparentes e comunicativos após a análise detalhada dos serviços
+                                que deveremos
+                                oferecer em relação a qualquer alteração nos custos ou no escopo do projeto.
+                                Mantendo os
+                                clientes informados e revisando os contratos para refletir as mudanças desde
+                                o início.
+                            </li>
+                            <li>Fornecemos relatórios detalhados sobre o trabalho realizado e o progresso do
+                                projeto,
+                                para
+                                que os clientes vejam o valor que estão recebendo pelos serviços
+                                contratados.</li>
+                        </ul>
+                        <p>Após o preenchimento, entraremos em contato com as demais informações e envio dos
+                            termos de
+                            contratação dos serviços da SOCIAL WEB DESIGNERS.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="popup" id="successPopup">
+                <p>Formulário enviado com sucesso!</p>
+            </div>
+            <section>
+                <form id="myForm">
+                    <div class="form-container">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-field">
+
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" id="empresa" name="empresa" class="form-field">
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" class="form-field">
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-field">
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="form-field" rows="6" maxlength="1000"></textarea>
+                    </div>
+
+                    <button type="button" class="btn" onclick="validateForm()">ENVIAR</button>
+                </form>
+            </section>
+            
+            
+
+            <h1 class="h1-spacing">A SOCIAL WEB DESIGNERS</h1>
+                
+
+            <div class="dropdown">
+                <button class="dropdown-btn">EMPRESA</button>
+                <div class="dropdown-content">
+                    <p>A Social Web Designers foi fundada em 5 de novembro de 2021, nasceu da observação da carência de
+                        presença online de ONGs, associações e instituições de caridade durante a pandemia. Nossos
+                        fundadores, Eduardo, Daniele, Guilherme, Iris e Mikael, sensibilizados pelas dificuldades
+                        enfrentadas por organizações sociais, decidiram preencher essa lacuna digital.
+                        Alguns dos fundadores da empresa têm origens em famílias de baixa renda e conhecem de perto as
+                        dificuldades enfrentadas por muitas organizações sociais, o que torna a missão da Social Web
+                        Designers ainda mais significativa. Juntos, eles estão contribuindo para preencher a lacuna
+                        digital e fortalecer a presença online de organizações que buscam fazer a diferença no mundo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">FUTURO</button>
+                <div class="dropdown-content">
+                    <p>FUTURO
+                        <strong>Expansão Internacional </strong>: À medida que crescemos, planejamos expandir nossa presença
+                        internacional, estendendo nosso alcance a organizações e empresas em todo o mundo. Isso nos
+                        permitirá impactar positivamente uma diversidade de comunidades e causas.
+                        <br><br>
+                        <strong>Desenvolvimento de Soluções Inovadoras </strong>: Continuaremos investindo em tecnologias e soluções
+                        inovadoras para oferecer aos nossos clientes serviços de alta qualidade e eficácia. Estaremos
+                        atentos às tendências digitais emergentes para garantir que nossos clientes estejam sempre à
+                        frente.
+                        <br><br>
+                        <strong>Apoio à Educação Digital </strong>: Iniciaremos programas de educação digital para capacitar organizações
+                        sociais e indivíduos a aproveitar ao máximo a presença online. Acreditamos que o conhecimento é
+                        um ativo valioso que deve ser compartilhado.
+                        <br><br>
+                        <strong>Responsabilidade Social Empresarial (RSE) </strong>: Continuaremos incentivando empresas a adotar práticas
+                        de RSE e, ao fazê-lo, alinharam seus valores com nossos próprios ideais. Essas parcerias não
+                        apenas gerarão impacto positivo, mas também fortalecerão nossa presença no mercado.
+                        <br><br>
+                        <strong>Mentoria e Networking </strong>: Implementação de programas de mentoria para startups e empreendedores
+                        sociais. Além disso, facilitaremos o networking entre organizações sociais, empresas e
+                        indivíduos que compartilham objetivos comuns.
+                        <br>
+                        A Social Web Designers está comprometida em ser uma força positiva na transformação digital e no
+                        impacto social. Acreditamos que, ao trabalhar juntos, podemos fazer a diferença e construir um
+                        mundo mais inclusivo e acessível para todos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">MISSÃO</button>
+                <div class="dropdown-content">
+                    <p>Desenvolver plataformas digitais online personalizadas para grandes empresas oferecendo
+                        tecnologia completa para digitalização dos negócios online e apoiar a inclusão de comunidades
+                        diversas através da tecnologia, promovendo o acesso universal e o empoderamento digital.</p>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropdown-btn">VISÃO</button>
+                <div class="dropdown-content">
+                    <p>Ser a principal referência global na criação de plataformas digitais que representem com
+                        excelência os valores e objetivos dos nossos clientes, ao mesmo tempo em que estabelecemos um
+                        padrão imbatível de inclusão e acessibilidade na web. Nosso sucesso será medido pelo impacto
+                        positivo que causamos, permitindo que todas as pessoas, independentemente de suas habilidades ou
+                        deficiências, tenham acesso e uma experiência imersiva em nossas plataformas.</p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">VALORES</button>
+                <div class="dropdown-content">
+                    <p>
+                
+                    <strong>Responsabilidade Social:</strong> Contribuímos positivamente para a
+                            sociedade, com um trabalho orientado por um propósito social, atendendo às
+                            necessidades de entidades beneficentes e empresas de grande porte. 
+                            <br>
+                    <strong>Empoderamento Digital:</strong> Buscamos capacitar as empresas e as
+                            comunidades por meio da tecnologia, fornecendo ferramentas e conhecimento para
+                            que possam se destacar e prosperar no mundo digital.
+                            <br>
+                    <strong>Personalização e Representatividade:</strong> Valorizamos a criação de
+                            plataformas personalizadas que representam os valores e objetivos de nossos
+                            clientes, contribuindo para uma experiência autêntica e alinhada com suas
+                            identidades.
+                            <br>
+                    <strong>Liderança e Parceria:</strong> Trabalhamos para ser líderes na
+                            elaboração de soluções digitais e estabelecemos parcerias de colaboração com
+                            entidades que compartilham nossa visão de inclusão e inovação tecnológica.
+                            <br>
+                    
+                    </p>
+                    <br>
+                    <p><strong>A empresa mantém sua missão, visão e valores centrados na inovação, responsabilidade
+                            social, empoderamento digital, personalização e representatividade, experiência imersiva,
+                            liderança e parceria, enquanto busca continuamente maneiras de ampliar seu impacto positivo
+                            e sua sustentabilidade.
+                            Nossa visão não é apenas um objetivo, mas uma promessa de um futuro mais equitativo e
+                            tecnologicamente avançado.</strong></p>
+                </div>
+            </div>
+            <article id="dep">
+                <h1 class="h1-spacing">DEPOIMENTOS</h1>
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <img src="assets/img/indexSWD/dep1.png" alt="pessoa">
+                        <h4>Diego Puerta</h4>
+                        <p>Dell Tecnologies Brasil</p>
+                        <p>O tempo em que estamos é de transformação digital. Vivemos assim todos os dias e
+                            em diversos detalhes do nosso cotidiano. Neste caminho e alinhado à nossa
+                            estratégia Dell Progress Made Real para impulsionar o progresso humano,
+                            estamos lado a lado com a SOCIAL WEB DESIGNERS para transformar comunidades e
+                            promover inclusão e acessibilidade através de tecnologia.
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/img/indexSWD/dep2.png" alt="pessoa">
+                        <h4>Dennis Herszkowicz</h4>
+                        <p>TOTVS</p>
+                        <p>Acreditar no Brasil que faz é acreditar que o investimento social transforma
+                            vidas e que o apoio das empresas pode ir além de promover inclusão e
+                            acessibilidade, gerar oportunidades reais para que pessoas com grande
+                            potencial possam fazer parte dessa era digital.
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/img/indexSWD/dep3.png" alt="pessoa">
+                        <h4>Lucia Rodrigues</h4>
+                        <p>Microsoft</p>
+                        <p>Na Microsoft temos um compromisso consistente com o Pais para gerar impacto real
+                            para um
+                            futuro melhor. A tecnologia que disponibilizamos é fundamental para o
+                            crescimento do Brasil
+                            e a parceria com o Instituto de Oportunidade Social nos auxilia nessa
+                            construção.
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                        <img src="assets/img/indexSWD/dep4.png" alt="pessoa">
+                        <h4>Kelly Salance</h4>
+                        <p>Zendesk</p>
+                        <p>Na Microsoft temos um compromisso consistente com o Pais para gerar impacto real
+                            para um
+                            futuro melhor. A tecnologia que disponibilizamos é fundamental para o
+                            crescimento do Brasil
+                            e a parceria com o Instituto de Oportunidade Social nos auxilia nessa
+                            construção.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <footer>
+                <div id="footer-pt1">
+                    <div>
+                        <button class="form-button">PORTUGUÊS</button>
+                        <br>
+                        <a href="https://play.google.com/" target="_blank">
+                            <img id="playstore" src="assets/img/indexSWD/icon/apps.png" alt="Play Store">
+                        </a>
+                    </div>
+
+                    <div id="infs">
+                        <h4>PRODUTOS</h4>
+                        <a href=""><p>MODELOS DE SITE
+                            <br>
+                            SITES
+                            <br>
+                            DOMÍNIOS
+                            <br>
+                            LOJAS ON-LINE
+                            <br>
+                            FERRAMENTAS DE MARKETING
+                            <br>
+                            MANUTENÇÃO
+                            <br>
+                            FABRICANTE DE LOGOTIPO
+                            <br>
+                            PACOTES
+                            <br>
+                            PREÇOS
+                        </p></a>
+                    </div>
+                    <div>
+                        <h4>CLIENTES</h4>
+                        <a href=""><p>EXEMPLOS DE SITES
+                            <br>
+                            COLEÇÃO SWD
+                            <br>
+                            FITNESS
+                            <br>
+                            BELEZA
+                            <br>
+                            CRIADORES
+                            <br>
+                            RESTAURANTES
+                            <br>
+                            ARTISTAS
+                            <br>
+                            BLOGUEIROS
+                            <br>
+                            FOTÓGRAFOS
+                            <br>
+                            CASAMENTOS
+                            <br>
+                            ONGs
+                        </p></a>
+                    </div>
+                    <div>
+                        <h4>EMPRESA</h4>
+                        <a href=""><p>EXEMPLOS DE SITES
+                            <br>
+                            COLEÇÃO SWD
+                            <br>
+                            FITNESS
+                            <br>
+                            BELEZA
+                            <br>
+                            CRIADORES
+                            <br>
+                            RESTAURANTES
+                            <br>
+                            ARTISTAS
+                            <br>
+                            BLOGUEIROS
+                            <br>
+                            FOTÓGRAFOS
+                            <br>
+                            CASAMENTOS
+                            <br>
+                            ONGs
+                        </p></a>
+                    </div>
+                    <div>
+                        <h4>COMUNIDADE</h4>
+                        <a href=""><p>CENTRO DE AJUDA
+                            <br>
+                            CONTRATO
+                            <br>
+                            FÓRUM DE ESPECIALISTAS
+                            <br>
+                            PLATAFORMA DO DESENVOLVEDOR
+                            <br>
+                            PROFISSIONAIS
+                        </p></a>
+                    </div>
+                    <div>
+                        <h4>SUPORTE TÉCNICO</h4>
+                        <a href=""><p>SUPORTE@SWD.COM
+                            <br>
+                            WHATSAPP
+                        </p></a>
+                    </div>
+                </div>
+                <div id="footer-pt2">
+                    <div class="logo">
+                        <img class="logo-tam" src="assets/img/indexSWD/logo/logo.jpg" alt="logo">
+                        <h4 id="copy">Copyright© 2023 - SOCIAL WEB DESIGNERS - Todos os direitos reservados</h4>
+                    </div>
+
+                    <div class="payment-methods">
+                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-1.png" alt="VISA">
+                        </div>
+                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-2.png" alt="ELO">
+                        </div>
+                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-3.png" alt="PAYPAL">
+                        </div>
+                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-4.png" alt="BOLETO">
+                        </div>
+                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-5.png" alt="MASTERCARD">
+                        </div>
+
+                        <div class="icons">
+                            <div class="icon">
+                                <a href="https://twitter.com" target="_blank">
+                                    <img src="assets/img/indexSWD/icon/TwitterX.png" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://pt-br.facebook.com/" target="_blank">
+                                    <img src="assets/img/indexSWD/icon/Facebook.png" alt="Facebook">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <img src="assets/img/indexSWD/icon/Instagram.png" alt="Instagram">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://github.com/" target="_blank">
+                                    <img src="assets/img/indexSWD/icon/GitHub.png" alt="GitHub">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.google.com.br" target="_blank">
+                                    <img src="assets/img/indexSWD/icon/Google Plus.png" alt="Google">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://br.linkedin.com" target="_blank">
+                                    <img src="assets/img/indexSWD/icon/LinkedIn.png" alt="LinkedIn">
+                                </a>
+                            </div>
+
+                        </div>
+            </footer>
+    </main>
+    <!-- Bootstrap JavaScript (necessário para o carrossel) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Slick Carousel JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Script externo para ativar o carrossel -->
+    <script src="assets/JS/indexSWD.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
+..........................................................................................................................................
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+/* CONFIGURAÇÕES PRINCIPAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9cccd4;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+p,
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300 bold;
+}
+
+.menu {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+
+
+/* HEADER */
+
+header {
+  background-image: url(../img/indexSWD/principal/fundoazul.png);
+
+  width: 100%;
+  max-height: 15vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 2rem;
+  text-transform: uppercase;
+  box-sizing: border-box; /* Adicionado para incluir padding e bordas na largura total */
+  position: relative;
+
+}
+
+.logo-tam {
+  margin-left: 3rem;
+  width: 60px;
+}
+
+.empresa {
+  white-space: nowrap;
+  margin-top: 3%;
+  margin-right: 3rem;
+  letter-spacing: 1.5px;
+  
+}
+
+#logo-h1-fixed {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+/* DUPLICAÇÃO DO H1 DA HEADER */
+
+.empresa h1:nth-child(1) {
+  margin-bottom: -12.4px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.399),
+    #9cccd4d7
+  );
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap; 
+}
+
+.menu a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  padding-right: 7%;
+  margin: 1px;
+}
+
+.menu a:hover {
+  color: #9be2e0;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #9be2e0, rgb(255, 255, 255));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.btn {
+  white-space: nowrap;
+  background-color: #9cccd4;
+  color: #fff;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+/* PRINCIPAL IMG E TEXTO */
+
+#section-principal {
+  overflow: hidden;
+  border-bottom: #ffffff 5px solid;
+  position: relative;
+}
+
+#img-principal {
+  width: 100%;
+  height: auto;
+}
+
+#div-left,
+#div-right {
+  position: absolute;
+  max-width: 45%;
+  /* Ajuste conforme necessário */
+  box-sizing: border-box;
+  /* Adiciona um pequeno espaçamento entre o texto e a borda da div */
+
+}
+
+#div-left {
+  left: 5%;
+  top: 25%;
+  text-align: left;
+  /* Alinha o texto à esquerda */
+}
+
+#div-right {
+  right: 5%;
+  top: 35%;
+  text-align: right;
+  /* Alinha o texto à direita */
+}
+
+/* Ajuste os estilos dos títulos e parágrafos conforme necessário */
+#h1-left,
+#h2-right {
+  font-size: 2vw;
+  /* Use vw para tamanho relativo à largura da viewport */
+  font-weight: bold;
+  /* Adiciona negrito */
+  white-space: normal;
+  /* Permite que o texto quebre */
+}
+
+#p-left,
+#p-right {
+  letter-spacing: 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  font-size: 1.5vw;
+  /* Use vw para tamanho relativo à largura da viewport */
+  font-weight: bold;
+  /* Adiciona negrito */
+  white-space: normal;
+  /* Permite que o texto quebre */
+}
+
+/* Adiciona um drop shadow */
+#h1-left,
+#h2-right,
+#p-left,
+#p-right {
+  text-shadow: 1px 1px 2px #000000;
+  /* Adiciona um drop shadow de 50% */
+}
+
+
+
+
+/* H1 PADRÃO */
+
+.h1-spacing {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  letter-spacing: 1px;
+}
+
+
+
+
+/* IMG PROJETOS PADRÃO */
+
+.project-image {
+  max-width: 100%; /* Torna a imagem responsiva */
+  height: auto; /* Garante que a proporção da imagem seja mantida */
+  max-width: 400px; /* Define uma largura máxima específica para a imagem */
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5rem 10rem; /* Ajustado para ser consistente com a parte superior */
+  margin-bottom: 20px;
+}
+
+.project > div {
+  flex: 1;
+}
+
+.titulo-projeto {
+  font-size: 1.5em;
+}
+
+.project-left,
+.project-right {
+  font-size: 1em;
+  white-space: normal;
+}
+
+.project-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5rem 10rem; /* Ajustado para ser consistente com a parte superior */
+  margin-bottom: 20px;
+}
+
+
+
+
+/* IMG - TEXTO LADO A LADO */
+
+.project-social > div {
+  flex: 1;
+  text-align: right;
+}
+
+.titulo-projeto {
+  font-size: 1.5em;
+}
+
+.project-left,
+.project-right {
+  font-size: 1em;
+  white-space: normal;
+}
+
+
+
+
+/* PARCEIROS */
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 5% 10rem 5% 10rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.partner-logos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  background-color: #000000;
+  color: #fff;
+}
+#text-parceiros {
+  display: flex;
+  text-align: right;
+  margin: 0 10rem 10rem;
+  padding-bottom: 5%;
+}
+
+
+
+
+/* PLANOS */
+
+.custom-section {
+  max-width: 1800px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.custom-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.p-box {
+  background-color: #9cccd4;
+  padding: 2%; /* Adicionado preenchimento */
+}
+
+.domain-button {
+  padding: 2%;
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #9cccd4;
+  margin-top: 2vh; /* Adicionado para espaçamento superior */
+}
+
+/* Removendo estilos da lista */
+.custom-subdiv {
+  width: 362rem;
+  height: auto;
+  background-color: black;
+  color: #fff;
+  border: 0.1px solid #9cccd4;
+  padding: 2% 2% 2% 2%;
+  padding-top: 1%;
+  margin-bottom: 2vh;
+  flex: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.custom-subdiv h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom-subdiv h4,
+.custom-subdiv p {
+  text-align: left;
+  font-size: 70%;
+}
+
+.custom-subdiv button {
+  padding: 2% 5%; /* Ajuste o preenchimento do botão */
+  margin: 5%;
+}
+
+/* Se necessário, ajuste o tamanho da fonte para as listas */
+.custom-subdiv ul li,
+.custom-subdiv ol li {
+  font-size: 70%;
+  text-align: left;
+  list-style-type: none;
+}
+
+.custom-subdiv ol li {
+  list-style-type: decimal;
+  margin-left: 7%;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+#espaçamento {
+  margin-left: 9rem;
+  margin-bottom: 40%;
+}
+
+
+
+
+/* DOMINIOS */
+
+.domain-section {
+  background-color: black;
+  color: #9cccd4;
+  float: left;
+  width: 20%;
+  margin: 1%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  height: 250px;
+  position: relative;
+}
+
+.dom-button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  position: absolute; /* Adiciona posicionamento absoluto para o botão */
+  bottom: 2%; /* Posiciona o botão a 2% do final da div */
+}
+
+.domain-article p {
+  text-align: left;
+  color: #fff;
+}
+
+.domain-article h4 {
+  text-align: left;
+  font-weight: bold;
+}
+
+
+
+
+/* CONTRAÇÃO */
+
+#espaçamento1 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.spacing {
+  margin-top: 50%;
+}
+
+.list {
+  list-style-type: none;
+  margin: 4%;
+}
+
+
+
+
+/* FORMULÁRIO */
+
+section form {
+  background-color: #000000;
+  color: white;
+  padding: 5% 20% 5% 10%;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.form-container {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.form-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  background-image: url(../img/indexSWD/principal/fundoazul.png);
+  color: white;
+  transition: width 0.3s ease-in-out; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.form-field:hover {
+  width: 110%; /* Aumenta o tamanho em 10% quando o mouse está sobre o campo */
+}
+
+.hidden-label {
+  display: none;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #9cccd4;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.popup p {
+  margin: 0;
+}
+
+.show-popup {
+  display: block !important;
+}
+
+
+
+
+/* QUEM SOMOS */
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  width: 70%; /* Defina a largura desejada para o dropdown */
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.dropdown-btn {
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  padding: 1%;
+}
+
+.dropdown-content p {
+  padding: 15px;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* DEPOIMENTOS */
+
+#dep {
+  text-align: center;
+  padding: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+h1.h1-spacing {
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial {
+  flex: 0 0 calc(90% - 10px); /* Largura de 48%, subtraindo a margem */
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.testimonial img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+
+
+
+/* FOOTER */
+
+#footer-pt1 {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+#footer-pt1 div {
+  flex: 1;
+  max-width: 300px; /* Ajuste conforme necessário */
+  margin: 10px;
+  text-align: left;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+.form-button {
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustes específicos para o botão e a imagem no primeiro div */
+#footer-pt1 div:first-child .form-button {
+  margin-bottom: 10px;
+}
+
+#footer-pt1 div:nth-child(2) img {
+  max-width: 50px; /* Ajuste conforme necessário */
+}
+
+#footer-pt2 {
+  background-image: url(../img/indexSWD/principal/fundoazul.png);
+  color: #fff;
+  padding: 20px;
+  gap: 20px; /* Adicionado para espaçamento entre as colunas */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinhamento à esquerda */
+  padding: 10px; /* Adicionado espaçamento interno */
+}
+
+.logo h4 {
+  margin-top: 10px;
+  margin-left: 10px; /* Adicione margem à esquerda se necessário */
+}
+
+.payment-methods,
+.icons {
+  display: flex;
+  flex-wrap: nowrap; /* Impede quebras para a próxima linha */
+  align-items: center;
+  justify-content: center; /* Adicionado para centralizar */
+  flex-grow: 1; /* Adicionado para ocupar o espaço restante e empurrar a div de pagamento para o centro */
+  padding: 10px; /* Adicionado espaçamento interno */
+}
+
+.payment-method {
+  margin-top: 10px;
+}
+
+#infs {
+  
+}
+
+.icon {
+  margin-top: 10px;
+}
+
+#copy {
+  font-size: 80%;
+}
+
+
+
+
+/* REFORÇO DE RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Altera a direção para coluna em telas menores */
+    align-items: flex-start; /* Alinha os itens à esquerda em telas menores */
+    padding: 15px 1rem; /* Ajusta o padding para telas menores */
+  }
+
+  .logo-tam {
+    margin-left: 1rem; /* Ajusta a margem para telas menores */
+  }
+
+  .empresa {
+    margin-right: 1rem; /* Ajusta a margem para telas menores */
+  }
+
+  .menu {
+    margin-top: 1rem; /* Adiciona margem superior para separar o menu em telas menores */
+    width: 100%; /* Garante que o menu ocupe a largura total */
+  }
+
+  .btn {
+    margin: 1rem 0; /* Adiciona margem superior e inferior ao botão em telas menores */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Aplique estilos específicos para telas menores que 768 pixels */
+
+  /* Exemplo: Alterar a largura do dropdown para ocupar a largura total */
+  .dropdown {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Adicione estilos para tornar o conteúdo do dropdown empilhado */
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Adapte outros estilos conforme necessário para uma experiência mais amigável em telas menores */
+  /* Por exemplo, ajuste tamanhos de fonte, margens, etc. */
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+  .domain-section {
+    background-color: black;
+    color: #9cccd4;
+    float: left;
+    width: 100%;
+    margin: 10%;
+    padding: 1rem;
+    text-align: center;
+    height: 250px;
+    position: relative;
+}
+
+}
+
+
+......................................................................................................................................
+
+$(document).ready(function(){
+  $('.partner-logos').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      arrows: false // Remover setas de navegação
+  });
+});
+
+  function validateForm() {
+    var nome = document.getElementById('nome').value;
+    var empresa = document.getElementById('empresa').value;
+    var telefone = document.getElementById('telefone').value;
+    var email = document.getElementById('email').value;
+    var mensagem = document.getElementById('mensagem').value;
+
+    if (nome === '' || empresa === '' || telefone === '' || email === '' || mensagem === '') {
+        alert('Por favor, preencha todos os campos.');
+    } else {
+        alert('Formulário enviado com sucesso!');
+    }
+}
+
+function validateForm() {
+  // Aqui ficaria a lógica para validar o formulário
+  // Se o formulário for válido e enviado com sucesso, exiba o pop-up
+  showSuccessPopup();
+}
+
+function validateForm() {
+  // Aqui ficaria a lógica para validar o formulário
+  // Por exemplo, verificar se os campos estão preenchidos corretamente
+
+  // Se o formulário for válido, exiba o pop-up de sucesso
+  showSuccessPopup();
+}
+
+function showSuccessPopup() {
+  var popup = document.getElementById("successPopup");
+  popup.classList.add("show-popup");
+
+  // Esconder o pop-up após alguns segundos (opcional)
+  setTimeout(function() {
+      popup.classList.remove("show-popup");
+  }, 3000); // 3000 milissegundos = 3 segundos
+}
