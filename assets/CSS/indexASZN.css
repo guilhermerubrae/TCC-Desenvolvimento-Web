@@ -372,7 +372,7 @@ body {
   color: #fff;
 }
 
-/* @media (max-width: 1244px) {
+@media (max-width: 1244px) {
   .timeline {
     display: block;
   }
@@ -380,7 +380,7 @@ body {
   .timeline__point {
     display: none;
   }
-} */
+}
 
 .timeline__component {
   margin: 0 40px 20px 40px;
