@@ -238,7 +238,77 @@ ul img {
     border-radius: 20px;
 }
 
-
+.container1 {
+    max-width: 1150px;
+    margin: 0 auto; /* Centraliza a div .container1 */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .container1 .card {
+    position: relative;
+    width: 250px;
+    background-color: whitesmoke;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden; /* Mantenha o overflow:hidden aqui se desejar cortar a imagem fora do contêiner */
+  }
+  
+  .container1 .card img {
+    width: auto;
+    height: auto;
+    
+     /* Isso mantém a proporção da imagem e a ajusta dentro do contêiner */
+  }
+  
+  .container1 .card .content1 {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Certifica-se de que o texto está acima da imagem */
+  }
+  
+  .container1 .card .content1 p {
+    color: #000000;
+    transition: 0.5s;
+  
+  }
+  
+  .container1 .card .content1 a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #e11456;
+    ;
+    color: #FBD300;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+  
+  .container1 .card:hover {
+    background-color: #FBD300;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container1 .card {
+      width: calc(100% - 40px); /* Reduz a largura do cartão para 100% - 40px de margem */
+      margin: 10px; /* Adapte a margem conforme necessário */
+    }
+  
+    .container1 .card .content1 {
+      padding: 5vh; /* Reduz o padding do conteúdo para se adequar a telas menores */
+    }
+  }
 
 
 
