@@ -27,3 +27,29 @@ nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
 setInterval(autoSlide, 7000); // Troca de slide a cada 7 segundos
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.getElementById("carousel");
+  const carouselInner = document.querySelector(".carousel-inner");
+  const items = document.querySelectorAll(".carousel-item");
+  let currentIndex = 0;
+
+  function changeSlide(direction) {
+    currentIndex =
+      (currentIndex + direction + items.length) % items.length;
+    const translateValue = -currentIndex * 50 + "%";
+    carouselInner.style.transform = "translateX(" + translateValue + ")";
+  }
+
+  document
+    .querySelector(".carousel-control-prev")
+    .addEventListener("click", function () {
+      changeSlide(-1);
+    });
+
+  document
+    .querySelector(".carousel-control-next")
+    .addEventListener("click", function () {
+      changeSlide(1);
+    });
+});
