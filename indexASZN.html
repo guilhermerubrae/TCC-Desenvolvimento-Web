@@ -23,14 +23,16 @@
         </a>
 
         <nav>
-          <a id="home" href="#"><span>Home</span><i class="fa-solid fa-house"></i></a>
-          <a href=""
+          <a id="home" href="#"
+            ><span>Home</span><i class="fa-solid fa-house"></i
+          ></a>
+          <a href="doaçõesASZN.html"
             ><span>Doações</span><i class="fa-solid fa-hand-holding-heart"></i
           ></a>
-          <a href="#"
+          <a href="vagasASZN.html"
             ><span>Vagas</span><i class="fa-solid fa-person-walking-luggage"></i
           ></a>
-          <a href="#"
+          <a href="cursosASZN.html"
             ><span>Cursos</span><i class="fa-solid fa-graduation-cap"></i
           ></a>
         </nav>
@@ -115,48 +117,54 @@
           </p>
 
           <div class="image">
-            <img src="assets/img/notebook.png" alt="Notebook" />
+            <img src="assets/img/notebook-resize.png" alt="Notebook" />
           </div>
         </div>
       </section>
 
       <section class="cards">
-        <div class="card-list">
-          <div class="card">
-            <img src="assets/img/cards/card1.png" alt="Card 1" />
-            <p>
-              Descubra como a Associação Sempre Zaki Narchi está enriquecendo
-              vidas e construindo um futuro brilhante com cursos
-              profissionalizantes, atividades esportivas e culturais para a
-              comunidade. Junte-se a nós nessa jornada de oportunidades e
-              empoderamento.
-            </p>
-            <a href="#">Inscreva-se</a>
+        <div id="carousel" class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="assets/img/cards/card1.png"
+                  alt="Card 1"
+                />
+                <div class="card-text cursos">
+                  <h3>Cursos</h3>
+                  <p>Descubra como a Associação Sempre Zaki Narchi está enriquecendo vidas e construindo um futuro brilhante com cursos profissionalizantes, atividades esportivas e culturais para a comunidade. Junte-se a nós nessa jornada de oportunidades e empoderamento.</p>
+                  <a href="cursosASZN.html" class="btn">Inscreva-se</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="assets/img/cards/card2.png" alt="Card 2" />
+                <div class="card-text">
+                  <h3>Vagas</h3>
+                  <p>Na Associação Sempre Zaki Narchi, acreditamos na transformação da comunidade e no empoderamento de seus moradores. Nossos pilares fundamentais incluem esporte e cultura, qualificação profissional e empregabilidade, e geração de renda. Nosso compromisso é proporcionar uma vida digna para todos, enfrentando as desigualdades sociais que afetam muitos de nós.</p>
+                  <a href="vagasASZN.html" class="btn">Vagas</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="assets/img/cards/card3.png" alt="Card 3" />
+                <div class="card-text">
+                  <h3>Doações</h3>
+                  <p>Na Associação Sempre Zaki Narchi, acreditamos que juntos podemos construir um futuro melhor para nossa comunidade e transformar vidas. Como uma organização não governamental dedicada a promover a igualdade de oportunidades, empoderar moradores e enfrentar desigualdades sociais, contamos com o apoio generoso de pessoas e empresas comprometidas.</p>
+                  <a href="doaçõesASZN.html" class="btn">Doações</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <img src="assets/img/cards/card2.png" alt="Card 2" />
-            <p>
-              Na Associação Sempre Zaki Narchi, acreditamos na transformação da
-              comunidade e no empoderamento de seus moradores. Nossos pilares
-              fundamentais incluem esporte e cultura, qualificação profissional
-              e empregabilidade, e geração de renda. Nosso compromisso é
-              proporcionar uma vida digna para todos, enfrentando as
-              desigualdades sociais que afetam muitos de nós.
-            </p>
-            <a href="#">Inscreva-se</a>
-          </div>
-          <div class="card">
-            <img src="assets/img/cards/card3.png" alt="Card 3" />
-            <p>
-              Na Associação Sempre Zaki Narchi, acreditamos que juntos podemos
-              construir um futuro melhor para nossa comunidade e transformar
-              vidas. Como uma organização não governamental dedicada a promover
-              a igualdade de oportunidades, empoderar moradores e enfrentar
-              desigualdades sociais, contamos com o apoio generoso de pessoas e
-              empresas comprometidas.
-            </p>
-            <a href="#">Inscreva-se</a>
-          </div>
+          <button class="carousel-control-prev" onclick="changeSlide(-1)">
+            &#10094;
+          </button>
+          <button class="carousel-control-next" onclick="changeSlide(1)">
+            &#10095;
+          </button>
         </div>
       </section>
 
@@ -169,7 +177,10 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <p>Você também pode conhecer nossa comunidade na palma da sua mão!</p>
       </section>
+
+      <img class="img-social" src="assets/img/imagem-social.jpg" alt="Imagem ASZN">
 
       <section class="timeline">
         <div class="timeline__component"></div>
@@ -177,11 +188,13 @@
           <div class="timeline__point"></div>
         </div>
         <div class="timeline__component timeline__component--bg">
-          <img
-            src="assets/img/timeline/timeline1.png"
-            alt="Timeline 1"
-            class="timeline__img"
-          />
+          <div class="img-component">
+            <img
+              src="assets/img/timeline/timeline1.png"
+              alt="Timeline 1"
+              class="timeline__img"
+            />
+          </div>
           <p class="timeline__paragraph">
             Nossa jornada de impacto social na comunidade Zaki Narchi teve
             início em 2013, quando nos propusemos a oferecer atividades lúdicas,
@@ -195,11 +208,13 @@
           </p>
         </div>
         <div class="timeline__component timeline__component--bg">
-          <img
-            src="assets/img/timeline/timeline2.png"
-            alt="Timeline 2"
-            class="timeline__img"
-          />
+          <div class="img-component">
+            <img
+              src="assets/img/timeline/timeline2.png"
+              alt="Timeline 2"
+              class="timeline__img"
+            />
+          </div>
           <p class="timeline__paragraph">
             Desde o início, nossa dedicação incansável foi voltada para a defesa
             dos direitos fundamentais de nossos moradores, trabalhando
@@ -216,11 +231,13 @@
           <div class="timeline__point"></div>
         </div>
         <div class="timeline__component timeline__component--bg">
-          <img
-            src="assets/img/timeline/timeline3.png"
-            alt="Timeline 3"
-            class="timeline__img"
-          />
+          <div class="img-component">
+            <img
+              src="assets/img/timeline/timeline3.png"
+              alt="Timeline 3"
+              class="timeline__img"
+            />
+          </div>
           <p class="timeline__paragraph">
             Nossa missão é clara: transformar vidas e comunidades, promovendo o
             desenvolvimento e empoderamento de todos que fazem parte da Zaki
@@ -238,8 +255,12 @@
         <div class="timeline__component timeline__component--bottom"></div>
       </section>
 
-      <img src="assets/img/img-predio.png" alt="Prédio Zaki Narchi" class="img-predio">
-      
+      <img
+        src="assets/img/img-predio.png"
+        alt="Prédio Zaki Narchi"
+        class="img-predio"
+      />
+
       <footer>
         <ul class="nave-footer">
           <li><a href="#">HOME</a></li>

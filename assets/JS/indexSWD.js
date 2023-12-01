@@ -46,3 +46,8 @@ function showSuccessPopup() {
       popup.classList.remove("show-popup");
   }, 3000); // 3000 milissegundos = 3 segundos
 }
+
+function toggleMenu() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('show');
+}

@@ -22,7 +22,7 @@ body {
 }
 
 header a {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-decoration: none;
     color: white;
 }
@@ -42,15 +42,13 @@ nav {
     align-items: center;
     text-align: center;
     background-color: black;
-    height: 12.5vh;
+    height: 12vh; /*height: 12.5vh; */
     margin-right: 2.5em;
 }
 
 .navbar {
     list-style: none;
     display: flex;
-    font-size: 1em;
-
 }
 
 .navbar li {
@@ -58,13 +56,13 @@ nav {
 }
 
 .Logo {
-    width: 7em;
-    height: auto;
+    width: 7em; /* width: 4.6em; minha tela*/
+    height: auto;  /* height: 4.1em; - Só ele */
     margin-left: 5rem;
 }
 
 ul img {
-    height: 2.3em;
+    height: 2em; /* 2.3 */
     vertical-align: middle;
     margin-left: 0.5rem;
 }
@@ -214,8 +212,8 @@ ul img {
 }
 
 .teste2 img {
-    width: 25vw;
-    height: auto;
+    width: 25vw;  /* width: 25vw; */
+    height: auto;  /*height: 90vh; */
     margin-top: 2.5em;
 }
 
