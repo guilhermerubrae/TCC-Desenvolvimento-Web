@@ -54,6 +54,15 @@ body {
   color: #fbd300;
 }
 
+#myNavbar .icon {
+  display: none;
+}
+
+#myNavbar .icon {
+  font-size: 40px;
+}
+
+
 .container header nav a::after {
   content: " ";
   width: 0%;
@@ -67,6 +76,21 @@ body {
 
 .container header nav a:hover::after {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #myNavbar a:not(:last-child) {
+    display: none;
+  }
+
+  #myNavbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .container header nav a::after {
+    display: none;
+  }
 }
 
 #carousel-container {
