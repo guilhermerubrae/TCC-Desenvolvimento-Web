@@ -19,26 +19,23 @@
 </head>
 
 <body>
-    <header class="fixed-header">
-<div id="logo-h1-fixed">
+    <header>
         <div class="logo">
             <img class="logo-tam" src="assets/img/indexSWD/logo/logo.jpg" alt="logo">
         </div>
-
-        <div class="empresa">
-            <h1 id="h1-1">SOCIAL WEB DESIGNERS</h1>
-            <h1 id="h1-2">SOCIAL WEB DESIGNERS</h1>
+        <div class="logo-h1">
+            <img class="h1-tam" src="assets/img/indexSWD/logo/logo-empresa.png" alt="logo">
         </div>
-    </div>
         <div class="menu">
-            <a href="#" id="projetos-link">PROJETOS</a>
-            <a href="#" id="pacotes-link">PACOTES</a>
-            <a href="#" id="quem-somos-link">SOBRE</a>
+            <a href="#projetos" id="projetos-link">PROJETOS</a>
+            <a href="#planos" id="pacotes-link">PLANOS</a>
+            <a href="#sobre" id="quem-somos-link">SOBRE</a>
         </div>
-        <div class=botao>
-            <button class="btn">COMECE AGORA</button>
+        <div class="botao">
+            <a href="#formulario" class="btn">COMECE AGORA</a>
         </div>
     </header>
+    
 
     <section id="section-principal">
         <img id="img-principal" src="assets/img/indexSWD/principal/imgPrincipal.png" alt="principal">
@@ -140,7 +137,10 @@
                 </div>
             </div>
 
-            <h1 class="h1-spacing">PROJETOS SOCIAIS</h1>
+<div id="projetos"></div>
+<br><br>
+
+            <h1 class="h1-spacing" >PROJETOS SOCIAIS</h1>
 
 
             <div class="project-social">
@@ -241,8 +241,9 @@
                         adicionais para expandir nossos serviços.</p>
                 </div>
             </section>
-
-            <h1 class="h1-spacing">PLANOS</h1>
+<div id="planos"></div>
+<br><br>
+            <h1 class="h1-spacing" >PLANOS</h1>
 
             <section class="custom-section">
                 <div class="custom-div">
@@ -363,17 +364,10 @@
                 </div>
             </section>
 
-            <section>
-                <h1 class="h1-spacing">SERVIÇOS DE REGISTRO DE DOMÍNIO</h1>
+            <section id="dom">
+                <h1 class="h1-spacing domain-section" >SERVIÇOS DE REGISTRO DE DOMÍNIO</h1>
                 <div id="espaçamento">
-                    <div class="domain-section">
-                        <article class="domain-article">
-                            <h4>.com.br</h4>
-                            <p>Uma das extensões mais clássicas do mercado brasileiro</p>
-                            <p>R$ 35,90/ano*</p>
-                            <button class="domain-button">CONSULTE</button>
-                        </article>
-                    </div>
+                    
                     <div class="domain-section">
                         <article class="domain-article">
                             <h4>.com</h4>
@@ -386,14 +380,6 @@
                         <article class="domain-article">
                             <h4>.net</h4>
                             <p>Uma excelente opção para micro e pequenas empresas</p>
-                            <p>R$ 35,90/ano*</p>
-                            <button class="domain-button">CONSULTE</button>
-                        </article>
-                    </div>
-                    <div class="domain-section">
-                        <article class="domain-article">
-                            <h4>.online</h4>
-                            <p>Uma escolha dinâmica para todo tipo de negócio</p>
                             <p>R$ 35,90/ano*</p>
                             <button class="domain-button">CONSULTE</button>
                         </article>
@@ -431,42 +417,99 @@
                         </article>
                     </div>
                 </div>
-            </section>
 
-            <section id="contracao">
 
-                <h1 class="h1-spacing spacing">CONTRATE NOSSOS SERVIÇOS</h1>
-                <div id="espaçamento1">
-                    <div>
-                        <p>Qualquer contratação de nossos serviços resultará em um contrato e acordo com o
-                            cliente em
-                            que
-                            serão esclarecidos os seguintes adendos:</p>
-                        <ul class="list">
-                            <li>Estabelecemos aos clientes datas de vencimento com um sistema de
-                                acompanhamento de
-                                pagamentos para garantir que as faturas sejam pagas dentro dos prazos
-                                acordados.</li>
-                            <li>Somos transparentes e comunicativos após a análise detalhada dos serviços
-                                que deveremos
-                                oferecer em relação a qualquer alteração nos custos ou no escopo do projeto.
-                                Mantendo os
-                                clientes informados e revisando os contratos para refletir as mudanças desde
-                                o início.
-                            </li>
-                            <li>Fornecemos relatórios detalhados sobre o trabalho realizado e o progresso do
-                                projeto,
-                                para
-                                que os clientes vejam o valor que estão recebendo pelos serviços
-                                contratados.</li>
-                        </ul>
-                        <p>Após o preenchimento, entraremos em contato com as demais informações e envio dos
-                            termos de
-                            contratação dos serviços da SOCIAL WEB DESIGNERS.</p>
+                <section id="contratacao">
+
+                    
+                    <div id="espaçamento1">
+                        <div>
+                            <h1 class="h1-c">CONTRATE NOSSOS SERVIÇOS</h1>
+                            <p>Qualquer contratação de nossos serviços resultará em um contrato e acordo com o
+                                cliente em
+                                que
+                                serão esclarecidos os seguintes adendos:</p>
+                            <ul class="list">
+                                <li>Estabelecemos aos clientes datas de vencimento com um sistema de
+                                    acompanhamento de
+                                    pagamentos para garantir que as faturas sejam pagas dentro dos prazos
+                                    acordados.</li>
+                                <li>Somos transparentes e comunicativos após a análise detalhada dos serviços
+                                    que deveremos
+                                    oferecer em relação a qualquer alteração nos custos ou no escopo do projeto.
+                                    Mantendo os
+                                    clientes informados e revisando os contratos para refletir as mudanças desde
+                                    o início.
+                                </li>
+                                <li>Fornecemos relatórios detalhados sobre o trabalho realizado e o progresso do
+                                    projeto,
+                                    para
+                                    que os clientes vejam o valor que estão recebendo pelos serviços
+                                    contratados.</li>
+                            </ul>
+                            <p>Após o preenchimento, entraremos em contato com as demais informações e envio dos
+                                termos de
+                                contratação dos serviços da SOCIAL WEB DESIGNERS.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <div class="popup" id="successPopup">
+                    <p>Formulário enviado com sucesso!</p>
+                </div>
+                <div id="formulario"><br></div>
+                <section>
+                
+                    <form id="myForm">
+                        <div class="form-container">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" class="form-field">
+
+                            <label for="empresa">Empresa:</label>
+                            <input type="text" id="empresa" name="empresa" class="form-field">
+
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" class="form-field">
+
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-field">
+
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" class="form-field" rows="6"
+                                maxlength="1000"></textarea>
+                        </div>
+
+                        <button type="button" class="btn" onclick="validateForm()">ENVIAR</button>
+                    </form>
+                </section>
+
+
+<div id="sobre"></div>
+<br><br>
+
+                <h1 class="h1-spacing" >A SOCIAL WEB DESIGNERS</h1>
+
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">EMPRESA</button>
+                    <div class="dropdown-content">
+                        <p>A Social Web Designers foi fundada em 5 de novembro de 2021, nasceu da observação da carência
+                            de
+                            presença online de ONGs, associações e instituições de caridade durante a pandemia. Nossos
+                            fundadores, Eduardo, Daniele, Guilherme, Iris e Mikael, sensibilizados pelas dificuldades
+                            enfrentadas por organizações sociais, decidiram preencher essa lacuna digital.
+                            Alguns dos fundadores da empresa têm origens em famílias de baixa renda e conhecem de perto
+                            as
+                            dificuldades enfrentadas por muitas organizações sociais, o que torna a missão da Social Web
+                            Designers ainda mais significativa. Juntos, eles estão contribuindo para preencher a lacuna
+                            digital e fortalecer a presença online de organizações que buscam fazer a diferença no
+                            mundo.
+                        </p>
                     </div>
                 </div>
-            </section>
 
+<<<<<<< HEAD
 
             <div class="popup" id="successPopup">
                 <p>Formulário enviado com sucesso!</p>
@@ -517,7 +560,7 @@
             <div class="dropdown">
                 <button class="dropdown-btn">FUTURO</button>
                 <div class="dropdown-content">
-                    <p>FUTURO
+                    <p>
                         <strong>Expansão Internacional </strong>: À medida que crescemos, planejamos expandir nossa presença
                         internacional, estendendo nosso alcance a organizações e empresas em todo o mundo. Isso nos
                         permitirá impactar positivamente uma diversidade de comunidades e causas.
@@ -575,236 +618,319 @@
                     <strong>Responsabilidade Social:</strong> Contribuímos positivamente para a
                             sociedade, com um trabalho orientado por um propósito social, atendendo às
                             necessidades de entidades beneficentes e empresas de grande porte. 
+=======
+                <div class="dropdown">
+                    <button class="dropdown-btn">FUTURO</button>
+                    <div class="dropdown-content">
+                        <p>FUTURO
+                            <strong>Expansão Internacional </strong>: À medida que crescemos, planejamos expandir nossa
+                            presença
+                            internacional, estendendo nosso alcance a organizações e empresas em todo o mundo. Isso nos
+                            permitirá impactar positivamente uma diversidade de comunidades e causas.
+                            <br><br>
+                            <strong>Desenvolvimento de Soluções Inovadoras </strong>: Continuaremos investindo em
+                            tecnologias e soluções
+                            inovadoras para oferecer aos nossos clientes serviços de alta qualidade e eficácia.
+                            Estaremos
+                            atentos às tendências digitais emergentes para garantir que nossos clientes estejam sempre à
+                            frente.
+                            <br><br>
+                            <strong>Apoio à Educação Digital </strong>: Iniciaremos programas de educação digital para
+                            capacitar organizações
+                            sociais e indivíduos a aproveitar ao máximo a presença online. Acreditamos que o
+                            conhecimento é
+                            um ativo valioso que deve ser compartilhado.
+                            <br><br>
+                            <strong>Responsabilidade Social Empresarial (RSE) </strong>: Continuaremos incentivando
+                            empresas
+                            a adotar práticas
+                            de RSE e, ao fazê-lo, alinharam seus valores com nossos próprios ideais. Essas parcerias não
+                            apenas gerarão impacto positivo, mas também fortalecerão nossa presença no mercado.
+                            <br><br>
+                            <strong>Mentoria e Networking </strong>: Implementação de programas de mentoria para
+                            startups e
+                            empreendedores
+                            sociais. Além disso, facilitaremos o networking entre organizações sociais, empresas e
+                            indivíduos que compartilham objetivos comuns.
+>>>>>>> 9012db45e8e8efcf8add2248c2a1749b787ff23a
                             <br>
-                    <strong>Empoderamento Digital:</strong> Buscamos capacitar as empresas e as
+                            A Social Web Designers está comprometida em ser uma força positiva na transformação digital
+                            e no
+                            impacto social. Acreditamos que, ao trabalhar juntos, podemos fazer a diferença e construir
+                            um
+                            mundo mais inclusivo e acessível para todos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">MISSÃO</button>
+                    <div class="dropdown-content">
+                        <p>Desenvolver plataformas digitais online personalizadas para grandes empresas oferecendo
+                            tecnologia completa para digitalização dos negócios online e apoiar a inclusão de
+                            comunidades
+                            diversas através da tecnologia, promovendo o acesso universal e o empoderamento digital.</p>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">VISÃO</button>
+                    <div class="dropdown-content">
+                        <p>Ser a principal referência global na criação de plataformas digitais que representem com
+                            excelência os valores e objetivos dos nossos clientes, ao mesmo tempo em que estabelecemos
+                            um
+                            padrão imbatível de inclusão e acessibilidade na web. Nosso sucesso será medido pelo impacto
+                            positivo que causamos, permitindo que todas as pessoas, independentemente de suas
+                            habilidades ou
+                            deficiências, tenham acesso e uma experiência imersiva em nossas plataformas.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">VALORES</button>
+                    <div class="dropdown-content">
+                        <p>
+
+                            <strong>Responsabilidade Social:</strong> Contribuímos positivamente para a
+                            sociedade, com um trabalho orientado por um propósito social, atendendo às
+                            necessidades de entidades beneficentes e empresas de grande porte.
+                            <br>
+                            <strong>Empoderamento Digital:</strong> Buscamos capacitar as empresas e as
                             comunidades por meio da tecnologia, fornecendo ferramentas e conhecimento para
                             que possam se destacar e prosperar no mundo digital.
                             <br>
-                    <strong>Personalização e Representatividade:</strong> Valorizamos a criação de
+                            <strong>Personalização e Representatividade:</strong> Valorizamos a criação de
                             plataformas personalizadas que representam os valores e objetivos de nossos
                             clientes, contribuindo para uma experiência autêntica e alinhada com suas
                             identidades.
                             <br>
-                    <strong>Liderança e Parceria:</strong> Trabalhamos para ser líderes na
+                            <strong>Liderança e Parceria:</strong> Trabalhamos para ser líderes na
                             elaboração de soluções digitais e estabelecemos parcerias de colaboração com
                             entidades que compartilham nossa visão de inclusão e inovação tecnológica.
                             <br>
-                    
-                    </p>
-                    <br>
-                    <p><strong>A empresa mantém sua missão, visão e valores centrados na inovação, responsabilidade
-                            social, empoderamento digital, personalização e representatividade, experiência imersiva,
-                            liderança e parceria, enquanto busca continuamente maneiras de ampliar seu impacto positivo
-                            e sua sustentabilidade.
-                            Nossa visão não é apenas um objetivo, mas uma promessa de um futuro mais equitativo e
-                            tecnologicamente avançado.</strong></p>
-                </div>
-            </div>
-            <article id="dep">
-                <h1 class="h1-spacing">DEPOIMENTOS</h1>
-                <div class="testimonial-container">
-                    <div class="testimonial">
-                        <img src="assets/img/indexSWD/dep1.png" alt="pessoa">
-                        <h4>Diego Puerta</h4>
-                        <p>Dell Tecnologies Brasil</p>
-                        <p>O tempo em que estamos é de transformação digital. Vivemos assim todos os dias e
-                            em diversos detalhes do nosso cotidiano. Neste caminho e alinhado à nossa
-                            estratégia Dell Progress Made Real para impulsionar o progresso humano,
-                            estamos lado a lado com a SOCIAL WEB DESIGNERS para transformar comunidades e
-                            promover inclusão e acessibilidade através de tecnologia.
-                        </p>
-                    </div>
-                    <div class="testimonial">
-                        <img src="assets/img/indexSWD/dep2.png" alt="pessoa">
-                        <h4>Dennis Herszkowicz</h4>
-                        <p>TOTVS</p>
-                        <p>Acreditar no Brasil que faz é acreditar que o investimento social transforma
-                            vidas e que o apoio das empresas pode ir além de promover inclusão e
-                            acessibilidade, gerar oportunidades reais para que pessoas com grande
-                            potencial possam fazer parte dessa era digital.
-                        </p>
-                    </div>
-                    <div class="testimonial">
-                        <img src="assets/img/indexSWD/dep3.png" alt="pessoa">
-                        <h4>Lucia Rodrigues</h4>
-                        <p>Microsoft</p>
-                        <p>Na Microsoft temos um compromisso consistente com o Pais para gerar impacto real
-                            para um
-                            futuro melhor. A tecnologia que disponibilizamos é fundamental para o
-                            crescimento do Brasil
-                            e a parceria com o Instituto de Oportunidade Social nos auxilia nessa
-                            construção.
-                        </p>
-                    </div>
-                    <div class="testimonial">
-                        <img src="assets/img/indexSWD/dep4.png" alt="pessoa">
-                        <h4>Kelly Salance</h4>
-                        <p>Zendesk</p>
-                        <p>Na Microsoft temos um compromisso consistente com o Pais para gerar impacto real
-                            para um
-                            futuro melhor. A tecnologia que disponibilizamos é fundamental para o
-                            crescimento do Brasil
-                            e a parceria com o Instituto de Oportunidade Social nos auxilia nessa
-                            construção.
-                        </p>
-                    </div>
-                </div>
-            </article>
 
-            <footer>
-                <div id="footer-pt1">
-                    <div>
-                        <button class="form-button">PORTUGUÊS</button>
+                        </p>
                         <br>
-                        <a href="https://play.google.com/" target="_blank">
-                            <img id="playstore" src="assets/img/indexSWD/icon/apps.png" alt="Play Store">
-                        </a>
-                    </div>
-
-                    <div id="infs">
-                        <h4>PRODUTOS</h4>
-                        <a href=""><p>MODELOS DE SITE
-                            <br>
-                            SITES
-                            <br>
-                            DOMÍNIOS
-                            <br>
-                            LOJAS ON-LINE
-                            <br>
-                            FERRAMENTAS DE MARKETING
-                            <br>
-                            MANUTENÇÃO
-                            <br>
-                            FABRICANTE DE LOGOTIPO
-                            <br>
-                            PACOTES
-                            <br>
-                            PREÇOS
-                        </p></a>
-                    </div>
-                    <div>
-                        <h4>CLIENTES</h4>
-                        <a href=""><p>EXEMPLOS DE SITES
-                            <br>
-                            COLEÇÃO SWD
-                            <br>
-                            FITNESS
-                            <br>
-                            BELEZA
-                            <br>
-                            CRIADORES
-                            <br>
-                            RESTAURANTES
-                            <br>
-                            ARTISTAS
-                            <br>
-                            BLOGUEIROS
-                            <br>
-                            FOTÓGRAFOS
-                            <br>
-                            CASAMENTOS
-                            <br>
-                            ONGs
-                        </p></a>
-                    </div>
-                    <div>
-                        <h4>EMPRESA</h4>
-                        <a href=""><p>EXEMPLOS DE SITES
-                            <br>
-                            COLEÇÃO SWD
-                            <br>
-                            FITNESS
-                            <br>
-                            BELEZA
-                            <br>
-                            CRIADORES
-                            <br>
-                            RESTAURANTES
-                            <br>
-                            ARTISTAS
-                            <br>
-                            BLOGUEIROS
-                            <br>
-                            FOTÓGRAFOS
-                            <br>
-                            CASAMENTOS
-                            <br>
-                            ONGs
-                        </p></a>
-                    </div>
-                    <div>
-                        <h4>COMUNIDADE</h4>
-                        <a href=""><p>CENTRO DE AJUDA
-                            <br>
-                            CONTRATO
-                            <br>
-                            FÓRUM DE ESPECIALISTAS
-                            <br>
-                            PLATAFORMA DO DESENVOLVEDOR
-                            <br>
-                            PROFISSIONAIS
-                        </p></a>
-                    </div>
-                    <div>
-                        <h4>SUPORTE TÉCNICO</h4>
-                        <a href=""><p>SUPORTE@SWD.COM
-                            <br>
-                            WHATSAPP
-                        </p></a>
+                        <p><strong>A empresa mantém sua missão, visão e valores centrados na inovação, responsabilidade
+                                social, empoderamento digital, personalização e representatividade, experiência
+                                imersiva,
+                                liderança e parceria, enquanto busca continuamente maneiras de ampliar seu impacto
+                                positivo
+                                e sua sustentabilidade.
+                                Nossa visão não é apenas um objetivo, mas uma promessa de um futuro mais equitativo e
+                                tecnologicamente avançado.</strong></p>
                     </div>
                 </div>
-                <div id="footer-pt2">
-                    <div class="logo">
-                        <img class="logo-tam" src="assets/img/indexSWD/logo/logo.jpg" alt="logo">
-                        <h4 id="copy">Copyright© 2023 - SOCIAL WEB DESIGNERS - Todos os direitos reservados</h4>
+                <article id="dep">
+                    <h1 class="h1-spacing">DEPOIMENTOS</h1>
+                    <div class="testimonial-container">
+                        <div class="testimonial">
+                            <img src="assets/img/indexSWD/dep1.png" alt="pessoa">
+                            <h4>Diego Puerta</h4>
+                            <p>Dell Tecnologies Brasil</p>
+                            <p>O tempo em que estamos é de transformação digital. Vivemos assim todos os dias e
+                                em diversos detalhes do nosso cotidiano. Neste caminho e alinhado à nossa
+                                estratégia Dell Progress Made Real para impulsionar o progresso humano,
+                                estamos lado a lado com a SOCIAL WEB DESIGNERS para transformar comunidades e
+                                promover inclusão e acessibilidade através de tecnologia.
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="assets/img/indexSWD/dep2.png" alt="pessoa">
+                            <h4>Dennis Herszkowicz</h4>
+                            <p>TOTVS</p>
+                            <p>Acreditar no Brasil que faz é acreditar que o investimento social transforma
+                                vidas e que o apoio das empresas pode ir além de promover inclusão e
+                                acessibilidade, gerar oportunidades reais para que pessoas com grande
+                                potencial possam fazer parte dessa era digital.
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="assets/img/indexSWD/dep3.png" alt="pessoa">
+                            <h4>Lucia Rodrigues</h4>
+                            <p>Microsoft</p>
+                            <p>Na Microsoft temos um compromisso consistente com o Pais para gerar impacto real
+                                para um
+                                futuro melhor. A tecnologia que disponibilizamos é fundamental para o
+                                crescimento do Brasil
+                                e a parceria com o Instituto de Oportunidade Social nos auxilia nessa
+                                construção.
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="assets/img/indexSWD/dep4.png" alt="pessoa">
+                            <h4>Kelly Salance</h4>
+                            <p>Zendesk</p>
+                            <p>Na Microsoft temos um compromisso consistente com o Pais para gerar impacto real
+                                para um
+                                futuro melhor. A tecnologia que disponibilizamos é fundamental para o
+                                crescimento do Brasil
+                                e a parceria com o Instituto de Oportunidade Social nos auxilia nessa
+                                construção.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <footer>
+                    <div id="footer-pt1">
+                        <div>
+                            <button class="form-button">PORTUGUÊS</button>
+                            <br>
+                            <a href="https://play.google.com/" target="_blank">
+                                <img id="playstore" src="assets/img/indexSWD/icon/apps.png" alt="Play Store">
+                            </a>
+                        </div>
+
+
+                        <div>
+                            <h4>PRODUTOS</h4>
+                            <a href="" class="footer-link"> MODELOS DE SITE</a>
+                            <br>
+                            <a href="" class="footer-link"> SITES</a>
+                            <br>
+                            <a href="" class="footer-link"> DOMÍNIOS</a>
+                            <br>
+                            <a href="" class="footer-link"> LOJAS ON-LINE</a>
+                            <br>
+                            <a href="" class="footer-link"> FERRAMENTAS DE MARKETING</a>
+                            <br>
+                            <a href="" class="footer-link"> MANUTENÇÃO</a>
+                            <br>
+                            <a href="" class="footer-link"> FABRICANTE DE LOGOTIPO</a>
+                            <br>
+                            <a href="" class="footer-link"> PACOTES</a>
+                            <br>
+                            <a href="" class="footer-link"> PREÇOS</a>
+
+                        </div>
+                        <div>
+                            <h4>CLIENTES</h4>
+                            <a href="" class="footer-link"> EXEMPLOS DE SITES</a>
+                            <br>
+                            <a href="" class="footer-link"> COLEÇÃO SWD</a>
+                            <br>
+                            <a href="" class="footer-link"> FITNESS</a>
+                            <br>
+                            <a href="" class="footer-link"> BELEZA</a>
+                            <br>
+                            <a href="" class="footer-link"> CRIADORES</a>
+                            <br>
+                            <a href="" class="footer-link"> RESTAURANTES</a>
+                            <br>
+                            <a href="" class="footer-link"> ARTISTAS</a>
+                            <br>
+                            <a href="" class="footer-link"> BLOGUEIROS</a>
+                            <br>
+                            <a href="" class="footer-link"> FOTÓGRAFOS</a>
+                            <br>
+                            <a href="" class="footer-link"> CASAMENTOS</a>
+                            <br>
+                            <a href="" class="footer-link"> ONGs</a>
+
+                        </div>
+                        <div>
+                            <h4>EMPRESA</h4>
+                            <a href="" class="footer-link"> EXEMPLOS DE SITES</a>
+                            <br>
+                            <a href="" class="footer-link"> COLEÇÃO SWD</a>
+                            <br>
+                            <a href="" class="footer-link"> FITNESS</a>
+                            <br>
+                            <a href="" class="footer-link"> BELEZA</a>
+                            <br>
+                            <a href="" class="footer-link"> CRIADORES</a>
+                            <br>
+                            <a href="" class="footer-link"> RESTAURANTES</a>
+                            <br>
+                            <a href="" class="footer-link"> ARTISTAS</a>
+                            <br>
+                            <a href="" class="footer-link"> BLOGUEIROS</a>
+                            <br>
+                            <a href="" class="footer-link"> FOTÓGRAFOS</a>
+                            <br>
+                            <a href="" class="footer-link"> CASAMENTOS</a>
+                            <br>
+                            <a href="" class="footer-link"> ONGs</a>
+
+                        </div>
+                        <div>
+                            <h4>COMUNIDADE</h4>
+                            <a href="" class="footer-link"> CENTRO DE AJUDA</a>
+                            <br>
+                            <a href="" class="footer-link"> CONTRATO</a>
+                            <br>
+                            <a href="" class="footer-link"> FÓRUM DE ESPECIALISTAS</a>
+                            <br>
+                            <a href="" class="footer-link"> PLATAFORMA DO DESENVOLVEDOR</a>
+                            <br>
+                            <a href="" class="footer-link"> PROFISSIONAIS</a>
+
+                        </div>
+                        <div>
+                            <h4>SUPORTE TÉCNICO</h4>
+                            <a href="" class="footer-link"> SUPORTE@SWD.COM</a>
+                            <br>
+                            <a href="" class="footer-link"> WHATSAPP</a>
+
+                        </div>
                     </div>
 
-                    <div class="payment-methods">
-                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-1.png" alt="VISA">
-                        </div>
-                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-2.png" alt="ELO">
-                        </div>
-                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-3.png" alt="PAYPAL">
-                        </div>
-                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-4.png" alt="BOLETO">
-                        </div>
-                        <div class="payment-method"><img src="assets/img/indexSWD/icon/image-5.png" alt="MASTERCARD">
+                    <div id="footer-pt2">
+                        <div class="logo">
+                            <img class="logo-tam" src="assets/img/indexSWD/logo/logo.jpg" alt="logo">
+                            <h4 id="copy">Copyright© 2023 - SOCIAL WEB DESIGNERS - Todos os direitos reservados</h4>
                         </div>
 
-                        <div class="icons">
-                            <div class="icon">
-                                <a href="https://twitter.com" target="_blank">
-                                    <img src="assets/img/indexSWD/icon/TwitterX.png" alt="Twitter">
-                                </a>
+                        <div class="payment-methods">
+                            <div class="payment-method"><img src="assets/img/indexSWD/icon/image-1.png" alt="VISA">
                             </div>
-                            <div class="icon">
-                                <a href="https://pt-br.facebook.com/" target="_blank">
-                                    <img src="assets/img/indexSWD/icon/Facebook.png" alt="Facebook">
-                                </a>
+                            <div class="payment-method"><img src="assets/img/indexSWD/icon/image-2.png" alt="ELO">
                             </div>
-                            <div class="icon">
-                                <a href="https://www.instagram.com" target="_blank">
-                                    <img src="assets/img/indexSWD/icon/Instagram.png" alt="Instagram">
-                                </a>
+                            <div class="payment-method"><img src="assets/img/indexSWD/icon/image-3.png" alt="PAYPAL">
                             </div>
-                            <div class="icon">
-                                <a href="https://github.com/" target="_blank">
-                                    <img src="assets/img/indexSWD/icon/GitHub.png" alt="GitHub">
-                                </a>
+                            <div class="payment-method"><img src="assets/img/indexSWD/icon/image-4.png" alt="BOLETO">
                             </div>
-                            <div class="icon">
-                                <a href="https://www.google.com.br" target="_blank">
-                                    <img src="assets/img/indexSWD/icon/Google Plus.png" alt="Google">
-                                </a>
-                            </div>
-                            <div class="icon">
-                                <a href="https://br.linkedin.com" target="_blank">
-                                    <img src="assets/img/indexSWD/icon/LinkedIn.png" alt="LinkedIn">
-                                </a>
+                            <div class="payment-method"><img src="assets/img/indexSWD/icon/image-5.png"
+                                    alt="MASTERCARD">
                             </div>
 
+                            <div class="icons">
+                                <div class="icon">
+                                    <a href="https://twitter.com" target="_blank">
+                                        <img src="assets/img/indexSWD/icon/TwitterX.png" alt="Twitter">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://pt-br.facebook.com/" target="_blank">
+                                        <img src="assets/img/indexSWD/icon/Facebook.png" alt="Facebook">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://www.instagram.com" target="_blank">
+                                        <img src="assets/img/indexSWD/icon/Instagram.png" alt="Instagram">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/" target="_blank">
+                                        <img src="assets/img/indexSWD/icon/GitHub.png" alt="GitHub">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://www.google.com.br" target="_blank">
+                                        <img src="assets/img/indexSWD/icon/Google Plus.png" alt="Google">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://br.linkedin.com" target="_blank">
+                                        <img src="assets/img/indexSWD/icon/LinkedIn.png" alt="LinkedIn">
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
-            </footer>
+                </footer>
     </main>
     <!-- Bootstrap JavaScript (necessário para o carrossel) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

@@ -357,3 +357,19 @@ header nav ul li a::after {
 header nav ul li a:hover::after {
   width: 100%;
 }
+
+.projeto {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.projeto button {
+  margin-top: 20px;
+  width: 95%;
+}
+
+.projeto .experiencia {
+  font-weight: 200;
+}

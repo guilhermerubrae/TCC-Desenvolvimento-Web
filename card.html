@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Carousel Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .carousel {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-item {
+        flex: 0 0 50%;
+        box-sizing: border-box;
+        padding: 0 10px; /* Adiciona um espaçamento entre os cards */
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 10px; /* Adiciona bordas arredondadas */
+        overflow: hidden;
+        margin: 10px 0;
+      }
+
+      .card img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+        border-radius: 10px 10px 0 0; /* Adiciona bordas arredondadas apenas no topo da imagem */
+      }
+
+      .card-text {
+        padding: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .carousel-control-prev {
+        left: 10px;
+      }
+
+      .carousel-control-next {
+        right: 10px;
+      }
+    </style>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("carousel");
+        const carouselInner = document.querySelector(".carousel-inner");
+        const items = document.querySelectorAll(".carousel-item");
+        let currentIndex = 0;
+
+        function changeSlide(direction) {
+          currentIndex =
+            (currentIndex + direction + items.length) % items.length;
+          const translateValue = -currentIndex * 50 + "%";
+          carouselInner.style.transform = "translateX(" + translateValue + ")";
+        }
+
+        document
+          .querySelector(".carousel-control-prev")
+          .addEventListener("click", function () {
+            changeSlide(-1);
+          });
+
+        document
+          .querySelector(".carousel-control-next")
+          .addEventListener("click", function () {
+            changeSlide(1);
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="carousel" class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <div class="card">
+            <img
+              src="https://picsum.photos/800/600?cats
+            "
+              alt="Card 1"
+            />
+            <div class="card-text">
+              <h3>Card 1</h3>
+              <p>This is the description for Card 1.</p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="https://picsum.photos/800/600?cats" alt="Card 2" />
+            <div class="card-text">
+              <h3>Card 2</h3>
+              <p>This is the description for Card 2.</p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="https://picsum.photos/800/600?cats" alt="Card 3" />
+            <div class="card-text">
+              <h3>Card 3</h3>
+              <p>This is the description for Card 3.</p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" onclick="changeSlide(-1)">
+        &#10094;
+      </button>
+      <button class="carousel-control-next" onclick="changeSlide(1)">
+        &#10095;
+      </button>
+    </div>
+  </body>
+</html>
