@@ -66,29 +66,89 @@ ul img {
   margin: 0;
 }
 
-.container1 {
-  height: 330px;
-  background-color: black;
+
+
+
+
+.black-division {
+  width: 100%;
+  height: 21px;
+  background-color: #000;
+}
+
+.desc-area {
+  width: 100%;
+  height: 500px;
+background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
-  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.column1 {
-  flex: 1;
-  padding: 80px;
-  text-align: center;
-  color: white;
+.desc-area .info {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.icon {
-  width: 80px;
-  height: 80px;
-  border: 1px solid #000000;
-  background-color: #fbd300;
-  padding: 40px;
-  margin: 60px;
-  border-radius: 10px;
+.desc-area .info p {
+  color: #fff;
 }
+
+.desc-area .info #text-1 {
+  width: 33%;
+}
+
+.desc-area .info #text-2 {
+  width: 33%;
+}
+
+.desc-area .info .area-image {
+  margin: 0 10px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc-area .info .area-image .icon {
+  background-color: #f8ef00;
+  height: 50%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  position: relative;
+}
+
+.desc-area .info .area-image .icon img {
+  position: relative;
+  left: 3px;
+  height: 130px;
+}
+
+#text-1,
+#text-2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .Principal2 {
   width: 100%;
