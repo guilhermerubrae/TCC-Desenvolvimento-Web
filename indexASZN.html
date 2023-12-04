@@ -17,13 +17,27 @@
   </head>
   <body>
     <main class="container">
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="fa-solid fa-x"></i>
+        </a>
+
+        <div class="overlay-content">
+          <a href="indexASZN.html">Home</a>
+          <a href="doaçõesASZN.html">Doações</a>
+          <a href="vagasASZN.html">Vagas</a>
+          <a href="cursosASZN.html">Cursos</a>
+        </div>
+      </div>
+
       <header>
         <a href="#">
           <img src="assets/img/logo/logoASZN.png" alt="Logo" />
         </a>
 
-        <nav>
-          <a id="home" href="#"
+        <nav id="myNavbar">
+          <a id="home" href="indexASZN.html"
             ><span>Home</span><i class="fa-solid fa-house"></i
           ></a>
           <a href="doaçõesASZN.html"
@@ -35,8 +49,13 @@
           <a href="cursosASZN.html"
             ><span>Cursos</span><i class="fa-solid fa-graduation-cap"></i
           ></a>
+          <a href="javascript:void(0);" class="nav-button" onclick="toggleNavbar()">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </nav>
       </header>
+
+
 
       <section id="carousel-container">
         <div id="carousel-wrapper">
@@ -44,35 +63,60 @@
             <img
               src="assets/img/carousel/ASSOCIAÇÃO SEMPRE ZAKI NARCHI.png"
               alt="Slide 1"
-              class="carousel-img"
+              class="carousel-img desktop"
+            />
+            <img
+              src="assets/img/carousel/mobile/ASSOCIAÇÃO SEMPRE ZAKI NARCHI.jpeg"
+              alt="Slide 1"
+              class="carousel-img mobile"
             />
           </div>
           <div class="carousel-slide">
             <img
               src="assets/img/carousel/Diversidade de cursos.png"
               alt="Slide 2"
-              class="carousel-img"
+              class="carousel-img desktop"
+            />
+            <img
+              src="assets/img/carousel/mobile/Diversidade de cursos.jpeg"
+              alt="Slide 2"
+              class="carousel-img mobile"
             />
           </div>
           <div class="carousel-slide">
             <img
               src="assets/img/carousel/Ajude a comunidade!.png"
               alt="Slide 3"
-              class="carousel-img"
+              class="carousel-img desktop"
+            />
+            <img
+              src="assets/img/carousel/mobile/Ajude a comunidade!.jpeg"
+              alt="Slide 3"
+              class="carousel-img mobile"
             />
           </div>
           <div class="carousel-slide">
             <img
               src="assets/img/carousel/Vagas.png"
               alt="Slide 4"
-              class="carousel-img"
+              class="carousel-img desktop"
+            />
+            <img
+              src="assets/img/carousel/mobile/Vagas.jpeg"
+              alt="Slide 4"
+              class="carousel-img mobile"
             />
           </div>
           <div class="carousel-slide">
             <img
               src="assets/img/carousel/ASZNResize.png"
               alt="Slide 5"
-              class="carousel-img"
+              class="carousel-img desktop"
+            />
+            <img
+              src="assets/img/carousel/mobile/ASZNResize.png"
+              alt="Slide 5"
+              class="carousel-img mobile"
             />
           </div>
         </div>
@@ -127,13 +171,16 @@
           <div class="carousel-inner">
             <div class="carousel-item">
               <div class="card">
-                <img
-                  src="assets/img/cards/card1.png"
-                  alt="Card 1"
-                />
+                <img src="assets/img/cards/card1.png" alt="Card 1" />
                 <div class="card-text cursos">
                   <h3>Cursos</h3>
-                  <p>Descubra como a Associação Sempre Zaki Narchi está enriquecendo vidas e construindo um futuro brilhante com cursos profissionalizantes, atividades esportivas e culturais para a comunidade. Junte-se a nós nessa jornada de oportunidades e empoderamento.</p>
+                  <p>
+                    Descubra como a Associação Sempre Zaki Narchi está
+                    enriquecendo vidas e construindo um futuro brilhante com
+                    cursos profissionalizantes, atividades esportivas e
+                    culturais para a comunidade. Junte-se a nós nessa jornada de
+                    oportunidades e empoderamento.
+                  </p>
                   <a href="cursosASZN.html" class="btn">Inscreva-se</a>
                 </div>
               </div>
@@ -143,7 +190,15 @@
                 <img src="assets/img/cards/card2.png" alt="Card 2" />
                 <div class="card-text">
                   <h3>Vagas</h3>
-                  <p>Na Associação Sempre Zaki Narchi, acreditamos na transformação da comunidade e no empoderamento de seus moradores. Nossos pilares fundamentais incluem esporte e cultura, qualificação profissional e empregabilidade, e geração de renda. Nosso compromisso é proporcionar uma vida digna para todos, enfrentando as desigualdades sociais que afetam muitos de nós.</p>
+                  <p>
+                    Na Associação Sempre Zaki Narchi, acreditamos na
+                    transformação da comunidade e no empoderamento de seus
+                    moradores. Nossos pilares fundamentais incluem esporte e
+                    cultura, qualificação profissional e empregabilidade, e
+                    geração de renda. Nosso compromisso é proporcionar uma vida
+                    digna para todos, enfrentando as desigualdades sociais que
+                    afetam muitos de nós.
+                  </p>
                   <a href="vagasASZN.html" class="btn">Vagas</a>
                 </div>
               </div>
@@ -153,7 +208,14 @@
                 <img src="assets/img/cards/card3.png" alt="Card 3" />
                 <div class="card-text">
                   <h3>Doações</h3>
-                  <p>Na Associação Sempre Zaki Narchi, acreditamos que juntos podemos construir um futuro melhor para nossa comunidade e transformar vidas. Como uma organização não governamental dedicada a promover a igualdade de oportunidades, empoderar moradores e enfrentar desigualdades sociais, contamos com o apoio generoso de pessoas e empresas comprometidas.</p>
+                  <p>
+                    Na Associação Sempre Zaki Narchi, acreditamos que juntos
+                    podemos construir um futuro melhor para nossa comunidade e
+                    transformar vidas. Como uma organização não governamental
+                    dedicada a promover a igualdade de oportunidades, empoderar
+                    moradores e enfrentar desigualdades sociais, contamos com o
+                    apoio generoso de pessoas e empresas comprometidas.
+                  </p>
                   <a href="doaçõesASZN.html" class="btn">Doações</a>
                 </div>
               </div>
@@ -180,7 +242,11 @@
         <p>Você também pode conhecer nossa comunidade na palma da sua mão!</p>
       </section>
 
-      <img class="img-social" src="assets/img/imagem-social.jpg" alt="Imagem ASZN">
+      <img
+        class="img-social"
+        src="assets/img/imagem-social.jpg"
+        alt="Imagem ASZN"
+      />
 
       <section class="timeline">
         <div class="timeline__component"></div>
@@ -263,14 +329,14 @@
 
       <footer>
         <ul class="nave-footer">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">DOAÇÕES</a></li>
-          <li><a href="#">CURSOS</a></li>
-          <li><a href="#">VAGAS</a></li>
+          <li><a href="indexASZN.html">HOME</a></li>
+          <li><a href="doaçõesASZN.html">DOAÇÕES</a></li>
+          <li><a href="cursosASZN.html">CURSOS</a></li>
+          <li><a href="vagasASZN.html">VAGAS</a></li>
         </ul>
         <div class="informa-footer">
           <img src="assets/img/logo/logoASZN.png" alt="ASZN" />
-          <button>
+          <button id="scrollup">
             <img id="sobe" src="assets/img/pra-cima.png" alt="Up" />
           </button>
           <ul>
