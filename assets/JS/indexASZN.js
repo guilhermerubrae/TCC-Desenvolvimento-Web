@@ -64,10 +64,9 @@ scrollButton.addEventListener("click", () => {
 });
 
 function toggleNavbar() {
-  var navbar = document.getElementById("myNavbar");
-  if (navbar.className === "navbar") {
-    navbar.className += " responsive";
-  } else {
-    navbar.className = "navbar";
-  }
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0";
 }
