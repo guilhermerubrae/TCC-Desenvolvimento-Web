@@ -472,44 +472,68 @@ footer {
         margin: 0.5em 0;
     }
     
-    footer { /* Alterado */
+    footer {
+        /* Alterado */
         font-size: 1em;
-    }
+        margin-top: 100px;
+      }
     
-    .informa-footer button { /* Alterado */
+      .informa-footer button {
+        /* Alterado */
         display: none;
-    }
+        margin: 0;
+        justify-content: center;
+      }
     
-    .informa-footer img { /* Alterado */
+      .informa-footer ul {
+        margin: 0;
+      }
+    
+      .informa-footer img {
+        /* Alterado */
         width: 20vw;
-    }
+      }
     
-    .req-footer { /* Alterado */
+      .req-footer {
+        /* Alterado */
         display: grid;
         margin: 2em 0;
-    }
+      }
     
-    .req-footer img { /* Alterado */
+      .req-footer img {
+        /* Alterado */
         display: none;
-    }
-
-    .req-footer p { /* Alterado */
+      }
+    
+      .req-footer p {
+        /* Alterado */
         margin: 0.4em 1em;
-    }
-
-    .final-footer {
+        text-align: center;
+      }
+    
+      .final-footer {
         display: grid;
         margin: 0.2em 1em;
-    }
+        text-align: center;
+        background-color: #000;
+      }
     
-    .redes-footer {
-        display: none;
-    }
+      .redes-footer,
+      .nave-footer {
+        display: block;
+        text-align: center;
+      }
     
-    .final-footer p {
+      .nave-footer {
+        display: flex;
+        flex-direction: row;
+      }
+    
+      .final-footer p {
         margin: 0.1em 1em;
         padding: 0.2em;
-    }
+      }
+    
 
 }
 
@@ -868,8 +892,5 @@ footer {
     .req-footer img {
         display: none;
     }
-
-
-
 
 }
