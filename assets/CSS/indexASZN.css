@@ -8,7 +8,7 @@
 }
 
 body {
-  height: 500vh;
+  /* height: 500vh; */
   font-family: "Lexend", sans-serif;
 }
 
@@ -300,6 +300,12 @@ body {
 @media screen and (max-width: 598px) {
   .info p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .info p {
+    font-size: 12px;
   }
 }
 

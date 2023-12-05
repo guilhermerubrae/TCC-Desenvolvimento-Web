@@ -36,14 +36,12 @@ p,
   font-weight: 300;
 }
 
-
-
 /* HEADER */
 
 header {
-  background-image: url(../img/indexSWD/principal/fundoazul.png);
+  background-image: url(../img/indexSWD/principal/fundoazul.svg);
   width: 100%;
-  max-height: 15vh;
+  max-height: 12vh;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -56,30 +54,25 @@ header {
 }
 
 .logo {
-  display: flex;
-  flex-wrap: nowrap;
+  margin-left: 4%;
 }
 
-.logo-tam {
-  margin-left: 3rem;
-  width: 4vw; 
-}
-
-.h1-tam {
-  width: 22vw; 
+.logo-svg {
+  width: 65%;
 }
 
 .menu {
   display: flex;
   flex-wrap: nowrap;
+  margin: 0 4% 0 4%;
 }
 
 .menu a {
   text-decoration: none;
   position: relative;
   color: #fff;
-  padding-right: 7%;
-  margin: 1px;
+  margin: 5px;
+  font-size: 95%;
 }
 
 .menu a:hover {
@@ -110,75 +103,75 @@ header {
   border-radius: 0%;
   font-size: 16px;
   cursor: pointer;
-}
-
-.menu-icon {
-  display: none; /* Oculta o ícone do menu por padrão */
-  cursor: pointer;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #1a1a1a;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 18px;
-  color: #9cccd4;
-  display: block;
-  transition: 0.3s;
 }
 
-.sidebar a:hover {
-  color: #fff;
+/* Estilo do botão quando o mouse está sobre ele */
+.btn:hover {
+  color: black; /* Cor preta quando o mouse está sobre o botão */
+}
+.botao {
+  margin-right: 4%;
 }
 
-.sidebar.show {
-  width: 250px;
-}
-
-/* Adicione uma media query para exibir o ícone do menu em telas menores */
-@media screen and (max-width: 700px) {
-  .menu {
-    display: flex;
-  }
-
+@media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Altera a direção para coluna em telas menores */
+    padding: 1px 1rem; /* Ajusta o padding para telas menores */
+    text-shadow: none;
+    position: relative;
   }
 
-  .menu-icon {
-    display: block; /* Exibe o ícone do menu em telas menores */
-    margin-left: 1rem;
+  .logo {
+    margin-left: -50px;
+  }
+
+  .logo-tam {
+    margin: 0.5rem;
+    width: 10vw;
+  }
+
+  .h1-tam {
+    margin: 1rem 2rem 1rem 0;
+    width: 50vw;
   }
 
   .menu {
-    display: none; /* Oculta o menu principal em telas menores */
+    display: none;
   }
 
-  .sidebar {
-    padding-top: 15vh;
+  .btn {
+    display: none; /* Oculta o botão em telas menores */
+  }
+
+  .mobile-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    height: 3px;
+    width: 25px;
+    background-color: #9cccd4;
+    margin: 6px 0;
+    transition: 0.4s;
   }
 }
 
+@media (max-width: 768px) {
+  .h1-spacing,
+  .h1-c {
+    white-space: nowrap;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+    font-size: 5vw;
+  }
+}
 
 /* PRINCIPAL IMG E TEXTO */
 
@@ -190,7 +183,23 @@ header {
 
 #img-principal {
   width: 100%;
-  height: auto;
+  min-height: 99.5vh;
+  max-height: 1080px;
+  animation: fadeInOut 5s infinite alternate; /* Adiciona a animação com efeito fadeIn/fadeOut */
+}
+
+@keyframes fadeInOut {
+  50% {
+    opacity: 1; /* Opacidade inicial (imagem totalmente visível) */
+  }
+
+  80% {
+    opacity: 0.7; /* Opacidade no meio da animação (imagem totalmente transparente) */
+  }
+
+  100% {
+    opacity: 1; /* Opacidade final (imagem totalmente visível novamente) */
+  }
 }
 
 #div-left,
@@ -200,7 +209,6 @@ header {
   /* Ajuste conforme necessário */
   box-sizing: border-box;
   /* Adiciona um pequeno espaçamento entre o texto e a borda da div */
-
 }
 
 #div-left {
@@ -228,6 +236,11 @@ header {
   /* Permite que o texto quebre */
 }
 
+#h1-left:hover,
+#h2-right:hover {
+  font-size: 2vw; /* Tamanho desejado ao passar o mouse sobre os títulos */
+}
+
 #p-left,
 #p-right {
   letter-spacing: 1px;
@@ -242,18 +255,31 @@ header {
   /* Permite que o texto quebre */
 }
 
+#p-left:hover,
+#p-right:hover {
+  font-size: 1.6vw; /* Tamanho desejado ao passar o mouse sobre os parágrafos */
+}
+
 /* Adiciona um drop shadow */
 #h1-left,
 #h2-right,
 #p-left,
 #p-right {
   text-shadow: 1px 1px 1px #000000;
-  /* Adiciona um drop shadow de 50% */
+  transition: color 2.7s ease;
+  transition: font-size 1s ease;
 }
 
+#h1-left:hover,
+#p-left:hover,
+#h2-right:hover,
+#p-right:hover {
+  color: #fff; /* Cor desejada ao passar o mouse sobre os elementos */
+}
 
-
-
+#landing-principal {
+  display: none;
+}
 /* H1 PADRÃO */
 
 .h1-spacing {
@@ -265,9 +291,6 @@ header {
   letter-spacing: 1px;
   font-size: 1.8em;
 }
-
-
-
 
 /* IMG PROJETOS PADRÃO */
 
@@ -307,9 +330,6 @@ header {
   margin-bottom: 20px;
 }
 
-
-
-
 /* IMG - TEXTO LADO A LADO */
 
 .project-social > div {
@@ -326,9 +346,6 @@ header {
   font-size: 1em;
   white-space: normal;
 }
-
-
-
 
 /* PARCEIROS */
 
@@ -356,21 +373,18 @@ header {
 #text-parceiros {
   display: flex;
   text-align: right;
-  margin: 0 10rem 10rem;
+  margin: 0 10rem 1rem;
   padding-bottom: 5%;
   font-size: 80%;
 }
-
-
-
 
 /* PLANOS */
 
 .custom-section {
   max-width: 1800px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 5%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
   margin-bottom: 5%;
 }
 
@@ -382,13 +396,14 @@ header {
 }
 
 .p-box {
-  background-color: #9cccd4;
+  background-color: #04141c;
+  color: #9be2e0;
   padding: 2%; /* Adicionado preenchimento */
 }
 
 .domain-button {
-  padding: 2%;
-  width: 50%;
+  padding: 3%;
+  width: 55%;
   background-color: #000000;
   color: #fff;
   border: 1px solid #9cccd4;
@@ -397,7 +412,7 @@ header {
 
 /* Removendo estilos da lista */
 .custom-subdiv {
-  width: 362vw;
+  width: 370vw;
   height: auto;
   background-color: black;
   color: #fff;
@@ -411,14 +426,14 @@ header {
 }
 
 .custom-subdiv h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .custom-subdiv h4,
 .custom-subdiv p {
   text-align: left;
-  font-size: 70%;
+  font-size: 90%;
 }
 
 .custom-subdiv button {
@@ -429,14 +444,20 @@ header {
 /* Se necessário, ajuste o tamanho da fonte para as listas */
 .custom-subdiv ul li,
 .custom-subdiv ol li {
-  font-size: 70%;
+  font-size: 80%;
   text-align: left;
   list-style-type: none;
+  font-weight: 600;
+  letter-spacing: 0.5%;
+  text-transform: uppercase;
 }
 
 .custom-subdiv ol li {
   list-style-type: decimal;
   margin-left: 7%;
+  font-weight: 600;
+  letter-spacing: 0.5%;
+  text-transform: uppercase;
 }
 
 .text-bold {
@@ -448,72 +469,18 @@ header {
   margin-bottom: 40%;
 }
 
-
-
-
-/* DOMINIOS */
-
-.domain-section {
-  background-color: #000;
-  color: #9cccd4;
-  float: left;
-  margin: 1%;
-  box-sizing: border-box;
-  padding: 20px;
+#center {
   text-align: center;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
+  color: #9be2e0;
+  text-transform: uppercase;
 }
-
-
-.dom-button {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-
-  bottom: 2%; /* Posiciona o botão a 2% do final da div */
-}
-
-.domain-article p {
-  text-align: left;
-  color: #fff;
-  width: 21vw;
-  height: 10vh;
-  background-color: black;
-  color: #fff;
-  border: 0.1px solid #9cccd4;
-  padding: 2% 2% 2% 2%;
-  padding-top: 1%;
-  margin-bottom: 2vh;
-  flex: 1;
-  box-sizing: border-box;
-  text-align: center;
-  
-}
-
-.domain-article h4 {
-  text-align: left;
-  font-weight: bold;
-}
-
-
-
 
 /* CONTRAÇÃO */
-
-#contratacao {
-  margin-top: 50%;
-}
 
 #espaçamento1 {
   margin-left: 10em; /* Alterei para uma unidade relativa */
   margin-right: 8em; /* Alterei para uma unidade relativa */
   margin-top: 5%; /* Alterei para uma unidade relativa */
-  margin-bottom: 2%; /* Alterei para uma unidade relativa */
 }
 
 .list {
@@ -526,10 +493,6 @@ header {
   font-size: 1.8em;
 }
 
-
-
-
-
 /* FORMULÁRIO */
 
 section form {
@@ -538,7 +501,7 @@ section form {
   padding: 5% 20% 5% 10%;
   border-radius: 5px;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 3%;
   margin-bottom: 2%;
 }
 
@@ -558,7 +521,7 @@ label {
   margin-bottom: 15px;
   box-sizing: border-box;
   border: 1px solid white;
-  background-image: url(../img/indexSWD/principal/fundoazul.png);
+  background-image: url(../img/indexSWD/principal/fundoazul.svg);
   color: white;
   transition: width 0.3s ease-in-out; /* Adiciona uma transição suave de 0.3 segundos */
 }
@@ -599,7 +562,6 @@ label {
 .show-popup {
   display: block !important;
 }
-
 
 /* QUEM SOMOS */
 
@@ -642,18 +604,30 @@ label {
   display: block;
 }
 
-
-
-
 /* DEPOIMENTOS */
 
 #dep {
   text-align: center;
   padding: 20px;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   margin-top: 4%;
   margin-bottom: 4%;
+}
+
+#img-dep {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
+  grid-gap: 20px; /* Adiciona espaço entre as colunas */
+}
+
+#id-dep {
+  text-align: left;
+}
+
+#p-bottom {
+  grid-row: span 2; /* Faz com que o parágrafo ocupe as duas colunas */
+  margin-top: 20px; /* Adiciona espaço acima do parágrafo */
 }
 
 h1.h1-spacing {
@@ -667,13 +641,22 @@ h1.h1-spacing {
 }
 
 .testimonial {
-  flex: 0 0 calc(90% - 10px); /* Largura de 48%, subtraindo a margem */
   margin: 10px;
-  background-color: white;
+  background-color: #04141c;
+  color: #9be2e0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+  transition: color 2.7s ease;
+  transition: size 1s ease;
+  transition: 2s ease;
+}
+
+.testimonial:hover {
+  background-color: #000;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 .testimonial img {
@@ -684,9 +667,6 @@ h1.h1-spacing {
 h4 {
   margin-top: 10px;
 }
-
-
-
 
 /* FOOTER */
 
@@ -745,7 +725,7 @@ img {
 }
 
 #footer-pt2 {
-  background-image: url(../img/indexSWD/principal/fundoazul.png);
+  background-image: url(../img/indexSWD/principal/fundoazul.svg);
   color: #fff;
   padding: 20px;
   gap: 20px; /* Adicionado para espaçamento entre as colunas */
@@ -781,9 +761,9 @@ img {
   margin-top: 10px;
 }
 
-#footer-pt1 .footer-link{
-    text-decoration: none;
-    color: #ffffff;
+#footer-pt1 .footer-link {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 #footer-pt1 .footer-link:hover {
@@ -805,63 +785,17 @@ img {
 /* REFORÇO DE RESPONSIVIDADE */
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: row; /* Altera a direção para coluna em telas menores */
-    justify-content: space-between;
-    padding: 1px 1rem; /* Ajusta o padding para telas menores */
-    text-shadow: none;
-    position: relative;
-
-  }
-
-  .logo {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  
-  .logo-tam {
-    margin: 0.5rem;
-    width: 10vw; 
-  }
-  
-  .h1-tam {
-    margin: 1rem 2rem 1rem 0;
-    width: 50vw; 
-  }
-  
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 3vw;
-    text-align: end;
-
-  }
-
-  .btn {
-    display: none; /* Oculta o botão em telas menores */
-  }
-}
-
-
-@media (max-width: 768px) {
-.h1-spacing {
-  white-space: nowrap;
-  margin-left: 4vw;
-  margin-right: 4vw;
-  margin-top: 10%;
-  margin-bottom: 2%;
-  letter-spacing: 1px;
-  font-size: 4vw;
-}
-}
-
-@media (max-width: 768px) {
+  .h1-spacing,
   .h1-c {
+    white-space: nowrap;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 10%;
+    margin-bottom: 2%;
     letter-spacing: 1px;
-    font-size: 4vw;
+    font-size: 5vw;
   }
-  }
+}
 
 @media screen and (max-width: 768px) {
   /* Aplique estilos específicos para telas menores que 768 pixels */
@@ -888,39 +822,55 @@ img {
   /* Por exemplo, ajuste tamanhos de fonte, margens, etc. */
 }
 
-
-
 @media screen and (max-width: 700px) {
+  .custom-section {
+    max-width: 1800px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 
-.custom-section {
-  max-width: 1800px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
+  .custom-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
 
-.custom-div {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.custom-subdiv h3 {
-  font-size: 20px;
-  font-weight: bold;
-  white-space: nowrap;
-}
-
-}
-
-@media (max-width: 768px) {
-  #dom .domain-section {
-    display: none;
+  .custom-subdiv h3 {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .custom-subdiv {
+    padding: 1% 0.8% 1% 0.8%;
   }
 }
 
+/* Adicione a seguinte regra ao seu arquivo de estilo CSS */
+@media screen and (max-width: 700px) {
+  .plan-carousel {
+    display: block;
+  }
+
+  .plan-carousel .custom-div {
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .plan-carousel .custom-subdiv {
+    flex: 0 0 auto;
+    width: 99%;
+    min-height: 640px;
+    margin-right: 0;
+  }
+
+  .domain-button {
+    white-space: nowrap;
+  }
+}
 
 @media screen and (max-width: 600px) {
   #espaçamento1 {
@@ -934,25 +884,35 @@ img {
 }
 
 @media screen and (max-width: 700px) {
-#text-parceiros {
-  display: flex;
-  text-align: right;
-  margin: 0 1rem 1rem;
-  padding-bottom: 5%;
-  font-size: 60%;
-}
+  #text-parceiros {
+    display: flex;
+    text-align: right;
+    margin: 0 1rem 1rem;
+    padding-bottom: 5%;
+    font-size: 60%;
+  }
 
-.partner-logos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  background-color: #000000;
-  padding: 5% 1rem 5% 1rem;
-  width: 100%;
-  margin: 0 auto;
+  .partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 5% 1rem 5% 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
+@media (max-width: 768px) {
+  #section-principal {
+    display: none;
+  }
+
+  #landing-principal {
+    display: block;
+    border-bottom: #ffffff 5px solid;
+  }
 }
 
 @media (max-width: 768px) {
@@ -990,18 +950,62 @@ img {
     text-align: left;
     /* Alinha o texto à esquerda */
   }
-  
+
   #div-right {
     right: 5%;
-    top: 20%;
+    top: 12%;
     text-align: right;
     /* Alinha o texto à direita */
   }
-    #h1-left,
-    #h2-right,
-    #p-left,
-    #p-right {
+  #h1-left,
+  #h2-right,
+  #p-left,
+  #p-right {
+    font-size: 60%;
     text-shadow: none;
-  /* Adiciona um drop shadow de 50% */
-}
+    font-weight: bold;
   }
+
+  #section-principal {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #dep {
+    font-size: 4vw;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer-pt1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; /* Adiciona espaço entre as colunas */
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer-pt2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2px; /* Adiciona espaço entre as colunas */
+    font-size: 77%;
+    padding: 0;
+    max-height: 220px;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .payment-method {
+    width: 30px;
+  }
+
+  .icons {
+    width: 300px;
+  }
+}

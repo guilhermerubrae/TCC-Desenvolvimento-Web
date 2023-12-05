@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/CSS/doaçõesASZN.css" />
     <link rel="Icon" href="./assets/img/doações/Cursos.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
     <title>Doações</title>
   </head>
 
   <body>
     <!-- Header -->
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <i class="fa-solid fa-x"></i>
+      </a>
+
+      <div class="overlay-content">
+        <a href="indexASZN.html">Home</a>
+        <a href="doaçõesASZN.html">Doações</a>
+        <a href="vagasASZN.html">Vagas</a>
+        <a href="cursosASZN.html">Cursos</a>
+      </div>
+    </div>
+
     <header>
       <nav>
         <img class="Logo" src="./assets/img/doações/ASZN.png" alt="Logo" />
@@ -30,6 +48,9 @@
             <a href="cursosASZN.html">CURSOS</a
             ><img src="./assets/img/doações/Cursos.png" alt="icone-cursos" />
           </li>
+          <li class="header-menu"><a href="javascript:void(0);" class="nav-button" onclick="toggleNavbar()">
+            <i class="fa-solid fa-bars"></i>
+          </a></li>
         </ul>
       </nav>
     </header>
@@ -213,14 +234,14 @@
 
     <footer>
       <ul class="nave-footer">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">DOAÇÕES</a></li>
-        <li><a href="#">CURSOS</a></li>
-        <li><a href="#">VAGAS</a></li>
+        <li><a href="indexASZN.html">HOME</a></li>
+        <li><a href="doaçõesASZN.html">DOAÇÕES</a></li>
+        <li><a href="cursosASZN.html">CURSOS</a></li>
+        <li><a href="vagasASZN.html">VAGAS</a></li>
       </ul>
       <div class="informa-footer">
         <img src="./assets/img/doações/ASZN.png" alt="ASZN" />
-        <button>
+        <button id="scrollup">
           <img id="sobe" src="./assets/img/doações/pra-cima.png" alt="" />
         </button>
         <ul>

@@ -21,6 +21,7 @@ body {
     background-color: #faf214;
 }
 
+<<<<<<< HEAD
 
 header nav ul li a::after {
     content: " ";
@@ -53,33 +54,154 @@ header a {
 }
 
 nav {
+=======
+/* HEADER-------------------------- */
+
+.container header {
+    width: 100%;
+    height: 90px;
+    flex-shrink: 0;
+    background-color: #000000;
+>>>>>>> preMain
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    background-color: black;
-    height: 12vh; /*height: 12.5vh; */
-    margin-right: 2.5em;
+  }
+  
+  .container header a {
+    height: 75%;
+    margin: 0 35px;
+    font-size: 1.2em;
+  }
+  
+  .container header a img {
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .container header nav a span {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 5px;
+  }
+  
+  .container header nav {
+    margin: 0 25px;
+  }
+  
+  .container header nav a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    margin: 0 5px;
+  }
+  
+  #vagas {
+    color: #fbd300;
+  }
+  
+  #myNavbar .icon {
+    display: none;
+  }
+  
+  #myNavbar .icon {
+    font-size: 40px;
+  }
+  
+  .container header nav a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(to right, #f8ef00, rgb(186, 20, 11));
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container header nav a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-button {
+    display: none;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    margin: 8px;
+  }
+  
+  .nav-button i {
+    color: #fff;
+  }
+
+.nav-button {
+display: none;
+border: none;
+font-size: 30px;
+padding: 10px;
+margin: 8px;
+cursor: pointer;
 }
 
-.navbar {
-    list-style: none;
-    display: flex;
+.nav-button i {
+color: #FFF;
 }
 
-.navbar li {
-    margin: 1em;
+@media screen and (max-width: 600px) {
+.navbar li:not(:last-child) {
+    display: none;
 }
 
-.Logo {
-    height: 4.1em;
-    margin-left: 5rem;
+.nav-button {
+    float: right;
+    display: block;
 }
 
-ul img {
-    height: 2em; /* 2.3 */
-    vertical-align: middle;
-    margin-left: 0.5rem;
+.container header nav a::after {
+    display: none;
+}
+}
+
+.overlay {
+width: 100%;
+height: 0;
+background-color: rgba(0, 0, 0, 0.9);
+z-index: 9;
+position: fixed;
+left: 0;
+top: 0;
+overflow-x: hidden;
+transition: all 0.5s;
+}
+
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+
+.overlay a {
+padding: 8px;
+text-decoration: none;
+color: #818181;
+display: block;
+font-size: 34px;
+transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+color: #F1F1F1;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 25px;
+right: 45px;
+font: 60px;
 }
 
 .Principal {
@@ -345,30 +467,67 @@ footer {
 
 
 @media (max-width: 767px) { /* Celulares */
-    header a {
-        font-size: 1.5em;
+
+    #myNavbar a:not(:last-child) {
+        display: none;
+      }
+    
+      .nav-button {
+        float: right;
+        display: block;
+      }
+    
+      .container header nav a::after {
+        display: block;
+      }
     }
     
-    nav {
-        display: flex;
-        justify-content: space-between  ;
-        align-items: center;
-        text-align: center;
-        background-color: black;
-        height: 14vh;
-        margin-right: 1em;
-    
+    .overlay {
+      width: 100%;
+      height: 0;
+      background-color: rgba(40, 40, 42, 0.9);
+      z-index: 9;
+      position: fixed;
+      left: 0;
+      top: 0;
+      overflow-x: hidden;
+      transition: all 0.5s;
+      text-transform: uppercase;
+      color: #fbd300;
     }
     
-    .navbar {
-        list-style: none;
-        display: flex;
-        font-size: 0.5em;
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
     }
     
-    .navbar li {
-        margin: 1px;
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      color: #fbd300;
+      display: block;
+      font-size: 34px;
+      transition: 0.3s;
     }
+    
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 25px;
+      right: 45px;
+      font: 60px;
+    }
+
+    .container header nav a::after {
+       display: none;
+      }
     
     .Logo {
         width: 5em;
@@ -466,6 +625,189 @@ footer {
         width: 65vw;
         height: auto;
         margin-top: 2.5em;
+        margin-left: 8.5em;
+    }
+    
+    #emprego { /* Alterado */
+        display: none;
+    }
+    
+    .help { /* Alterado */ 
+        margin: 3em 0.8em;
+    }
+    
+    #ajuda { /* Alterado */
+        width: auto;
+        height: 17.5vh;
+        margin-right: 7em;
+    }
+    
+    #separa {  /* Alterado */
+        height: 1.5vh;
+        margin: 0.5em 0;
+    }
+    
+    footer {
+        /* Alterado */
+        font-size: 1em;
+        margin-top: 100px;
+      }
+    
+      .informa-footer button {
+        /* Alterado */
+        display: none;
+        margin: 0;
+        justify-content: center;
+      }
+    
+      .informa-footer ul {
+        margin: 0;
+      }
+    
+      .informa-footer img {
+        /* Alterado */
+        width: 20vw;
+      }
+    
+      .req-footer {
+        /* Alterado */
+        display: grid;
+        margin: 2em 0;
+      }
+    
+      .req-footer img {
+        /* Alterado */
+        display: none;
+      }
+    
+      .req-footer p {
+        /* Alterado */
+        margin: 0.4em 1em;
+        text-align: center;
+      }
+    
+      .final-footer {
+        display: grid;
+        margin: 0.2em 1em;
+        text-align: center;
+        background-color: #000;
+      }
+    
+      .redes-footer,
+      .nave-footer {
+        display: block;
+        text-align: center;
+      }
+    
+      .nave-footer {
+        display: flex;
+        flex-direction: row;
+      }
+    
+      .final-footer p {
+        margin: 0.1em 1em;
+        padding: 0.2em;
+      }
+    
+
+@media (max-width: 250px) { /* Celulares */
+    
+    .Logo {
+        width: 3em;
+        height: auto;
+        margin-left: 0.7em;
+        margin-right: none;
+    }
+    
+    ul img {
+        height: 3em;
+        margin-left: 0.3rem;
+    }
+    
+    .Principal {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .sobre {
+        display: flex;
+        align-items: center;
+        font-size: 0.5rem;
+        margin: 0;
+    }
+    
+    .icon {
+        width: 50px;
+        margin: 20px 15px;
+    }
+    
+    .container {
+        display: grid;
+        font-size: 0.5rem;
+    }
+
+    .column+.column {
+        border-left: none;
+    }
+    
+    .texto-aszn {
+        display: none; /* Retirado */
+    }
+    
+    .card { /* Alterado */
+        width: 10rem;
+        height: auto;
+        padding: 0.7em;
+        margin: 0.9em;
+        margin-bottom: none;
+        border-radius: 15px;
+    }
+
+    .card:hover { /* Alterado */
+        transform: none;
+        transition: none;
+    }
+    
+    .imagem2 { /* Alterado */
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #card-oport { /* Alterado */ 
+        display: none;
+    }
+    
+    .cards {
+        display: grid; /* Alterado */
+        grid-template-columns: 13em;
+        margin-bottom: 1.7em;
+    }
+    
+    .card-vagas {
+        width: 70vw; /* Alterado */
+        margin-left: none;
+        margin-right: 1.2em;
+    }
+    
+
+    .conjunto-vagas {
+        display: grid; /* Alterado */
+        justify-content: none;
+    }
+    
+    
+    .teste2 { /* Alterado */
+        margin-top: 5%;
+        padding: 2%; 
+        display: grid;
+    
+    }
+    
+    .teste2 img { /* Alterado */
+        width: 65vw;
+        height: auto;
+        margin-top: 2.5em;
         margin-left: 4em;
     }
     
@@ -529,6 +871,7 @@ footer {
 
 }
 
+<<<<<<< HEAD
 @media (max-width: 249px) { /* Celulares */
     header a {
         font-size: 1.5em;
@@ -556,35 +899,84 @@ footer {
     }
     
     .Logo {
+=======
+
+
+
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #myNavbar a:not(:last-child) {
+        display: none;
+      }
+    
+      .nav-button {
+        float: right;
+        display: block;
+      }
+    
+      .container header nav a::after {
+        display: block;
+      }
+    }
+    
+    
+    @media (max-width: 818px) {
+      /* Celulares */
+    
+      .logoaszn {
+>>>>>>> preMain
         width: 5em;
         height: auto;
         margin-left: 1.5em;
         margin-right: none;
+<<<<<<< HEAD
     }
     
+=======
+      }
+
+
+>>>>>>> preMain
     ul img {
         height: 3em;
         margin-left: 0.4rem;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> preMain
     .Principal {
         width: 100vw;
         height: auto;
         margin: 0;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> preMain
     .sobre {
         display: flex;
         align-items: center;
         font-size: 0.5rem;
         margin: 0;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> preMain
     .icon {
         width: 50px;
         margin: 20px 15px;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> preMain
     .container {
         display: grid;
         font-size: 0.8rem;
@@ -593,12 +985,21 @@ footer {
     .column+.column {
         border-left: none;
     }
+<<<<<<< HEAD
     
     .texto-aszn {
         display: none; /* Retirado */
     }
     
     .card { /* Alterado */
+=======
+
+    .texto-aszn {
+        display: none;
+    }
+
+    .card {
+>>>>>>> preMain
         width: 10rem;
         height: auto;
         padding: 0.7em;
@@ -607,16 +1008,26 @@ footer {
         border-radius: 15px;
     }
 
+<<<<<<< HEAD
     .card:hover { /* Alterado */
         transform: none;
         transition: none;
     }
     
     .imagem2 { /* Alterado */
+=======
+    .card:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .imagem2 {
+>>>>>>> preMain
         margin: 20px;
         padding: 20px;
     }
 
+<<<<<<< HEAD
     #card-oport { /* Alterado */ 
         display: none;
     }
@@ -713,3 +1124,81 @@ footer {
     }
 
 }
+=======
+    #card-oport {
+        display: none;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 13em 13em;
+        margin-bottom: 1.7em;
+    }
+
+    .card-vagas {
+        width: 80vw;
+        margin-left: none;
+        margin-right: 1.2em;
+    }
+
+    .conjunto-vagas {
+        display: grid;
+        justify-content: none;
+    }
+
+    .teste2 {
+        margin-top: 5%;
+        padding: 2%;
+        display: grid;
+    }
+
+    .teste2 img {
+        
+        width: 70vw;
+        height: auto;
+        margin-top: 2.5em;
+        margin-left: 3.5em;
+    }
+
+    #emprego {
+        display: none;
+    }
+
+    .help {
+        margin: 3em 0.8em;
+    }
+
+    #ajuda {
+        width: auto;
+        height: 17.5vh;
+        margin-right: 4em;
+    }
+
+    #separa {
+        height: 1.5vh;
+        margin: 0.5em 0;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    .informa-footer button {
+        display: none;
+    }
+
+    .informa-footer img {
+        width: 20vw;
+    }
+
+    .req-footer {
+        display: grid;
+        margin: 2em 0;
+    }
+
+    .req-footer img {
+        display: none;
+    }
+
+}
+>>>>>>> preMain

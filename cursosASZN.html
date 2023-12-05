@@ -5,92 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/CSS/cursosASZN.css">
-    <link rel="Icon" href="./assets/img/cursosASZN/ASZN.png">
+    <link rel="Icon" href="./assets/img/Vagas/ASZN.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Associação Zaki Narchi</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img class="Logo" src="./assets/img/cursosASZN/ASZN.png" alt="Logo">
-            <ul class="navbar">
-                <li class="header-menu"><a href="./indexASZN.html">HOME</a><img src="./assets/img/cursosASZN/Home.png"
-                        alt="icone-home">
-                </li>
-                <li class="header-menu"><a href="./doaçõesASZN.html">DOAÇÕES</a><img
-                        src="./assets/img/cursosASZN/Doacoes.png" alt="icone-doacoes"></li>
-                <li class="header-menu"><a href="./vagasASZN.html">VAGAS</a><img src="./assets/img/cursosASZN/Vagas.png"
-                        alt="icone-vagas"></li>
-                <li class="header-menu"><a class="cor-selecao" href="./cursosASZN.html">CURSOS</a><img
-                        src="./assets/img/cursosASZN/Cursos.png" alt="icone-cursos"></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <img class="Principal" src="./assets/img/Vagas/Principal.png" alt="">
-    </main>
+    <main class="container">
 
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <i class="fa-solid fa-x"></i>
+            </a>
 
-    <section id="section-initial">
-        <div class="sobre">
-            <img class="icon" src="./assets/img/cursosASZN/sobre.png" alt="icon-sobre">
-            <h2>O QUE TEMOS A OFERECER?</h2>
-        </div>
-        <p>Atualmente, em colaboração com o Instituto Resgatando Vidas e o Instituto Center Norte, a Associação Sempre
-            Zaki
-            Narchi oferece cursos gratuitos de socioemocional para o mercado de trabalho, com mais de 80 pessoas já
-            tendo
-            concluído com sucesso o programa. Além disso, oferecemos cursos de informática direcionados ao mercado de
-            trabalho.
-            <br><br>
-            As crianças da comunidade têm a oportunidade de participar das aulas de futebol na Escolinha Zaki,
-            promovendo um
-            estilo de vida ativo e saudável desde cedo. As aulas de iniciação musical são fornecidas pelo Projeto Guri,
-            que
-            enriquece a experiência das crianças com aulas de canto, coral, teoria musical e violão.
-            <br><br>
-            Uma vez por mês, o Projeto Trajetória Literária Periférica visita a Zaki Narchi para oferecer uma dose extra
-            de
-            cultura às nossas crianças. As atividades incluem aulas de circo, contação de histórias, poesia e percussão.
-            <br><br>
-            De maneira voluntária, a Associação Sempre Zaki Narchi junto com parceiros oferece aulas de inglês, reforço
-            escolar e jiu-jitsu para crianças durante as manhãs. Isso ajuda a manter suas mentes ativas e abre novas
-            perspectivas para um futuro promissor.
-            <br><br>
-            Explore nossos cursos e junte-se a nós nessa jornada de crescimento e transformação.
-        </p>
-
-    </section>
-
-    <section id="section-aria">
-        <div class="sobre">
-            <img class="icon" src="./assets/img/cursosASZN/mais.png" alt="icon-mais">
-            <h2>ÁREAS DE INTERESSE</h2>
-        </div>
-        <div class="cards">
-            <div class="card">
-                <img class="imagem2" src="./assets/img/cursosASZN/card1.png" alt="Desenvolvimento">
-                <h4>Desenvolvimento pessoal e <br> profissional</h4>
-            </div>
-            <div class="card">
-                <img class="imagem2" src="./assets/img/cursosASZN/card2.png" alt="Desenvolvimento">
-                <h4>Música</h4>
-            </div>
-            <div class="card">
-                <img class="imagem2" src="./assets/img/cursosASZN/card3.png" alt="Desenvolvimento">
-                <h4>Inglês</h4>
-            </div>
-            <div class="card">
-                <img class="imagem2" src="./assets/img/cursosASZN/card4.png" alt="Desenvolvimento">
-                <h4>Esportes</h4>
+            <div class="overlay-content">
+                <a href="indexASZN.html">Home</a>
+                <a href="doaçõesASZN.html">Doações</a>
+                <a href="vagasASZN.html">Vagas</a>
+                <a href="cursosASZN.html">Cursos</a>
             </div>
         </div>
-    </section>
 
-    
+        <header>
+            <a href="#">
+                <img src="assets/img/logo/logoASZN.png" alt="Logo" />
+            </a>
 
+            <nav id="myNavbar">
+                <a href="indexASZN.html"><span>Home</span><i class="fa-solid fa-house"></i></a>
+                <a href="doaçõesASZN.html"><span>Doações</span><i class="fa-solid fa-hand-holding-heart"></i></a>
+                <a href="vagasASZN.html"><span>Vagas</span><i class="fa-solid fa-person-walking-luggage"></i></a>
+                <a id="cursos" href="cursosASZN.html"><span>Cursos</span><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="javascript:void(0);" class="nav-button" onclick="toggleNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </nav>
+        </header>
 
+<<<<<<< HEAD
 
 
 
@@ -145,14 +107,404 @@
                 <img src="./assets/img/cursosASZN/twitter.png" alt="Twitter-Aszn">
                 <img src="./assets/img/cursosASZN/linkedin.png" alt="Linkedin-Aszn">
                 <img src="./assets/img/cursosASZN/instagram.png" alt="Intagram-Aszn">
+=======
+        <main>
+            <img class="Principal" src="./assets/img/Vagas/Principal.png" alt="">
+            <div class="sobre">
+                <img class="icon" src="./assets/img/cursosASZN/sobre.png" alt="icon-sobre">
+                <h2>SOBRE</h2>
+>>>>>>> preMain
             </div>
-            <p>ASZN - TODOS OS DIREITOS RESERVADOS</p>
-            <p>Privcy Policy | Terms of Service</p>
-        </div>
-    </footer>
+            <div class="containeer">
+                <div class="column">
+
+                    <p>À medida que a Associação Sempre Zaki Narchi cresceu e ampliou seu alcance, reconhecemos a
+                        importância de estabelecer parcerias com instituições maiores para melhor estruturar nossos
+                        processos. Isso nos permitiu oferecer cursos profissionalizantes e oportunidades de emprego para
+                        os
+                        moradores da Zaki Narchi, além de promover o acesso a atividades esportivas e culturais para
+                        nossas
+                        crianças.
+
+                    </p>
+                </div>
+                <div class="column">
+
+                    <p>Aqui na Associação Sempre Zaki Narchi, nosso compromisso é proporcionar oportunidades e
+                        empoderamento
+                        para todos os membros da comunidade. Estamos dedicados a oferecer cursos e atividades que
+                        enriqueçam
+                        vidas e construam um futuro brilhante.</p>
+                </div>
+            </div>
+
+            </div>
+            <div class="texto-aszn">
+                <h2>Atualmente, em colaboração com o Instituto Resgatando Vidas e o Instituto Center Norte, a Associação
+                    Sempre Zaki Narchi oferece cursos gratuitos de socioemocional para o mercado de trabalho, com mais
+                    de 80
+                    pessoas já tendo concluído com sucesso o programa. Além disso, oferecemos cursos de informática
+                    direcionados ao mercado de trabalho.
+                    <br>
+
+                    <br>
+                    As crianças da comunidade têm a oportunidade de participar das aulas de futebol na Escolinha Zaki,
+                    promovendo um estilo de vida ativo e saudável desde cedo. As aulas de iniciação musical são
+                    fornecidas
+                    pelo Projeto Guri, que enriquece a experiência das crianças com aulas de canto, coral, teoria
+                    musical e
+                    violão.
+                    <br>
+
+                    <br>
+                    Uma vez por mês, o Projeto Trajetória Literária Periférica visita a Zaki Narchi para oferecer uma
+                    dose
+                    extra de cultura às nossas crianças. As atividades incluem aulas de circo, contação de histórias,
+                    poesia
+                    e percussão.
+                    <br>
+
+                    <br>
+                    De maneira voluntária, a Associação Sempre Zaki Narchi junto com parceiros oferece aulas de inglês,
+                    reforço escolar e jiu-jitsu para crianças durante as manhãs. Isso ajuda a manter suas mentes ativas
+                    e
+                    abre novas perspectivas para um futuro promissor.
+                    <br><br>
+
+                    Explore nossos cursos e junte-se a nós nessa jornada de crescimento e transformação.
 
 
-    <script src="./assets/JS/cursosASZN.js"></script>
+                </h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img class="imagem2" src="./assets/img/cursosASZN/card1.png" alt="Desenvolvimento">
+                    <h4>Desenvolvimento pessoal e <br> profissional</h4>
+                </div>
+                <div class="card">
+                    <img class="imagem2" src="./assets/img/cursosASZN/card2.png" alt="Desenvolvimento">
+                    <h4>MÚSICA</h4>
+                </div>
+                <div class="card">
+                    <img class="imagem2" src="./assets/img/cursosASZN/card3.png" alt="Desenvolvimento">
+                    <h4>INGLÊS</h4>
+                </div>
+                <div class="card">
+                    <img class="imagem2" src="./assets/img/cursosASZN/card4.png" alt="Desenvolvimento">
+                    <h4>ESPORTES</h4>
+                </div>
+            </div>
+
+
+            <div class="sobre">
+                <img class="icon" src="./assets/img/Vagas/Icon2.png" alt="icon-sobre">
+                <h2>CURSOS</h2>
+            </div>
+
+            <div class="owl-carousel">
+                <div class="conjunto-vagas">
+                    <div class="card-vagas">
+                        <h2>Curso de Socioemocional</h2>
+                        <button class="localidade">Local: SP - Av. Zaki Narchi, 629</button>
+
+                        <p>Descrição: <br><br> Oferecemos cursos gratuitos de desenvolvimento socioemocional para o
+                            mercado
+                            de
+                            trabalho
+                            em parceria com o Instituto Resgatando Vidas e o Instituto Center Norte. Mais de 80 pessoas
+                            já
+                            concluíram o programa com sucesso.
+                            <br><br>
+                            Objetivo: <br><br> Aprimorar as habilidades sociais e emocionais dos participantes,
+                            preparando-os para o
+                            mercado de trabalho.
+                        </p>
+                        <br>
+
+                        <h4 class="data">DURAÇÃO: VÁRIAVEL | NÍVEL: INICIANTE</h4>
+                        <br>
+                        <div class="candidata">
+                            <button class="candidatura">INSCREVA-SE</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="conjunto-vagas">
+                    <div class="card-vagas">
+                        <h2>Curso de Informática</h2>
+                        <button class="localidade">Local: SP - Av. Zaki Narchi, 629</button>
+
+                        <p>Descrição: <br><br> Oferecemos cursos de informática direcionados ao mercado de trabalho.
+                            Prepare-se
+                            para as oportunidades digitais com nosso programa.
+                            <br><br>
+                            Objetivo: <br><br> Desenvolver habilidades em informática e tecnologia para melhorar as
+                            perspectivas de
+                            emprego.
+                        </p>
+                        <br>
+
+                        <h4 class="data">DURAÇÃO: VÁRIAVEL | NÍVEL: INICIANTE</h4>
+                        <br>
+                        <div class="candidata">
+                            <button class="candidatura">INSCREVA-SE</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="conjunto-vagas">
+                    <div class="card-vagas">
+                        <h2>Aulas de Inglês</h2>
+                        <button class="localidade">Local: SP - Av. Zaki Narchi, 629</button>
+
+                        <p>Descrição: <br><br> Oferecemos aulas de inglês para crianças como parte de nosso compromisso
+                            em
+                            proporcionar oportunidades de aprendizado. As aulas ajudam a desenvolver habilidades
+                            linguísticas
+                            desde cedo.
+                            <br><br>
+                            Objetivo: <br><br> Desenvolver proficiência em inglês e ampliar horizontes.
+                        </p>
+                        <br>
+
+                        <h4 class="data">DURAÇÃO: VÁRIAVEL | NÍVEL: INICIANTE</h4>
+                        <br>
+                        <div class="candidata">
+                            <button class="candidatura">INSCREVA-SE</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="conjunto-vagas">
+                    <div class="card-vagas">
+                        <h2>Reforço Escolar</h2>
+                        <button class="localidade">Local: SP - Av. Zaki Narchi, 629</button>
+
+                        <p>Descrição: <br><br> Oferecemos aulas de reforço escolar para crianças, ajudando a fortalecer
+                            suas
+                            habilidades acadêmicas. Nosso programa visa o sucesso educacional de todas as crianças da
+                            comunidade
+                            <br><br>
+                            Objetivo: <br><br> Apoiar o sucesso acadêmico das crianças.
+                        </p>
+                        <br>
+
+                        <h4 class="data">DURAÇÃO: VÁRIAVEL | NÍVEL: INICIANTE</h4>
+                        <br>
+                        <div class="candidata">
+                            <button class="candidatura">INSCREVA-SE</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="conjunto-vagas">
+                    <div class="card-vagas">
+                        <h2>Aulas de Jiu-Jitsu</h2>
+                        <button class="localidade">Local: SP - Av. Zaki Narchi, 629</button>
+
+                        <p>Descrição: <br><br> As aulas de jiu-jitsu são uma ótima maneira de manter as crianças ativas
+                            e
+                            ensinar autodisciplina. Oferecemos aulas de jiu-jitsu para crianças, promovendo
+                            condicionamento
+                            físico e autoconfiança
+                            <br><br>
+                            Objetivo: <br><br> Desenvolvimento físico, mental e emocional por meio do jiu-jitsu.
+                        </p>
+                        <br>
+
+                        <h4 class="data">DURAÇÃO: VÁRIAVEL | NÍVEL: INICIANTE</h4>
+                        <br>
+                        <div class="candidata">
+                            <button class="candidatura" onclick="mostrarFormulario()">INSCREVA-SE</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="conjunto-vagas">
+                    <div class="card-vagas">
+                        <h2>Aulas de Iniciação Musical Projeto Guri</h2>
+                        <button class="localidade">Local: SP - Av. Zaki Narchi, 629</button>
+
+                        <p>Descrição: <br><br> Enriqueça a experiência das crianças com aulas de iniciação musical,
+                            incluindo
+                            canto, coral, teoria musical e violão. As aulas são fornecidas pelo Projeto Guri e são uma
+                            oportunidade única para explorar o mundo da música
+                            <br><br>
+                            Objetivo: <br><br> Desenvolver talento musical e apreciação artística.
+                        </p>
+                        <br>
+
+                        <h4 class="data">DURAÇÃO: VÁRIAVEL | NÍVEL: INICIANTE</h4>
+                        <br>
+                        <div class="candidata">
+                            <button class="candidatura">INSCREVA-SE</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="conjunto-vagas">
+                    <div class="card-vagas">
+                        <h2>Aulas de Futebol</h2>
+                        <button class="localidade">Local: SP - Av. Zaki Narchi, 629</button>
+
+                        <p>Descrição: <br><br> Dê às crianças da comunidade a oportunidade de se envolver em atividades
+                            esportivas e promover um estilo de vida ativo e saudável desde cedo. Nossas aulas de futebol
+                            na
+                            Escolinha Zaki são uma ótima maneira de fazê-lo
+                            <br><br>
+                            Objetivo: <br><br> Promover atividades físicas, trabalho em equipe e disciplina.
+                        </p>
+                        <br>
+
+                        <h4 class="data">DURAÇÃO: VÁRIAVEL | NÍVEL: INICIANTE</h4>
+                        <br>
+                        <div class="candidata">
+                            <button class="candidatura">INSCREVA-SE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sobre">
+                <img class="icon" src="./assets/img/cursosASZN/i (3).png" alt="icon-sobre">
+                <h2>CONHEÇA NOSSO CURSO MAIS AGREGADOR</h2>
+            </div>
+
+            <section id="inf-socio">
+                <div id="div1">
+                    <img class="img-socio" src="./assets/img/cursosASZN/cursos-s- (1).svg" alt="ASZN">
+                    <p>O desenvolvimento socioemocional é a chave para uma vida equilibrada e bem-sucedida. Afinal, para
+                        que
+                        serve o aspecto socioemocional? Ele desempenha um papel fundamental em nossa jornada,
+                        permitindo-nos
+                        compreender e gerenciar nossas emoções, construir relacionamentos saudáveis, tomar decisões
+                        sábias e
+                        enfrentar desafios com resiliência.</p>
+                </div>
+
+                <div id="div2">
+
+                    <p>Essas habilidades não apenas impactam nossas vidas pessoais, mas também são essenciais no mercado
+                        de
+                        trabalho. A inteligência emocional é valorizada pelas empresas, pois colaboradores
+                        emocionalmente
+                        inteligentes tendem a ser mais eficazes, comunicativos e líderes melhores. Além disso, o
+                        desenvolvimento socioemocional promove uma sensação de bem-estar e autoestima, ajudando-nos a
+                        enfrentar os altos e baixos da vida com confiança.</p>
+                    <img class="img-socio img-rigth" src="./assets/img/cursosASZN/cursos-s- (2).svg" alt="ASZN">
+
+                </div>
+
+                <div id="div3">
+                    <img class="img-socio" src="./assets/img/cursosASZN/cursos-s- (3).svg" alt="ASZN">
+                    <p>Não perca a oportunidade de se destacar em um mundo competitivo. Inscreva-se hoje e aproveite ao
+                        máximo
+                        tudo o que o curso socioemocional pode proporcionar. Desperte seu potencial, faça a diferença em
+                        sua
+                        vida e nas vidas daqueles ao seu redor. Junte-se a nós nessa jornada de crescimento e
+                        transformação.
+                        Seu
+                        futuro promissor está a um passo de distância!
+                    </p>
+                </div>
+
+                <div id="div4">
+                    <p>Ao se comprometer com o curso, você terá a chance de aprimorar suas habilidades emocionais e
+                        sociais,
+                        tornando-se mais resiliente, empático e eficaz em todas as áreas da vida. </p>
+                    <img class="img-socio" src="./assets/img/cursosASZN/cursos-s- (4).svg" alt="ASZN">
+                    <p>As lições aprendidas não apenas enriquecerão sua jornada pessoal, mas também melhorarão suas
+                        perspectivas no mercado de trabalho.</p>
+                </div>
+
+                <div id="div5">
+                    <p>você não está apenas dando um passo em direção a um futuro brilhante, mas está, na verdade,
+                        desvendando as portas para um crescimento pessoal e profissional que transcende todas as
+                        expectativas.</p>
+                    <img class="img-socio" src="./assets/img/cursosASZN/cursos-s- (5).svg" alt="ASZN">
+                    <p>Imagine um mundo repleto de possibilidades à sua espera. Ao tomar a decisão de se inscrever no
+                        nosso
+                        renomado curso de desenvolvimento socioemocional.</p>
+                </div>
+                <div id="div6">
+
+                    <p>O depoimento de Maria de Fátima, uma ex-aluna do nosso curso de desenvolvimento socioemocional, é
+                        mais do que palavras. É uma luz que ilumina o caminho da Associação Sempre Zaki Narchi,
+                        lembrando-nos da importância do nosso trabalho e do impacto real que temos na comunidade.
+                        ESSE depoimento é uma fonte de inspiração e validação da nossa missão. Ele nos lembra que,
+                        juntos, estamos construindo um futuro mais brilhante e promissor para todos.</p>
+                    <img class="img-socio img-rigth" src="./assets/img/cursosASZN/cursos-s- (6).svg" alt="ASZN">
+
+                </div>
+
+                <div id="div7">
+                    <img class="img-socio" src="./assets/img/cursosASZN/cursos-s- (7).svg" alt="ASZN">
+                    <p>Gostou? Engaje e Faça a Diferença!
+
+                        Compartilhe nossa missão nas redes sociais, divulgue nossos programas e iniciativas e ajude a
+                        conscientizar mais pessoas. Para se inscrever em nossos cursos e atividades.
+                        basta acessar o QR code no celular, que levará ao formulário de matrícula EXCLUSIVAMENTE DO
+                        CURSO SOCIOEMOCIONAL. Sua participação é fundamental para alcançarmos nossos objetivos e
+                        construirmos um futuro melhor juntos.
+
+                        Junte-se a nós!</p>
+                </div>
+            </section>
+
+            <img src="assets/img/img-predio.png" alt="Prédio Zaki Narchi" class="img-predio">
+            <footer>
+                <ul class="nave-footer">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">DOAÇÕES</a></li>
+                    <li><a href="#">CURSOS</a></li>
+                    <li><a href="#">VAGAS</a></li>
+                </ul>
+                <div class="informa-footer">
+                    <img src="./assets/img/Vagas/ASZN.png" alt="ASZN">
+                    <button onclick="voltarParaInicio()">
+                        <img id="sobe" src="./assets/img/Vagas/pra-cima.png" alt="">
+                    </button>
+
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Comerciantes</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="req-footer">
+                    <img src="./assets/img/Vagas/./e-mail.png" alt="Email">
+                    <p>aszn.ong@gmail.com</p>
+                    <img src="./assets/img/Vagas/telefone.png" alt="Telefone">
+                    <p>+55 (11) 9724-4569</p>
+                    <img src="./assets/img/Vagas/local.png" alt="Local">
+                    <p>Av. Zaki Narchi, 629, São Paulo, Brazil CEP 020290-00</p>
+                </div>
+                <div class="final-footer">
+                    <div class="redes-footer">
+                        <a href=""><img src="./assets/img/Vagas/linkedin.png" alt="Linkedin-Aszn"></a>
+                        <a href=""><img src="./assets/img/Vagas/instagram.png" alt="Intagram-Aszn"></a>
+                        <a href=""><img src="./assets/img/Vagas/facebook.png" alt="Facebook-Aszn"></a>
+                        <a href=""><img src="./assets/img/Vagas/twitter.png" alt="Twitter-Aszn"></a>
+                    </div>
+                    <p>ASZN - TODOS OS DIREITOS RESERVADOS</p>
+                    <p>Privcy Policy | Terms of Service</p>
+                </div>
+        </main>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        <script src="./assets/JS/cursosASZN.js"></script>
 </body>
 
 </html>
