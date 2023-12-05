@@ -277,6 +277,9 @@ header {
   color: #fff; /* Cor desejada ao passar o mouse sobre os elementos */
 }
 
+#landing-principal {
+  display: none;
+}
 /* H1 PADRÃO */
 
 .h1-spacing {
@@ -904,6 +907,11 @@ img {
 @media (max-width: 768px) {
   #section-principal {
     display: none;
+  }
+
+  #landing-principal {
+    display: block;
+    border-bottom: #ffffff 5px solid;
   }
 }
 
