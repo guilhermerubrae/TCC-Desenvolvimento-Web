@@ -1,26 +1,32 @@
-$(document).ready(function(){
-  $('.partner-logos').slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      arrows: false // Remover setas de navegação
+$(document).ready(function () {
+  $(".partner-logos").slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false, // Remover setas de navegação
   });
 });
 
-  function validateForm() {
-    var nome = document.getElementById('nome').value;
-    var empresa = document.getElementById('empresa').value;
-    var telefone = document.getElementById('telefone').value;
-    var email = document.getElementById('email').value;
-    var mensagem = document.getElementById('mensagem').value;
+function validateForm() {
+  var nome = document.getElementById("nome").value;
+  var empresa = document.getElementById("empresa").value;
+  var telefone = document.getElementById("telefone").value;
+  var email = document.getElementById("email").value;
+  var mensagem = document.getElementById("mensagem").value;
 
-    if (nome === '' || empresa === '' || telefone === '' || email === '' || mensagem === '') {
-        alert('Por favor, preencha todos os campos.');
-    } else {
-        alert('Formulário enviado com sucesso!');
-    }
+  if (
+    nome === "" ||
+    empresa === "" ||
+    telefone === "" ||
+    email === "" ||
+    mensagem === ""
+  ) {
+    alert("Por favor, preencha todos os campos.");
+  } else {
+    alert("Formulário enviado com sucesso!");
+  }
 }
 
 function validateForm() {
@@ -42,12 +48,21 @@ function showSuccessPopup() {
   popup.classList.add("show-popup");
 
   // Esconder o pop-up após alguns segundos (opcional)
-  setTimeout(function() {
-      popup.classList.remove("show-popup");
+  setTimeout(function () {
+    popup.classList.remove("show-popup");
   }, 3000); // 3000 milissegundos = 3 segundos
 }
 
-function toggleMenu() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.toggle('show');
-}
+$(document).ready(function () {
+  if ($(window).width() <= 767) {
+    $(".plan-carousel .custom-div").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+    });
+  }
+});

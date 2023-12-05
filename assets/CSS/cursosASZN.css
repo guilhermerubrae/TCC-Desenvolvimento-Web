@@ -1,405 +1,771 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap");
 
 * {
-    font-family: 'Lexend', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #000000;
-    color: white;
+  background-color: #000000;
+  color: white;
 }
 
+/* SCROLL-------------------------- */
+
 ::-webkit-scrollbar {
-    width: 10px;
-    background-color: rgb(0, 0, 0);
+  width: 10px;
+  background-color: rgb(0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
-    width: 10px;
-    background-color: #FBD300;
+  width: 10px;
+  background-color: #fbd300;
 }
 
-header a {
-    font-size: 1.1em;
-    text-decoration: none;
-    color: white;
+/* HEADER-------------------------- */
+
+.container header {
+  width: 100%;
+  height: 90px;
+  flex-shrink: 0;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-menu:hover {
-    transform: scale(1.05);
-    transition: .8s;
+.container header a {
+  height: 75%;
+  margin: 0 35px;
 }
 
-.cor-selecao {
-    color: #FBD300;
+.container header a img {
+  height: 100%;
+  flex-shrink: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    background-color: black;
-    height: 12vh;
-    margin-right: 2.5em;
-
+.container header nav a span {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 5px;
 }
 
-.navbar {
-    list-style: none;
-    display: flex;
-    font-size: 1em;
-
+.container header nav {
+  margin: 0 25px;
 }
 
-.navbar li {
-    margin: 1em;
+.container header nav a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  margin: 0 5px;
 }
 
-.Logo {
-    height: 4.1em;
-    margin-left: 5rem;
-
+#cursos {
+  color: #fbd300;
 }
 
-ul img {
-    height: 2em;
-    vertical-align: middle;
-    margin-left: 0.5rem;
+#myNavbar .icon {
+  display: none;
 }
+
+#myNavbar .icon {
+  font-size: 40px;
+}
+
+.container header nav a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(to right, #f8ef00, rgb(186, 20, 11));
+  position: absolute;
+  top: 20px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.container header nav a:hover::after {
+  width: 100%;
+}
+
+.nav-button {
+  display: none;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  margin: 8px;
+}
+
+.nav-button i {
+  color: #fff;
+}
+
+/* IMG PADRÃO-------------------------- */
 
 .Principal {
-    width: 100%;
-    height: auto; 
-    margin: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 
-#section-initial{
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-}
+/* ICONE ?-------------------------- */
 
 .sobre {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 0.7rem;
-    margin: 1em 1.5em;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  margin: 1em 1.5em;
 }
 
 .icon {
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
+  width: 50px;
+  height: auto;
+  margin: 20px;
 }
 
+/* TEXTOS-------------------------- */
 
-.container {
-    display: flex;
-    font-size: 0.8rem;
+.containeer {
+  display: flex;
+  font-size: 1em;
 }
 
 .column {
-    flex: 1;
-    padding: 30px;
-    text-align: center;
+  flex: 1;
+  padding: 3em;
+  text-align: left;
 }
 
-.titulo-caixa {
-    margin: 30px;
-}
-
-.column+.column {
-    border-left: 1px solid #ccc;
+.column + .column {
+  border-left: 1px solid #ccc;
 }
 
 .texto-aszn {
-    margin: 8%;
-    text-align: center;
-    font-size: 0.8rem;
-
+  margin: 8%;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
-#section-aria {
-    background-image: url(../img/cursosASZN/fundo-cursos.png);
-    max-width: 1920px;
-    width: 100%;
-    height: auto;
-    padding-left: 10rem;
-    padding: 10rem;
-    padding-top: 20rem;
-    padding-bottom: 5rem;
-}
+/* AREAS DE INTERESSE-------------------------- */
 
 .card {
-    width: 13rem;
-    height: 13rem;
-    text-align: center;
-    border: 1px solid #000000;
-    background-color: #FBD300;
-    color: black;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 9%;
-    border-radius: 10px;
-    font-size: 0.9em;
-    /* ou 14px*/
+  width: 14rem;
+  height: 14rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fbd300;
+  color: black;
+  padding: 0.7em;
+  margin: 0.7em;
+  margin-bottom: 9%;
+  border-radius: 10px;
+  font-size: 0.8em;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    transition: .5s;
+  transform: scale(1.05);
+  transition: 0.5s;
 }
-
-#section-aria {
-    padding-left: 10rem;
-    padding: 10rem;
-    padding-top: 20rem;
-    padding-bottom: 5rem;
-}
-
-.card-cursos {
-    width: 16rem;
-    height: 13rem;
-    text-align: center;
-    border: 1px solid #ffffff; /* Corrigido para #ffffff (branco) */
-    background-color: #003da6; /* Cor de fundo alterada para #003da6 */
-    color: #ffffff; /* Cor do texto alterada para #ffffff */
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 9%;
-    border-radius: 10px;
-    font-size: 0.9em;
-    /* ou 14px*/
-}
-
-.card-cursos:hover {
-    transform: scale(1.05);
-    transition: .5s;
-}
-
-.divisoria {
-    border-right: 0.5px solid #ffffff; /* Adiciona a divisória à direita */
-}
-
-/* Estilizando o popup */
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #003da6; /* Cor de fundo alterada para #003da6 */
-    color: #ffffff; /* Cor do texto alterada para #ffffff */
-    border: 1px solid #ffffff; /* Corrigido para #ffffff (branco) */
-    border-radius: 10px;
-    max-width: 300px;
-}
-
-.popup p {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.card-vagas {
-    width: 30%; 
-    height: auto;
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 1.8em;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    border-radius: 15px;
-}
-
-.lista-requisitos li {
-    margin: 10px;
-    margin-left: 20px;
-}
-
-.card-vagas h2 {
-    margin-bottom: 10px;
-}
-
-.card-vagas h3 {
-    margin-top: 10px;
-}
-
-.localidade {
-    margin-top: 5px;
-    margin-bottom: 30px;
-    padding: 8px;
-    border: solid 1px rgb(0, 0, 0);
-    border-radius: 20px;
-}
-
-.container1 {
-    max-width: 1150px;
-    margin: 0 auto; /* Centraliza a div .container1 */
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .container1 .card {
-    position: relative;
-    width: 250px;
-    background-color: #003da6;
-    margin: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
-    transition: 0.5s;
-    text-align: center;
-    overflow: hidden; /* Mantenha o overflow:hidden aqui se desejar cortar a imagem fora do contêiner */
-  }
-  
-  .container1 .card img {
-    width: auto;
-    height: auto;
-    
-     /* Isso mantém a proporção da imagem e a ajusta dentro do contêiner */
-  }
-  
-  .container1 .card .content1 {
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    z-index: 1; /* Certifica-se de que o texto está acima da imagem */
-  }
-  
-  .container1 .card .content1 p {
-    color: #000000;
-    transition: 0.5s;
-  
-  }
-  
-  .container1 .card .content1 a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 25px;
-    background-color: #003da6;
-    ;
-    color: #FBD300;
-    text-decoration: none;
-    transition: 0.5s;
-    outline: none;
-    border-radius: 40px;
-    margin-top: 20px;
-  }
-  
-  .container1 .card:hover {
-    background-color: #FBD300;
-    color: white;
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .container1 .card {
-      width: calc(100% - 40px); /* Reduz a largura do cartão para 100% - 40px de margem */
-      margin: 10px; /* Adapte a margem conforme necessário */
-    }
-  
-    .container1 .card .content1 {
-      padding: 5vh; /* Reduz o padding do conteúdo para se adequar a telas menores */
-    }
-  }
-
-
 
 .imagem2 {
-    margin: 10px;
-    padding: 40px;
+  margin: 10px;
+  padding: 40px;
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* CURSOS-------------------------- */
+
+.conjunto-vagas {
+  display: flex;
+  justify-content: space-around;
+  min-height: 630px;
+}
+
+.card-vagas {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 2px;
+  padding: 1.8em;
+  background-color: #003da6;
+  color: #fff;
+}
+
+.card-vagas h2 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  color: #fbd300;
+  text-transform: uppercase;
+}
+
+.card-vagas h4 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.localidade {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 8px;
+  background-color: #000;
+  color: #fff;
+  border: solid 1px #fbd300;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.candidata {
+  display: flex;
+  justify-content: center;
+}
+
+.candidatura {
+  padding: 15px;
+  background: #fbd300;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.data {
+  margin-right: 20px;
+}
+
+.owl-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* SOCIOEMOCIONAL-------------------------- */
+
+#inf-socio p {
+  display: flex;
+  font-size: 85%;
+  text-transform: uppercase;
+  background-color: #003da6;
+  height: 47%;
+  border-radius: 20px 50px 20px 50px;
+  align-items: center;
+  padding: 0 1rem 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.img-socio {
+  width: 25vw;
+}
+
+#div1,
+#div2,
+#div3,
+#div6,
+#div7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px; /* Adiciona espaço entre as colunas */
+  margin: 5% 10rem 5% 10rem;
+}
+
+#div4,
+#div5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; /* Adiciona espaço entre as colunas */
+  margin: 5% 10rem 5% 10rem;
+}
+
+.img-rigth {
+  justify-self: end;
 }
 
 
+/* FOOTER-------------------------- */
+
+.img-predio {
+  width: 100%;
+  position: relative;
+  top: 90px;
+  z-index: -1;
+}
+
 footer {
-     font-size: 1em;
+  font-size: 0.9em;
+  background-color: #000;
+  padding-bottom: 20px;
 }
 
 .nave-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nave-footer a {
+  text-decoration: none;
+  color: white;
 }
 
 .nave-footer li {
-    margin: 4em 0.4em;
+  margin: 4em 0.4em;
 }
 
 .informa-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2em;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+  margin-bottom: 40px;
 }
 
 .informa-footer button {
-    text-align: center;
-    margin-right: 2em;
-    padding: 0.5em;
-    border-radius: 3em;
-    border: none;
-    cursor: pointer;
-    background-color: #FBD300;
+  text-align: center;
+  margin-right: 2em;
+  padding: 0.5em;
+  border-radius: 3em;
+  border: none;
+  cursor: pointer;
+  background-color: #fbd300;
+  justify-content: center;
+  display: block;
+  margin: 0;
 }
 
 .informa-footer img {
-    width: 8vw;
+  width: 8vw;
 }
 
 #sobe {
-    width: 3vw;
+  width: 3vw;
 }
 
 .informa-footer ul {
-    list-style: none;
+  list-style: none;
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.informa-footer a {
+  text-decoration: none;
+  color: white;
 }
 
 .req-footer {
-    display: flex;
-    justify-content: center;
-    
-    margin: 5em 0;
+  display: flex;
+  justify-content: center;
+
+  margin: 5em 0;
 }
 
 .req-footer img {
-    width: 1.5vw;
-    height: auto;
-    margin: 0 0.7em;
+  width: 1.5vw;
+  height: auto;
+  margin: 0 0.7em;
 }
 
 .final-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4em;
-    background-color: #1A1A1A;
-    border-radius: 2em;
-   
-} 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2em 4em;
+  background-color: #1a1a1a;
+  border-radius: 2em;
+  margin-bottom: 22px;
+}
 
 .redes-footer {
-    margin: 0.5em 1.5em;
+  margin: 0.5em 1.5em;
 }
 
 .final-footer img {
-    width: 3vw;
-    margin-right: 0.6em;
+  width: 3vw;
+  margin-right: 0.6em;
 }
 
 .final-footer p {
-    margin: 0px 20px;
+  margin: 0px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #myNavbar a:not(:last-child) {
+    display: none;
+  }
+
+  .nav-button {
+    float: right;
+    display: block;
+  }
+
+  .container header nav a::after {
+    display: block;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 0;
+  background-color: rgba(40, 40, 42, 0.9);
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: #fbd300;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  color: #fbd300;
+  display: block;
+  font-size: 34px;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font: 60px;
+}
+
+@media (max-width: 818px) {
+  /* Celulares */
+
+  .logoaszn {
+    width: 5em;
+    height: auto;
+    margin-left: 1.5em;
+    margin-right: none;
+  }
+
+  ul img {
+    height: 3em;
+    margin-left: 0.4rem;
+  }
+
+  .Principal {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .sobre {
+    display: flex;
+    align-items: center;
+    font-size: 0.5rem;
+    margin: 0;
+  }
+
+  .icon {
+    width: 50px;
+    margin: 20px 15px;
+  }
+
+  .containeer {
+    display: grid;
+    font-size: 0.8rem;
+    background-clip: text;
+    -webkit-background-clip: text; /* Adicionado para compatibilidade com navegadores Webkit (Safari, Chrome) */
+    color: transparent; /* Tornar o texto transparente */
+    background-image: linear-gradient(to right, #ffffff, rgb(236, 211, 52));
+  }
+
+  .column + .column {
+    border-left: none;
+  }
+
+  .texto-aszn {
+    display: none; /* Retirado */
+  }
+
+  .card {
+    /* Alterado */
+    width: 40vw;
+    height: auto;
+    margin-left: 17px;
+
+    border-radius: 15px;
+  }
+
+  .card:hover {
+    /* Alterado */
+    transform: none;
+    transition: none;
+  }
+
+  .imagem2 {
+    /* Alterado */
+    margin: 20px;
+    padding: 20px;
+  }
+
+  #card-oport {
+    /* Alterado */
+    display: none;
+  }
+
+  .cards {
+    display: grid; /* Alterado */
+    grid-template-columns: 13em 13em;
+    margin-bottom: 1.7em;
+  }
+
+  .card-vagas {
+    width: 87vw; /* Alterado */
+    margin: 10px;
+    height: 400px;
+    font-size: 80%;
+  }
+
+  .conjunto-vagas {
+    display: grid; /* Alterado */
+    justify-content: none;
+  }
+
+  .teste2 {
+    /* Alterado */
+    margin-top: 5%;
+    padding: 2%;
+    display: grid;
+  }
+
+  .teste2 img {
+    /* Alterado */
+    width: 65vw;
+    height: auto;
+    margin-top: 2.5em;
+    margin-left: 4em;
+  }
+
+  #separa {
+    /* Alterado */
+    height: 1.5vh;
+    margin: 0.5em 0;
+  }
+
+  footer {
+    /* Alterado */
+    font-size: 1em;
+    margin-top: 100px;
+  }
+
+  .informa-footer button {
+    /* Alterado */
+    display: none;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .informa-footer ul {
+    margin: 0;
+  }
+
+  .informa-footer img {
+    /* Alterado */
+    width: 20vw;
+  }
+
+  .req-footer {
+    /* Alterado */
+    display: grid;
+    margin: 2em 0;
+  }
+
+  .req-footer img {
+    /* Alterado */
+    display: none;
+  }
+
+  .req-footer p {
+    /* Alterado */
+    margin: 0.4em 1em;
+    text-align: center;
+  }
+
+  .final-footer {
+    display: grid;
+    margin: 0.2em 1em;
+    text-align: center;
+    background-color: #000;
+  }
+
+  .redes-footer,
+  .nave-footer {
+    display: block;
+    text-align: center;
+  }
+
+  .nave-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .final-footer p {
+    margin: 0.1em 1em;
+    padding: 0.2em;
+  }
+
+  #div1,
+  #div2,
+  #div3,
+  #div4,
+  #div5,
+  #div6,
+  #div7 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #inf-socio div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #inf-socio p {
+    background-color: #000;
+    background-clip: text;
+    -webkit-background-clip: text; /* Adicionado para compatibilidade com navegadores Webkit (Safari, Chrome) */
+    color: transparent; /* Tornar o texto transparente */
+    background-image: linear-gradient(to right, #f8ef00, rgb(186, 20, 11));
+    width: 100%;
+    font-size: 70%;
+    border-radius: 0;
+    padding: 10%;
+  }
+
+  .img-socio {
+    width: 82%;
+    height: auto;
+    display: block; /* Para centralizar a imagem horizontalmente */
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1445px) {
+  #inf-socio p {
+    display: flex;
+    font-size: 85%;
+    text-transform: uppercase;
+    background-color: #003da6;
+    height: 70%;
+    border-radius: 20px 50px 20px 50px;
+    align-items: center;
+    padding: 0 1rem 0 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .img-socio {
+    width: 25vw;
+  }
+
+  #div1,
+  #div2,
+  #div3,
+  #div6,
+  #div7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; /* Adiciona espaço entre as colunas */
+    margin: 5% 10rem 5% 10rem;
+  }
+
+  #div4,
+  #div5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; /* Adiciona espaço entre as colunas */
+    margin: 5% 10rem 5% 10rem;
+  }
+
+  .img-rigth {
+    justify-self: end;
+  }
+
+  .card-vagas {
+    width: 100%;
+    height: 580px;
+    margin-top: 20px;
+    margin-left: 2px;
+    padding: 1.8em;
+    background-color: #003da6;
+    color: #fff;
+  }
+
+  .card-vagas h2 {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: #fbd300;
+    text-transform: uppercase;
+  }
+
+  .card-vagas h4 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .localidade {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 8px;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #fbd300;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .candidata {
+    display: flex;
+    justify-content: center;
+  }
+
+  .candidatura {
+    padding: 15px;
+    background: #fbd300;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .data {
+    margin-right: 20px;
+  }
+
+  .owl-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
