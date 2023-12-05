@@ -6,27 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/CSS/vagasASZN.css">
     <link rel="Icon" href="./assets/img/Vagas/ASZN.png">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Associação Zaki Narchi</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img class="Logo" src="./assets/img/Vagas/ASZN.png" alt="Logo">
-            <ul class="navbar">
-                <li class="header-menu"><a href="./indexASZN.html">HOME</a><img src="./assets/img/Vagas/Home.png"
-                        alt="icone-home">
-                </li>
-                <li class="header-menu"><a href="./doaçõesASZN.html">DOAÇÕES</a><img
-                        src="./assets/img/Vagas/Doacoes.png" alt="icone-doacoes"></li>
-                <li class="header-menu"><a class="cor-selecao" href="./vagasASZN.html">VAGAS</a><img
-                        src="./assets/img/Vagas/Vagas.png" alt="icone-vagas"></li>
-                <li class="header-menu"><a href="./cursosASZN.html">CURSOS</a><img src="./assets/img/Vagas/Cursos.png"
-                        alt="icone-cursos"></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <main class="container">
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <i class="fa-solid fa-x"></i>
+            </a>
+
+            <div class="overlay-content">
+                <a href="indexASZN.html">Home</a>
+                <a href="doaçõesASZN.html">Doações</a>
+                <a href="vagasASZN.html">Vagas</a>
+                <a href="cursosASZN.html">Cursos</a>
+            </div>
+        </div>
+
+        <header>
+            <a href="#">
+                <img src="assets/img/logo/logoASZN.png" alt="Logo" />
+            </a>
+
+            <nav id="myNavbar">
+                <a href="indexASZN.html"><span>Home</span><i class="fa-solid fa-house"></i></a>
+                <a href="doaçõesASZN.html"><span>Doações</span><i class="fa-solid fa-hand-holding-heart"></i></a>
+                <a id="vagas" href="vagasASZN.html"><span>Vagas</span><i class="fa-solid fa-person-walking-luggage"></i></a>
+                <a href="cursosASZN.html"><span>Cursos</span><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="javascript:void(0);" class="nav-button" onclick="toggleNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+    </main>
         <img class="Principal" src="./assets/img/Vagas/Principal.png" alt="">
         <div class="sobre">
             <img class="icon" src="./assets/img/Vagas/Icon.png" alt="icon-sobre">
@@ -113,7 +134,6 @@
             <img class="icon" src="./assets/img/Vagas/Icon2.png" alt="icon-sobre">
             <h2>Oportunidades Exclusivas</h2>
         </div>
-        <div class="owl-carousel">
             <div class="conjunto-vagas">
                 <div class="card-vagas">
                     <h1>Processo Seletivo</h1>
@@ -278,7 +298,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
 
 
 
@@ -334,5 +354,4 @@
         </footer>
         <script src="./assets/JS/vagasASZN.js"></script>
 </body>
-
 </html>

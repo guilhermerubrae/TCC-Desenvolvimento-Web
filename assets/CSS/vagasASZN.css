@@ -21,50 +21,85 @@ body {
     background-color: #FBD300;
 }
 
-header a {
-    font-size: 1.1em;
-    text-decoration: none;
-    color: white;
-}
+/* HEADER-------------------------- */
 
-.header-menu:hover {
-    transform: scale(1.05);
-    transition: .8s;
-}
-
-.cor-selecao {
-    color: #FBD300;
-}
-
-nav {
+.container header {
+    width: 100%;
+    height: 90px;
+    flex-shrink: 0;
+    background-color: #000000;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    background-color: black;
-    height: 12vh; /*height: 12.5vh; */
-    margin-right: 2.5em;
-}
-
-.navbar {
-    list-style: none;
-    display: flex;
-}
-
-.navbar li {
-    margin: 1em;
-}
-
-.Logo {
-    height: 4.1em;
-    margin-left: 5rem;
-}
-
-ul img {
-    height: 2em; /* 2.3 */
-    vertical-align: middle;
-    margin-left: 0.5rem;
-}
+  }
+  
+  .container header a {
+    height: 75%;
+    margin: 0 35px;
+    font-size: 1.2em;
+  }
+  
+  .container header a img {
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .container header nav a span {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 5px;
+  }
+  
+  .container header nav {
+    margin: 0 25px;
+  }
+  
+  .container header nav a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    margin: 0 5px;
+  }
+  
+  #vagas {
+    color: #fbd300;
+  }
+  
+  #myNavbar .icon {
+    display: none;
+  }
+  
+  #myNavbar .icon {
+    font-size: 40px;
+  }
+  
+  .container header nav a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(to right, #f8ef00, rgb(186, 20, 11));
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container header nav a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-button {
+    display: none;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    margin: 8px;
+  }
+  
+  .nav-button i {
+    color: #fff;
+  }
 
 .Principal {
     width: 100%;
@@ -329,30 +364,67 @@ footer {
 
 
 @media (max-width: 767px) { /* Celulares */
-    header a {
-        font-size: 1.5em;
+
+    #myNavbar a:not(:last-child) {
+        display: none;
+      }
+    
+      .nav-button {
+        float: right;
+        display: block;
+      }
+    
+      .container header nav a::after {
+        display: block;
+      }
     }
     
-    nav {
-        display: flex;
-        justify-content: space-between  ;
-        align-items: center;
-        text-align: center;
-        background-color: black;
-        height: 14vh;
-        margin-right: 1em;
-    
+    .overlay {
+      width: 100%;
+      height: 0;
+      background-color: rgba(40, 40, 42, 0.9);
+      z-index: 9;
+      position: fixed;
+      left: 0;
+      top: 0;
+      overflow-x: hidden;
+      transition: all 0.5s;
+      text-transform: uppercase;
+      color: #fbd300;
     }
     
-    .navbar {
-        list-style: none;
-        display: flex;
-        font-size: 0.5em;
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
     }
     
-    .navbar li {
-        margin: 1px;
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      color: #fbd300;
+      display: block;
+      font-size: 34px;
+      transition: 0.3s;
     }
+    
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 25px;
+      right: 45px;
+      font: 60px;
+    }
+
+    .container header nav a::after {
+       display: none;
+      }
     
     .Logo {
         width: 5em;
@@ -535,34 +607,7 @@ footer {
       }
     
 
-}
-
-
 @media (max-width: 250px) { /* Celulares */
-    header a {
-        font-size: 1em;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between  ;
-        align-items: center;
-        text-align: center;
-        background-color: black;
-        height: 14vh;
-        margin-right: 1em;
-    
-    }
-    
-    .navbar {
-        list-style: none;
-        display: flex;
-        font-size: 0.5em;
-    }
-    
-    .navbar li {
-        margin: 1px;
-    }
     
     .Logo {
         width: 3em;
@@ -727,41 +772,80 @@ footer {
 
 
 
-
-
-
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-    header a {
-        font-size: 1.5em;
+    #myNavbar a:not(:last-child) {
+        display: none;
+      }
+    
+      .nav-button {
+        float: right;
+        display: block;
+      }
+    
+      .container header nav a::after {
+        display: block;
+      }
+    }
+    
+    .overlay {
+      width: 100%;
+      height: 0;
+      background-color: rgba(40, 40, 42, 0.9);
+      z-index: 9;
+      position: fixed;
+      left: 0;
+      top: 0;
+      overflow-x: hidden;
+      transition: all 0.5s;
+      text-transform: uppercase;
+      color: #fbd300;
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      color: #fbd300;
+      display: block;
+      font-size: 34px;
+      transition: 0.3s;
+    }
+    
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 25px;
+      right: 45px;
+      font: 60px;
     }
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        background-color: black;
-        height: 14vh;
-        margin-right: 1em;
-    }
-
-    .navbar {
-        list-style: none;
-        display: flex;
-        font-size: 0.5em;
-    }
-
-    .navbar li {
-        margin: 1px;
-    }
-
-    .Logo {
+    .container header nav a::after {
+        display: none;
+       }
+     
+    
+    @media (max-width: 818px) {
+      /* Celulares */
+    
+      .logoaszn {
         width: 5em;
         height: auto;
         margin-left: 1.5em;
         margin-right: none;
-    }
+      }
+
 
     ul img {
         height: 3em;
