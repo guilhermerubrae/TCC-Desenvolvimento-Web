@@ -99,7 +99,7 @@ header nav ul li a:hover::after {
     display: block;
   }
 
-  header nav ul li a:hover::after  {
+  header nav ul li a:hover::after {
     display: none;
   }
 }
