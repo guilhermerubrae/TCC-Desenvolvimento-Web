@@ -21,40 +21,6 @@ body {
     background-color: #faf214;
 }
 
-<<<<<<< HEAD
-
-header nav ul li a::after {
-    content: " ";
-    width: 0%;
-    height: 4px;
-    background: linear-gradient(to right, #f8ef00, rgb(186, 20, 11));
-    position: absolute;
-    top: 25px;
-    left: 0;
-    transition: 0.5s ease-in-out;
-  }
-  
-  header nav ul li a:hover::after {
-    width: 100%;
-  }
-  
-header a {
-    font-size: 1.1em;
-    text-decoration: none;
-    color: white;
-}
-
-.header-menu:hover {
-    transform: scale(1.05);
-    transition: .8s;
-}
-
-.cor-selecao {
-    color: #faf214;
-}
-
-nav {
-=======
 /* HEADER-------------------------- */
 
 .container header {
@@ -62,7 +28,6 @@ nav {
     height: 90px;
     flex-shrink: 0;
     background-color: #000000;
->>>>>>> preMain
     display: flex;
     flex-direction: row;
     justify-content: space-between;

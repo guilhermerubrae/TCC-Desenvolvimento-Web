@@ -7,8 +7,6 @@ scrollButton.addEventListener("click", () => {
   });
 });
 
-<<<<<<< HEAD
-=======
 function toggleNavbar() {
   document.getElementById("myNav").style.height = "100%";
 }
@@ -16,4 +14,3 @@ function toggleNavbar() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0";
 }
->>>>>>> preMain
