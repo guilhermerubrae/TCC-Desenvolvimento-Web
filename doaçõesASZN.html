@@ -1,85 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/doaçõesASZN.css" />
+    <link rel="Icon" href="./assets/img/doações/Cursos.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+    <title>Doações</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/CSS/cursosASZN.css">
-    <link rel="Icon" href="./assets/img/Vagas/ASZN.png">
+  <body>
+    <!-- Header -->
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <i class="fa-solid fa-x"></i>
+      </a>
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <title>Associação Zaki Narchi</title>
-</head>
-
-<body>
-
-    <main class="container">
-
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <i class="fa-solid fa-x"></i>
-            </a>
-
-            <div class="overlay-content">
-                <a href="indexASZN.html">Home</a>
-                <a href="doaçõesASZN.html">Doações</a>
-                <a href="vagasASZN.html">Vagas</a>
-                <a href="cursosASZN.html">Cursos</a>
-            </div>
-        </div>
-
-        <header>
-            <a href="#">
-                <img src="assets/img/logo/logoASZN.png" alt="Logo" />
-            </a>
-
-            <nav id="myNavbar">
-                <a href="indexASZN.html"><span>Home</span><i class="fa-solid fa-house"></i></a>
-                <a href="doaçõesASZN.html"><span>Doações</span><i class="fa-solid fa-hand-holding-heart"></i></a>
-                <a href="vagasASZN.html"><span>Vagas</span><i class="fa-solid fa-person-walking-luggage"></i></a>
-                <a id="cursos" href="cursosASZN.html"><span>Cursos</span><i class="fa-solid fa-graduation-cap"></i></a>
-                <a href="javascript:void(0);" class="nav-button" onclick="toggleNavbar()">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </nav>
-        </header>
-
-        <main>
-            <img class="Principal" src="./assets/img/Vagas/Principal.png" alt="">
-
-    <div class="container1">
-      <div class="column1">
-        <p>
-          Na Associação Sempre Zaki Narchi, acreditamos no poder da
-          solidariedade. Sua doação é o alicerce que sustenta nossa missão de
-          promover igualdade de oportunidades, empoderar moradores e enfrentar
-          desigualdades sociais em nossa comunidade.
-        </p>
-      </div>
-      <div class="Doação">
-        <img
-          class="icon"
-          src="./assets/img/doações/Doa+º+úoRed.png"
-          alt="icon-doação"
-        />
-      </div>
-      <div class="column1">
-        <p>
-          Se você acredita em nossa visão e deseja ser um agente de mudança, sua
-          contribuição tem um impacto real. <br />
-          Juntos, podemos criar um impacto duradouro em nossa comunidade. Doe
-          agora e faça parte desta jornada transformadora!
-        </p>
+      <div class="overlay-content">
+        <a href="indexASZN.html">Home</a>
+        <a href="doaçõesASZN.html">Doações</a>
+        <a href="vagasASZN.html">Vagas</a>
+        <a href="cursosASZN.html">Cursos</a>
       </div>
     </div>
+
+    <header>
+      <nav>
+        <img class="Logo" src="./assets/img/doações/ASZN.png" alt="Logo" />
+        <ul class="navbar">
+          <li class="header-menu">
+            <a href="indexASZN.html">HOME</a
+            ><img src="./assets/img/doações/Home.png" alt="icone-home" />
+          </li>
+          <li class="header-menu">
+            <a class="cor-selecao" href="doaçõesASZN.html">DOAÇÕES</a
+            ><img src="./assets/img/doações/Doacoes.png" alt="icone-doacoes" />
+          </li>
+          <li class="header-menu">
+            <a href="vagasASZN.html">VAGAS</a
+            ><img src="./assets/img/doações/Vagas.png" alt="icone-vagas" />
+          </li>
+          <li class="header-menu">
+            <a href="cursosASZN.html">CURSOS</a
+            ><img src="./assets/img/doações/Cursos.png" alt="icone-cursos" />
+          </li>
+          <li class="header-menu"><a href="javascript:void(0);" class="nav-button" onclick="toggleNavbar()">
+            <i class="fa-solid fa-bars"></i>
+          </a></li>
+        </ul>
+      </nav>
+    </header>
+    <img
+      class="Principal1"
+      src="./assets/img/doações/Principal.png"
+      alt="Imagem-Principal-1"
+    />
+
+
+
+
+    <div class="black-division"></div>
+
+    <section class="desc-area">
+      <div class="info">
+        <p id="text-1">
+          À Nossa missão é clara: transformar vidas e comunidades, promovendo
+          o desenvolvimento e empoderamento de todos que fazem parte da Zaki
+          Narchi. Através de programas e iniciativas, buscamos construir um
+          futuro melhor, onde a igualdade de oportunidades e a dignidade se
+          tornem uma realidade para cada morador.
+        </p>
+        <div class="area-image">
+          <div class="icon">
+            <img src="assets/img/diversity-3.png" alt="" />
+          </div>
+        </div>
+        <p id="text-2">
+          Venha você tambem fazer conhecer um pouco de como é a comunidade e o
+          nosso dia a dia.
+        </p>
+      </div>
+    </section>
+
+
+
+
+
     <img
       class="Principal2"
       src="./assets/img/doações/Principal 2.png"
@@ -222,48 +232,41 @@
 
     <!-- Footer -->
 
-    <img src="assets/img/img-predio.png" alt="Prédio Zaki Narchi" class="img-predio">
-            <footer>
-                <ul class="nave-footer">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">DOAÇÕES</a></li>
-                    <li><a href="#">CURSOS</a></li>
-                    <li><a href="#">VAGAS</a></li>
-                </ul>
-                <div class="informa-footer">
-                    <img src="./assets/img/Vagas/ASZN.png" alt="ASZN">
-                    <button onclick="voltarParaInicio()">
-                        <img id="sobe" src="./assets/img/Vagas/pra-cima.png" alt="">
-                    </button>
-
-                    <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Comerciantes</a></li>
-                        <li><a href="#">Parcerias</a></li>
-                        <li><a href="#">Contatos</a></li>
-                    </ul>
-                </div>
-                <div class="req-footer">
-                    <img src="./assets/img/Vagas/./e-mail.png" alt="Email">
-                    <p>aszn.ong@gmail.com</p>
-                    <img src="./assets/img/Vagas/telefone.png" alt="Telefone">
-                    <p>+55 (11) 9724-4569</p>
-                    <img src="./assets/img/Vagas/local.png" alt="Local">
-                    <p>Av. Zaki Narchi, 629, São Paulo, Brazil CEP 020290-00</p>
-                </div>
-                <div class="final-footer">
-                    <div class="redes-footer">
-                        <a href=""><img src="./assets/img/Vagas/linkedin.png" alt="Linkedin-Aszn"></a>
-                        <a href=""><img src="./assets/img/Vagas/instagram.png" alt="Intagram-Aszn"></a>
-                        <a href=""><img src="./assets/img/Vagas/facebook.png" alt="Facebook-Aszn"></a>
-                        <a href=""><img src="./assets/img/Vagas/twitter.png" alt="Twitter-Aszn"></a>
-                    </div>
-                    <p>ASZN - TODOS OS DIREITOS RESERVADOS</p>
-                    <p>Privcy Policy | Terms of Service</p>
-                </div>
-        </main>
-        </footer>
+    <footer>
+      <ul class="nave-footer">
+        <li><a href="indexASZN.html">HOME</a></li>
+        <li><a href="doaçõesASZN.html">DOAÇÕES</a></li>
+        <li><a href="cursosASZN.html">CURSOS</a></li>
+        <li><a href="vagasASZN.html">VAGAS</a></li>
+      </ul>
+      <div class="informa-footer">
+        <img src="./assets/img/doações/ASZN.png" alt="ASZN" />
+        <button id="scrollup">
+          <img id="sobe" src="./assets/img/doações/pra-cima.png" alt="" />
+        </button>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Parcerias</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </div>
+      <div class="req-footer">
+        <img src="./assets/img/doações/e-mail.png" alt="Email" />
+        <p>aszn.ong@gmail.com</p>
+        <img src="./assets/img/doações/telefone.png" alt="Telefone" />
+        <p>+55 (11) 9724-4569</p>
+        <img src="./assets/img/doações/local.png" alt="Local" />
+        <p>Av. Zaki Narchi, 629, São Paulo, Brazil CEP 020290-00</p>
+      </div>
+      <div class="final-footer">
+        <div class="redes-footer">
+          <img src="./assets/img/doações/facebook.png" alt="Facebook-Aszn" />
+          <img src="./assets/img/doações/twitter.png" alt="Twitter-Aszn" />
+          <img src="./assets/img/doações/linkedin.png" alt="Linkedin-Aszn" />
+          <img src="./assets/img/doações/instagram.png" alt="Intagram-Aszn" />
+        </div>
+        <p>ASZN - TODOS OS DIREITOS RESERVADOS</p>
+        <p>Privcy Policy | Terms of Service</p>
 
         <script src="assets/JS/doaçõesASZN.js"></script>
       </div>

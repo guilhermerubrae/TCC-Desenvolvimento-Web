@@ -21,68 +21,68 @@ body {
   background-color: #FBD300;
 }
 
-.container header {
-  width: 100%;
-  height: 90px;
-  flex-shrink: 0;
-  background-color: #000000;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+header {
+  background-color: black;
 }
 
-.container header a {
-  height: 75%;
-  margin: 0 35px;
-}
-
-.container header a img {
-  height: 100%;
-  flex-shrink: 0;
-}
-
-.container header nav a span {
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 0 5px;
-}
-
-.container header nav {
-  margin: 0 25px;
-}
-
-.container header nav a {
+header a {
+  font-size: 1em;
   text-decoration: none;
-  color: #fff;
-  position: relative;
-  margin: 0 5px;
+  color: white;
 }
 
-#cursos {
+.header-menu:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+.cor-selecao {
   color: #fbd300;
 }
 
-#myNavbar .icon {
-  display: none;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  height: 12vh;
+  margin-right: 70px;
 }
 
-#myNavbar .icon {
-  font-size: 40px;
+.navbar {
+  list-style: none;
+  display: flex;
+  font-size: 1em;
 }
 
-.container header nav a::after {
+.navbar li {
+  margin: 1em;
+}
+
+.Logo {
+  height: 4.1em;
+  margin-left: 5rem;
+}
+
+ul img {
+  height: 2em;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+header nav ul li a::after {
   content: " ";
   width: 0%;
   height: 4px;
   background: linear-gradient(to right, #f8ef00, rgb(186, 20, 11));
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 0;
   transition: 0.5s ease-in-out;
 }
 
-.container header nav a:hover::after {
+header nav ul li a:hover::after {
   width: 100%;
 }
 
@@ -92,17 +92,159 @@ body {
   font-size: 30px;
   padding: 10px;
   margin: 8px;
+  cursor: pointer;
 }
 
 .nav-button i {
+  color: #FFF;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar li:not(:last-child) {
+    display: none;
+  }
+
+  .nav-button {
+    float: right;
+    display: block;
+  }
+
+  header nav ul li a:hover::after {
+    display: none;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  font-size: 34px;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #F1F1F1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font: 60px;
+}
+
+.Principal1 {
+  width: 100%;
+  margin: 0;
+}
+
+
+
+
+
+.black-division {
+  width: 100%;
+  height: 21px;
+  background-color: #000;
+}
+
+.desc-area {
+  width: 100%;
+  height: 500px;
+background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc-area .info {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.desc-area .info p {
   color: #fff;
 }
 
-/* IMG PADRÃO-------------------------- */
+.desc-area .info #text-1 {
+  width: 33%;
+}
 
-.Principal {
+.desc-area .info #text-2 {
+  width: 33%;
+}
+
+.desc-area .info .area-image {
+  margin: 0 10px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc-area .info .area-image .icon {
+  background-color: #f8ef00;
+  height: 50%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  position: relative;
+}
+
+.desc-area .info .area-image .icon img {
+  position: relative;
+  left: 3px;
+  height: 130px;
+}
+
+#text-1,
+#text-2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Principal2 {
   width: 100%;
-  height: auto;
   margin: 0;
 }
 
@@ -241,17 +383,9 @@ body {
   margin: 0;
 }
 
-.img-predio {
-  width: 100%;
-  position: relative;
-  top: 90px;
-  z-index: -1;
-}
-
 footer {
   font-size: 0.9em;
-  background-color: #000;
-  padding-bottom: 20px;
+  background-color: #000000;
 }
 
 .nave-footer {
@@ -275,7 +409,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: 2em;
-  margin-bottom: 40px;
 }
 
 .informa-footer button {
@@ -286,9 +419,6 @@ footer {
   border: none;
   cursor: pointer;
   background-color: #fbd300;
-  justify-content: center;
-  display: block;
-  margin: 0;
 }
 
 .informa-footer img {
@@ -301,8 +431,6 @@ footer {
 
 .informa-footer ul {
   list-style: none;
-  text-align: right;
-  margin-right: 3rem;
 }
 
 .informa-footer a {
@@ -313,7 +441,7 @@ footer {
 .req-footer {
   display: flex;
   justify-content: center;
-
+  color: white;
   margin: 5em 0;
 }
 
@@ -329,8 +457,7 @@ footer {
   align-items: center;
   margin: 0.2em 4em;
   background-color: #1a1a1a;
-  border-radius: 2em;
-  margin-bottom: 22px;
+  border-radius: 50%;
 }
 
 .redes-footer {
@@ -346,63 +473,6 @@ footer {
   margin: 0px 20px;
 }
 
-@media screen and (max-width: 600px) {
-  #myNavbar a:not(:last-child) {
-    display: none;
-  }
-
-  .nav-button {
-    float: right;
-    display: block;
-  }
-
-  .container header nav a::after {
-    display: block;
-  }
-}
-
-.overlay {
-  width: 100%;
-  height: 0;
-  background-color: rgba(40, 40, 42, 0.9);
-  z-index: 9;
-  position: fixed;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  transition: all 0.5s;
-  text-transform: uppercase;
-  color: #fbd300;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  color: #fbd300;
-  display: block;
-  font-size: 34px;
-  transition: 0.3s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 25px;
-  right: 45px;
-  font: 60px;
-}
 .div-doacao {
     position: relative;
     text-align: center;
@@ -441,71 +511,3 @@ footer {
 .projeto .experiencia {
   font-weight: 200;
 }
-
-@media screen and (max-width: 600px) {
-  #myNavbar a:not(:last-child) {
-    display: none;
-  }
-
-  .nav-button {
-    float: right;
-    display: block;
-  }
-
-  .container header nav a::after {
-    display: block;
-  }
-}
-
-.overlay {
-  width: 100%;
-  height: 0;
-  background-color: rgba(40, 40, 42, 0.9);
-  z-index: 9;
-  position: fixed;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  transition: all 0.5s;
-  text-transform: uppercase;
-  color: #fbd300;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  color: #fbd300;
-  display: block;
-  font-size: 34px;
-  transition: 0.3s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 25px;
-  right: 45px;
-  font: 60px;
-}
-
-@media (max-width: 818px) {
-  /* Celulares */
-
-  .logoaszn {
-    width: 5em;
-    height: auto;
-    margin-left: 1.5em;
-    margin-right: none;
-  }
